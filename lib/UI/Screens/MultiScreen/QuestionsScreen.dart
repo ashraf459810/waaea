@@ -1,12 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/Models/QuestionModel.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
 
 class QuestionsScreen extends StatelessWidget {
   static const route = '/Questions';
-
+  // final QuestionModel question;
+  // QuestionsScreen({required this.question});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +31,7 @@ class QuestionsScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
                 child: Text(
-                  "ما هو المقصود بالنهج الشامل لحقوق الإنسان؟",
+                  Constants.questionModel.title,
                   style: theme(context)
                       .textTheme
                       .headline5!
@@ -45,10 +47,9 @@ class QuestionsScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              questionCard(context:context,title: "من هو صاحب الحق؟", subTitle: "كل إنسان بغض النظر عن اللون او العرق او الجنس أو الدين او اللغة أو الجنسية"),
-              questionCard(context:context,title: "من هو المكلف بالواجب أو الالتزام لحامية الحق؟", subTitle: "الدولة الطرف ومؤسساتها وموظفيها"),
-              questionCard(context:context,title: "ما هو موضوع الحق؟", subTitle: "أي حق من الحقوق المدنية والسياسية والاقتصادية والاجتامعية والثقافية والجامعية"),
-              questionCard(context:context,title: "ما هي ضامنة الحق؟", subTitle: "الدستور والقانون الدولي لحقوق الإنسان (الاتفاقيات الدولية والإعلانات والمبادئ العامة...)والقانون الوطني"),
+              Column(
+                children: getListWidgets(context),
+              ),
             ],
           ),
         ),
@@ -56,7 +57,10 @@ class QuestionsScreen extends StatelessWidget {
     ));
   }
 
-  Widget questionCard({required BuildContext context,required String title, required String subTitle}) {
+  Widget questionCard(
+      {required BuildContext context,
+      required String title,
+      required String subTitle}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: Row(
@@ -70,11 +74,13 @@ class QuestionsScreen extends StatelessWidget {
               backgroundColor: Constants.orangeColor,
             ),
           ),
-          SizedBox(width: 10,),
+          SizedBox(
+            width: 10,
+          ),
           Expanded(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
                 title,
@@ -100,5 +106,18 @@ class QuestionsScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  List<Widget> getListWidgets(BuildContext context) {
+    List<Widget> list = [];
+    for (int i = 0; i < Constants.questionModel.questionList.length; i++) {
+      list.add(
+        questionCard(
+            context: context,
+            title: Constants.questionModel.questionList[i],
+            subTitle: Constants.questionModel.answerList[i]),
+      );
+    }
+    return list;
   }
 }

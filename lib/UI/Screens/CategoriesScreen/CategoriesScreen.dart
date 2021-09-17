@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/DetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
+import 'package:wa3iaa/UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -27,6 +30,8 @@ class CategoriesScreen extends StatelessWidget {
           children: [
             Expanded(
                 child: CardCategory(
+              onPressed: () =>
+                  Navigator.pushNamed(context, SubCategoriesScreen.route),
               title: "الاطار الحقوقي والقانوني",
               description:
                   "لك الحق أن تعرفي انك تتمتعين بنفس الحقوق والحريات الأساسية بالمساواة مع الجميع. فحقوق الإنسان ليست هبة ولا يُمكن لأحد أو لأي جهة أن تُمنحك حقوقك أو تسلبها منك.",
@@ -34,6 +39,8 @@ class CategoriesScreen extends StatelessWidget {
             )),
             Expanded(
                 child: CardCategory(
+              onPressed: () =>
+                  Navigator.pushNamed(context, SubCategoriesScreen.route),
               title: "الإطار العملي",
               description:
                   "وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور" +

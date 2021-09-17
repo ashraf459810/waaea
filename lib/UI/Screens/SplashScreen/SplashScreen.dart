@@ -4,7 +4,6 @@ import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/DetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/HomeScreen/HomeScreen.dart';
 import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
-import 'package:wa3iaa/UI/Screens/QuestionsScreen/QuestionsScreen.dart';
 import 'package:wa3iaa/UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 

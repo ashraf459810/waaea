@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/DetailsScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -38,12 +39,14 @@ class SubCategoriesScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "مفهوم حقوق الإنسان",
                     subTitle: "",
                     color: theme(context).primaryColor,
                     textColor: theme(context).backgroundColor,
                   ),
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "آليات حامية حقوق الإنسان",
                     subTitle: "في الإطار الدولي والوطني",
                     color: theme(context).accentColor,
@@ -60,12 +63,14 @@ class SubCategoriesScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "المشاركة في حل النزاع وبناء السلام",
                     subTitle: "",
                     color: Colors.white,
                     textColor: Colors.black87,
                   ),
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "حقوق النساء   ",
                     subTitle: "",
                     color: Constants.orangeColor,
@@ -76,40 +81,43 @@ class SubCategoriesScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black12,
-                        spreadRadius: 0.5,
-                        offset: Offset.zero,
-                        blurRadius: 0.9),
-                    BoxShadow(
-                        color: Colors.black12,
-                        spreadRadius: 0.2,
-                        offset: Offset(1, 0.5),
-                        blurRadius: 9)
-                  ],
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                  image: DecorationImage(
-                    image: AssetImage(Constants.symbol),
-                    fit: BoxFit.cover,
+              child: GestureDetector(
+                onTap: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black12,
+                          spreadRadius: 0.5,
+                          offset: Offset.zero,
+                          blurRadius: 0.9),
+                      BoxShadow(
+                          color: Colors.black12,
+                          spreadRadius: 0.2,
+                          offset: Offset(1, 0.5),
+                          blurRadius: 9)
+                    ],
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                    image: DecorationImage(
+                      image: AssetImage(Constants.symbol),
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                ),
-                margin: EdgeInsets.symmetric(horizontal: 30, vertical: 14),
-                child: Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                    child: Text(
-                      "مناهضة العنف القائم على النوع الاجتامعي",
-                      style: theme(context)
-                          .textTheme
-                          .headline5!
-                          .copyWith(color: theme(context).primaryColor),
-                      textDirection: TextDirection.rtl,
+                  margin: EdgeInsets.symmetric(horizontal: 30, vertical: 14),
+                  child: Align(
+                    alignment: Alignment.topCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                      child: Text(
+                        "مناهضة العنف القائم على النوع الاجتامعي",
+                        style: theme(context)
+                            .textTheme
+                            .headline5!
+                            .copyWith(color: theme(context).primaryColor),
+                        textDirection: TextDirection.rtl,
+                      ),
                     ),
                   ),
                 ),
@@ -122,12 +130,14 @@ class SubCategoriesScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "المشاركة السياسية للنساء",
                     subTitle: "",
                     color: theme(context).accentColor,
                     textColor: Colors.white,
                   ),
                   CardGrid(
+                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
                     title: "التنمية المستدامة",
                     subTitle: "",
                     color: theme(context).primaryColor,

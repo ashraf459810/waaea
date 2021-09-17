@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/MainButton.dart';
+import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
+import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -46,6 +48,7 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           width:MediaQuery.of(context).size.width/2.7,
                           child: MainButton(
+                            onPressed: ()=>Navigator.pushNamed(context, CategoriesScreen.route),
                             label: "خلي نبدأ",
                             color: Constants.orangeColor,
                             textColor: Colors.white,
@@ -55,6 +58,7 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           width:MediaQuery.of(context).size.width/2.7,
                           child: MainButton(
+                            onPressed: ()=>Navigator.pushNamed(context, CategoriesScreen.route),
                             label: "عن التطبيق",
                             color: theme(context).backgroundColor,
                             textColor: Colors.black38,

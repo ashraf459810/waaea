@@ -6,16 +6,17 @@ class MainButton extends StatelessWidget {
   final String label;
   final Color color;
   final Color textColor;
+  final void Function() onPressed;
 
   MainButton(
-      {required this.label, required this.color, required this.textColor});
+      {required this.label,required this.onPressed, required this.color, required this.textColor});
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(7.8),
       child: TextButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.resolveWith<Color>(
             (Set<MaterialState> states) {
