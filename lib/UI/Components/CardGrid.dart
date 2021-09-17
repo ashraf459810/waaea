@@ -21,9 +21,9 @@ class CardGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => onPressed,
+      onTap:  onPressed,
       child: Container(
-        height: MediaQuery.of(context).size.height / 5,
+        height: MediaQuery.of(context).size.height / 5.5,
         width: MediaQuery.of(context).size.width / 2.5,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),

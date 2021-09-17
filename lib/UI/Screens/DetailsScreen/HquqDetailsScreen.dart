@@ -1,22 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Definition1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Definition2Screen.dart.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Hquuq1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Hquuq2Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Hquuq3Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Hquuq4Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/MultiPointScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/PointScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/QuestionsScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Quote1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiScreen/Quote2Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition1Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition2Screen.dart.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq1Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq2Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq3Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq4Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/MultiPointScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/PointScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote1Screen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote2Screen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
 
-class DetailsScreen extends StatelessWidget {
-  static const route = '/details';
+class HquqDetailsScreen extends StatelessWidget {
+  static const route = '/HquqDetails';
 
   @override
   Widget build(BuildContext context) {
@@ -71,11 +71,11 @@ class DetailsScreen extends StatelessWidget {
                         Navigator.pushNamed(context, Quote2Screen.route),
                     text: "ما هي المبادئ الأساسية لحقوق الإنسان؟",
                     context: context),
-                rowQuestionWidget(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Definition1Screen.route),
-                    text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
-                    context: context),
+                // rowQuestionWidget(
+                //     onPressed: () =>
+                //         Navigator.pushNamed(context, Definition1Screen.route),
+                //     text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
+                //     context: context),
                 rowQuestionWidget(
                     onPressed: () =>
                         Navigator.pushNamed(context, Definition2Screen.route),

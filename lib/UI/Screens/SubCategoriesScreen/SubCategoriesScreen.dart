@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
-import 'package:wa3iaa/UI/Screens/DetailsScreen/DetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote2Screen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -33,20 +35,24 @@ class SubCategoriesScreen extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
-                    title: "مفهوم حقوق الإنسان",
-                    subTitle: "",
-                    color: theme(context).primaryColor,
-                    textColor: theme(context).backgroundColor,
+                  GestureDetector(
+                    onTap: () async{
+                     await Navigator.pushNamed(context, Quote2Screen.route);
+                    },
+                    child: CardGrid(
+                      onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
+                      title: "مفهوم حقوق الإنسان",
+                      subTitle: "",
+                      color: theme(context).primaryColor,
+                      textColor: theme(context).backgroundColor,
+                    ),
                   ),
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HmayaDetailsScreen.route),
                     title: "آليات حامية حقوق الإنسان",
                     subTitle: "في الإطار الدولي والوطني",
                     color: theme(context).accentColor,
@@ -57,20 +63,19 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
                     title: "المشاركة في حل النزاع وبناء السلام",
                     subTitle: "",
                     color: Colors.white,
                     textColor: Colors.black87,
                   ),
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
                     title: "حقوق النساء   ",
                     subTitle: "",
                     color: Constants.orangeColor,
@@ -80,9 +85,8 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
               child: GestureDetector(
-                onTap: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                onTap: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
@@ -124,20 +128,19 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
                     title: "المشاركة السياسية للنساء",
                     subTitle: "",
                     color: theme(context).accentColor,
                     textColor: Colors.white,
                   ),
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, DetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
                     title: "التنمية المستدامة",
                     subTitle: "",
                     color: theme(context).primaryColor,

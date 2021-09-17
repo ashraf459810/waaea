@@ -14,6 +14,9 @@ class Constants {
   static String symbol = 'assets/images/symbol.png';
   static String women = 'assets/images/women.png';
   static String bgFlower = 'assets/images/bgFlower.png';
+  static String handHeader = 'assets/images/handHeader.png';
+  static String women2 = 'assets/images/women2.png';
+  static String tableScreenshot = 'assets/images/tableScreenshot.png';
 
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);

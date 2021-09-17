@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
-import 'package:wa3iaa/UI/Screens/DetailsScreen/DetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
 import 'package:wa3iaa/UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
