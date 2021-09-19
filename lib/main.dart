@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/AlmasawatScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/TawattawrScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IraqProtocolScreen.dart';
 import 'Helper/Language.dart';
 import 'Helper/Theme.dart';
+import 'UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
+import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
+import 'UI/Screens/MultiAlhnfScreen/AtharHanafScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/ItarScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
@@ -70,6 +76,12 @@ class MyApp extends StatelessWidget {
             ItarScreen.route: (context) => ItarScreen(),
             MasadrHmayaScreen.route: (context) => MasadrHmayaScreen(),
             IraqProtocolScreen.route: (context) => IraqProtocolScreen(),
+            HalamyaDetailsScreen.route: (context) => HalamyaDetailsScreen(),
+            AlmasawatScreen.route: (context) => AlmasawatScreen(),
+            TawattawrScreen.route: (context) => TawattawrScreen(),
+            AlhnfDetailsScreen.route: (context) => AlhnfDetailsScreen(),
+            AlhnfNawhScreen.route: (context) => AlhnfNawhScreen(),
+            AtharHanafScreen.route: (context) => AtharHanafScreen(),
 
           },
         ));

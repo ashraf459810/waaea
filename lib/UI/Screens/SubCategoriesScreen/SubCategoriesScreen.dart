@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote2Screen.dart';
@@ -75,7 +77,7 @@ class SubCategoriesScreen extends StatelessWidget {
                     textColor: Colors.black87,
                   ),
                   CardGrid(
-                    onPressed: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
+                    onPressed: ()=>Navigator.pushNamed(context, HalamyaDetailsScreen.route),
                     title: "حقوق النساء   ",
                     subTitle: "",
                     color: Constants.orangeColor,
@@ -86,7 +88,7 @@ class SubCategoriesScreen extends StatelessWidget {
             ),
             Expanded(
               child: GestureDetector(
-                onTap: ()=>Navigator.pushNamed(context, HquqDetailsScreen.route),
+                onTap: ()=>Navigator.pushNamed(context, AlhnfDetailsScreen.route),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(

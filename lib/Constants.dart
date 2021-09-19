@@ -17,6 +17,20 @@ class Constants {
   static String handHeader = 'assets/images/handHeader.png';
   static String women2 = 'assets/images/women2.png';
   static String tableScreenshot = 'assets/images/tableScreenshot.png';
+  static String tattawratScreenshot = 'assets/images/tattawratScreenshot.png';
+
+  //images / gender-violence
+  static String topBg = 'assets/images/gender-violence/topBg.png';
+  static String page1 = 'assets/images/gender-violence/page1.png';
+  static String depressPic = 'assets/images/gender-violence/depressPic.png';
+  static String familyPic = 'assets/images/gender-violence/familyPic.png';
+  static String handPic = 'assets/images/gender-violence/handPic.png';
+  static String graduatePic = 'assets/images/gender-violence/graduatePic.png';
+  static String jasadyIcon = 'assets/images/gender-violence/jasadyIcon.png';
+  static String iqtsadyIcon = 'assets/images/gender-violence/iqtsadyIcon.png';
+  static String ijtmahyIcon = 'assets/images/gender-violence/ijtmahyIcon.png';
+  static String jnsyIcon = 'assets/images/gender-violence/jnsyIcon.png';
+  static String nafsyIcon = 'assets/images/gender-violence/nafsyIcon.png';
 
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);
