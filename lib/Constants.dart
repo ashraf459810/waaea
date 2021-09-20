@@ -18,6 +18,9 @@ class Constants {
   static String women2 = 'assets/images/women2.png';
   static String tableScreenshot = 'assets/images/tableScreenshot.png';
   static String tattawratScreenshot = 'assets/images/tattawratScreenshot.png';
+  static String ijraatTableScreenshot = 'assets/images/ijraatTableScreenshot.png';
+  static String ashabWlayatScreenshot = 'assets/images/ashabWlayatScreenshot.png';
+  static String hadadMqrrinScreenshot = 'assets/images/hadadMqrrinScreenshot.png';
 
   //images / gender-violence
   static String topBg = 'assets/images/gender-violence/topBg.png';

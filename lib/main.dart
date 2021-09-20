@@ -5,6 +5,7 @@ import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/AlmasawatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/TawattawrScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/AshabWlayatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IraqProtocolScreen.dart';
 import 'Helper/Language.dart';
 import 'Helper/Theme.dart';
@@ -14,6 +15,9 @@ import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AtharHanafScreen.dart';
+import 'UI/Screens/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
+import 'UI/Screens/MultiHmayaScreen/HadadMqrrinScreen.dart';
+import 'UI/Screens/MultiHmayaScreen/IjraatXassScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/ItarScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
@@ -82,6 +86,10 @@ class MyApp extends StatelessWidget {
             AlhnfDetailsScreen.route: (context) => AlhnfDetailsScreen(),
             AlhnfNawhScreen.route: (context) => AlhnfNawhScreen(),
             AtharHanafScreen.route: (context) => AtharHanafScreen(),
+            GhairTahaqdyaScreen.route: (context) => GhairTahaqdyaScreen(),
+            IjraatXassScreen.route: (context) => IjraatXassScreen(),
+            AshabWlayatScreen.route: (context) => AshabWlayatScreen(),
+            HadadMqrrinScreen.route: (context) => HadadMqrrinScreen(),
 
           },
         ));

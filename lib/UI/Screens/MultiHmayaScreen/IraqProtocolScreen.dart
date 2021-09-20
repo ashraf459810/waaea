@@ -7,8 +7,6 @@ import '../../../Constants.dart';
 
 class IraqProtocolScreen extends StatelessWidget {
   static const route = '/IraqProtocol';
-  // final QuotesModel quote;
-  // QuestionsScreen({required this.quote});
 
   @override
   Widget build(BuildContext context) {

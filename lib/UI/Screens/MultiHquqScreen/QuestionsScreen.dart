@@ -7,8 +7,7 @@ import '../../../Constants.dart';
 
 class QuestionsScreen extends StatelessWidget {
   static const route = '/Questions';
-  // final QuestionModel question;
-  // QuestionsScreen({required this.question});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

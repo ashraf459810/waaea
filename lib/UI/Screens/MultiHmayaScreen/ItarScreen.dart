@@ -7,8 +7,6 @@ import '../../../Constants.dart';
 
 class ItarScreen extends StatelessWidget {
   static const route = '/Itar';
-  // final QuotesModel quote;
-  // QuestionsScreen({required this.quote});
 
   @override
   Widget build(BuildContext context) {
