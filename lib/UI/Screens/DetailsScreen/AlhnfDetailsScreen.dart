@@ -29,7 +29,7 @@ class AlhnfDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: theme(context).backgroundColor.withAlpha(240),
+        backgroundColor: Constants.lightBgColor,
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),

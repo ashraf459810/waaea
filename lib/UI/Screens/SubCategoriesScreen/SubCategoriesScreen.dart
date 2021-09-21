@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
@@ -61,7 +62,7 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, HquqDetailsScreen.route),
+                    Navigator.pushNamed(context, CedawDetailsScreen.route),
                 title: "المشاركة في حل النزاع وبناء السلام",
                 subTitle: "",
                 color: Colors.white,
