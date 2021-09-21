@@ -14,12 +14,13 @@ class TawattawrScreen extends StatelessWidget {
         body: Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(Constants.bgFlower),
-          fit: BoxFit.cover,
-        ),
-      ),
+      color: Constants.lightBgColor,
+      // decoration: BoxDecoration(
+      //   image: DecorationImage(
+      //     image: AssetImage(Constants.bgFlower),
+      //     fit: BoxFit.cover,
+      //   ),
+      // ),
       child: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -38,7 +39,7 @@ class TawattawrScreen extends StatelessWidget {
                   ),
                 ),
 
-                Image.asset(Constants.tattawratScreenshot,fit: BoxFit.fitWidth ,width: MediaQuery.of(context).size.width,),
+                Image.asset(Constants.tattawratScreenshot ,width: MediaQuery.of(context).size.width,),
                 // Padding(
                 //   padding:
                 //       const EdgeInsets.symmetric(horizontal: 10, vertical: 10),

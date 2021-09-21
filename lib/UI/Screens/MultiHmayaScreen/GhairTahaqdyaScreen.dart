@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IjraatXassScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IstihrathScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -68,7 +69,7 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                       title: "آلية الاستعراض الدوري الشامل",
                       label: "UPR",
                       bgColor: theme(context).primaryColor,
-                      onPressed: () {},
+                      onPressed: () => Navigator.pushNamed(context, IstihrathScreen.route),
                     ),
                     TahaqdyWidget(
                       title: "الشكاوي السرية",

@@ -21,6 +21,7 @@ class Constants {
   static String ijraatTableScreenshot = 'assets/images/ijraatTableScreenshot.png';
   static String ashabWlayatScreenshot = 'assets/images/ashabWlayatScreenshot.png';
   static String hadadMqrrinScreenshot = 'assets/images/hadadMqrrinScreenshot.png';
+  static String istihrathScreenshot = 'assets/images/istihrathScreenshot.png';
 
   //images / gender-violence
   static String topBg = 'assets/images/gender-violence/topBg.png';
@@ -42,6 +43,7 @@ class Constants {
   static Color blueColor = Color(0xff4777b6);
   static Color lightBlueColor = Color(0xffd5d7ff);
   static Color purpleColor = Color(0xff463066);
+  static Color lightBgColor = Color(0xfff6f5f1);
 
   //data
   static QuestionModel questionModel = new QuestionModel(

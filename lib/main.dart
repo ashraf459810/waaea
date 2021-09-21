@@ -19,6 +19,7 @@ import 'UI/Screens/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/HadadMqrrinScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/IjraatXassScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
+import 'UI/Screens/MultiHmayaScreen/IstihrathScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/ItarScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
 import 'UI/Screens/MultiHquqScreen/Definition1Screen.dart';
@@ -90,6 +91,7 @@ class MyApp extends StatelessWidget {
             IjraatXassScreen.route: (context) => IjraatXassScreen(),
             AshabWlayatScreen.route: (context) => AshabWlayatScreen(),
             HadadMqrrinScreen.route: (context) => HadadMqrrinScreen(),
+            IstihrathScreen.route: (context) => IstihrathScreen(),
 
           },
         ));

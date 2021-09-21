@@ -24,7 +24,7 @@ class SubCategoriesScreen extends StatelessWidget {
             onTap: () => Navigator.pop(context),
             child: Icon(Icons.arrow_back_ios)),
         title: Text(
-          "الحقوقي والقانوين",
+          "الحقوقي والقانوني",
           style: theme(context)
               .textTheme
               .headline5!
