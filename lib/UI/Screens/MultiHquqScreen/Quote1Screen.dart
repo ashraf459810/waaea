@@ -20,63 +20,65 @@ class Quote1Screen extends StatelessWidget {
         ),
       ),
       child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-                child: Text(
-                  Constants.quotesModel.title,
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
+                  child: Text(
+                    Constants.quotesModel.title,
+                    style: theme(context)
+                        .textTheme
+                        .headline5!
+                        .copyWith(color: Constants.orangeColor, fontSize: 30),
+                    textDirection: TextDirection.rtl,
+                  ),
+                ),
+                Container(
+                    margin: EdgeInsets.symmetric(vertical: 4),
+                    height: 2,
+                    width: MediaQuery.of(context).size.width / 3,
+                    color: Constants.orangeColor),
+                SizedBox(
+                  height: 6,
+                ),
+                Constants.quotesModel.subTitle != "null"
+                    ? Text(
+                  Constants.quotesModel.subTitle,
                   style: theme(context)
                       .textTheme
                       .headline5!
-                      .copyWith(color: Constants.orangeColor, fontSize: 30),
+                      .copyWith(color: Colors.black87, fontSize: 22),
                   textDirection: TextDirection.rtl,
+                )
+                    : SizedBox.shrink(),
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4),
-                  height: 2,
-                  width: MediaQuery.of(context).size.width / 3,
-                  color: Constants.orangeColor),
-              SizedBox(
-                height: 6,
-              ),
-              Constants.quotesModel.subTitle != "null"
-                  ? Text(
-                Constants.quotesModel.subTitle,
-                style: theme(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(color: Colors.black54, fontSize: 22),
-                textDirection: TextDirection.rtl,
-              )
-                  : SizedBox.shrink(),
-              SizedBox(
-                height: 10,
-              ),
-              Column(
-                children: Constants.quotesModel.pointsList.map((val) => quoteCard(
-                    context: context,
-                    title: val,
-                    ),).toList(),
-              ),
+                Column(
+                  children: Constants.quotesModel.pointsList.map((val) => quoteCard(
+                      context: context,
+                      title: val,
+                      ),).toList(),
+                ),
 
-              Constants.quotesModel2.extra != "null"
-                  ? Text(
-                Constants.quotesModel2.extra,
-                style: theme(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(color: Colors.black, fontSize: 22),
-                textDirection: TextDirection.rtl,
-              )
-                  : SizedBox.shrink()
+                Constants.quotesModel.extra != "null"
+                    ? Text(
+                  Constants.quotesModel.extra,
+                  style: theme(context)
+                      .textTheme
+                      .headline5!
+                      .copyWith(color: Colors.black54, fontSize: 22),
+                  textDirection: TextDirection.rtl,
+                )
+                    : SizedBox.shrink()
 
-             ],
+               ],
+            ),
           ),
         ),
       ),
@@ -87,7 +89,7 @@ class Quote1Screen extends StatelessWidget {
       {required BuildContext context,
       required String title,}) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -108,7 +110,7 @@ class Quote1Screen extends StatelessWidget {
                 style: theme(context)
                     .textTheme
                     .headline5!
-                    .copyWith(color: Colors.black, fontSize: 22),
+                    .copyWith(color: Colors.black54, fontSize: 22),
                 textDirection: TextDirection.rtl,
               ),)
         ],

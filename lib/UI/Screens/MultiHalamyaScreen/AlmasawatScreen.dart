@@ -48,7 +48,7 @@ class AlmasawatScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .bodyText1!
-                        .copyWith(color: Colors.black45, fontSize: 20),
+                        .copyWith(color: Colors.black54, fontSize: 20),
                   ),
                 ),
               ],

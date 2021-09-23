@@ -116,7 +116,7 @@ class ItarScreen extends StatelessWidget {
                       style: theme(context)
                           .textTheme
                           .headline5!
-                          .copyWith(color: Colors.black45, fontSize: 20),
+                          .copyWith(color: Colors.black54, fontSize: 20),
                     ),
                     TextSpan(
                         text: define,
@@ -156,7 +156,7 @@ class ItarScreen extends StatelessWidget {
                                     .textTheme
                                     .headline5!
                                     .copyWith(
-                                        color: Colors.black45, fontSize: 20)),
+                                        color: Colors.black54, fontSize: 20)),
                           ),
                         ],
                       ),

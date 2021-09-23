@@ -117,7 +117,7 @@ class Definition2Screen extends StatelessWidget {
                 TextSpan(text: define,style:theme(context)
                     .textTheme
                     .headline5!
-                    .copyWith(color: Colors.black45, fontSize: 20)),
+                    .copyWith(color: Colors.black54, fontSize: 20)),
               ],
             ),
           ))

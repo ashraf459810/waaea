@@ -50,7 +50,7 @@ class HquqDetailsScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .bodyText1!
-                        .copyWith(color: Colors.black45, fontSize: 20),
+                        .copyWith(color: Colors.black54, fontSize: 20),
                   ),
                 ),
                 SizedBox(
@@ -187,7 +187,7 @@ class HquqDetailsScreen extends StatelessWidget {
                                     title:
                                         "هل تُعتبر المساواة بني الجنسني أساسيا من حقا حقوق الإنسان؟",
                                     description:
-                                        "عم، وتضمن المساواة في الفرص والعائدات وتساعد في تحقيق التنمية المستدامة والسلام في المجتمعات",
+                                        " نعم، وتضمن المساواة في الفرص والعائدات وتساعد في تحقيق التنمية المستدامة والسلام في المجتمعات",
                                   )),
                         ),
                     text:

@@ -1,11 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
-import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
-import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/HomeScreen/HomeScreen.dart';
-import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
-import 'package:wa3iaa/UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -37,7 +32,6 @@ class _SplashScreenState extends State<SplashScreen> {
           Constants.logo,
           height: 75,
         ),
-        // child: CircularProgressIndicator()
       ),
     );
   }
