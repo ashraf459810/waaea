@@ -37,6 +37,17 @@ class Constants {
   static String jnsyIcon = 'assets/images/gender-violence/jnsyIcon.png';
   static String nafsyIcon = 'assets/images/gender-violence/nafsyIcon.png';
 
+  //images / gender
+  static String headerGender = 'assets/images/gender/headerGender.png';
+  static String question = 'assets/images/gender/question.png';
+  static String dishesImage = 'assets/images/gender/dishesImage.png';
+  static String moneyImage = 'assets/images/gender/moneyImage.png';
+  static String natureImage = 'assets/images/gender/natureImage.png';
+  static String stealImage = 'assets/images/gender/stealImage.png';
+  static String genderImage = 'assets/images/gender/genderImage.png';
+  static String screenshotGender = 'assets/images/gender/screenshotGender.png';
+
+
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);
   static Color lightPinkColor = Color(0xfff28779);

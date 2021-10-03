@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
@@ -121,7 +122,7 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, HquqDetailsScreen.route),
+                    Navigator.pushNamed(context, GenderDetailsScreen.route),
                 title: "المشاركة السياسية للنساء",
                 subTitle: "",
                 color: theme(context).accentColor,
@@ -129,7 +130,7 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, HquqDetailsScreen.route),
+                    Navigator.pushNamed(context, GenderDetailsScreen.route),
                 title: "التنمية المستدامة",
                 subTitle: "",
                 color: theme(context).primaryColor,

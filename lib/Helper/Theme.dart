@@ -20,7 +20,7 @@ class AppTheme {
     primaryColor: primaryColor,
     accentColor: accentColor,
     textTheme: lightTextTheme,
-    fontFamily: 'R016',
+    fontFamily: 'R032',
     primarySwatch: Colors.green,
     appBarTheme: AppBarTheme(
       iconTheme: IconThemeData(color: blackTwo),

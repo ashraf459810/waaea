@@ -39,6 +39,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/gender-violence/
+    - assets/images/gender/
     - assets/icons/
     - assets/fonts/
 

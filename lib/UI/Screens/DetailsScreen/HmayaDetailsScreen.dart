@@ -35,10 +35,13 @@ class HmayaDetailsScreen extends StatelessWidget {
                 Stack(
                   children: [
                     Container(
-                      height: MediaQuery.of(context).size.height/5,
+                      height: MediaQuery.of(context).size.height/4.8,
                       color: theme(context).accentColor,
                     ),
-                    Image.asset(Constants.handHeader,height:MediaQuery.of(context).size.height/5,)
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset(Constants.handHeader,height:MediaQuery.of(context).size.height/5.3,),
+                    )
                   ],
                 ),
 
