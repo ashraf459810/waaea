@@ -7,7 +7,7 @@ class AppTheme {
   static const accentColor = Color(0xfff28779);
   static const blackTwo = const Color(0xFF324149);
   static const backgroundColor = Color(0xfff6f5f1);
-  static const white = const Color(0xffffffff);
+  static const white = const Color(0xfff6f5f1);
   static const black = const Color(0xff000000);
   static const successColor = const Color(0xff7BE495);
   static const warningColor = const Color(0xffFFCF5C);
@@ -29,7 +29,7 @@ class AppTheme {
       textTheme: TextTheme(
           headline6: _headline6.copyWith(
               color: white, fontWeight: FontWeight.w300)),
-      elevation: 1,
+      elevation: 0,
       shadowColor: primaryColor,
     ),
     tabBarTheme: TabBarTheme(

@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
             LandingScreen.route: (context) => LandingScreen(),
             CategoriesScreen.route: (context) => CategoriesScreen(),
             SubCategoriesScreen.route: (context) => SubCategoriesScreen(),
-            //Hquuq Screens
+            //Hquuq Screens (Section 1)
             HquqDetailsScreen.route: (context) => HquqDetailsScreen(),
             QuestionsScreen.route: (context) => QuestionsScreen(),
             Quote1Screen.route: (context) => Quote1Screen(),
@@ -79,17 +79,17 @@ class MyApp extends StatelessWidget {
             Hquuq2Screen.route: (context) => Hquuq2Screen(),
             Hquuq3Screen.route: (context) => Hquuq3Screen(),
             Hquuq4Screen.route: (context) => Hquuq4Screen(),
-            //Hmaya Screens
+            //Hmaya Screens (Section 2)
             HmayaDetailsScreen.route: (context) => HmayaDetailsScreen(),
             IltzamatScreen.route: (context) => IltzamatScreen(),
             ItarScreen.route: (context) => ItarScreen(),
             MasadrHmayaScreen.route: (context) => MasadrHmayaScreen(),
             IraqProtocolScreen.route: (context) => IraqProtocolScreen(),
-            //Halamya Screens
+            //Halamya Screens (Section 3)
             HalamyaDetailsScreen.route: (context) => HalamyaDetailsScreen(),
             AlmasawatScreen.route: (context) => AlmasawatScreen(),
             TawattawrScreen.route: (context) => TawattawrScreen(),
-            //Alhnf Screens
+            //Alhnf Screens (Section 4)
             AlhnfDetailsScreen.route: (context) => AlhnfDetailsScreen(),
             AlhnfNawhScreen.route: (context) => AlhnfNawhScreen(),
             AtharHanafScreen.route: (context) => AtharHanafScreen(),
@@ -98,9 +98,9 @@ class MyApp extends StatelessWidget {
             AshabWlayatScreen.route: (context) => AshabWlayatScreen(),
             HadadMqrrinScreen.route: (context) => HadadMqrrinScreen(),
             IstihrathScreen.route: (context) => IstihrathScreen(),
-            //Cedaw Screens
+            //Cedaw Screens (Section 5)
             CedawDetailsScreen.route: (context) => CedawDetailsScreen(),
-            //Gender Screens
+            //Gender Screens (Section 6)
             GenderDetailsScreen.route: (context) => GenderDetailsScreen(),
           },
         ));

@@ -23,6 +23,7 @@ class Constants {
   static String hadadMqrrinScreenshot = 'assets/images/hadadMqrrinScreenshot.png';
   static String istihrathScreenshot = 'assets/images/istihrathScreenshot.png';
   static String cedaw = 'assets/images/cedaw.png';
+  static String iraqImage = 'assets/images/iraqImage.png';
 
   //images / gender-violence
   static String topBg = 'assets/images/gender-violence/topBg.png';

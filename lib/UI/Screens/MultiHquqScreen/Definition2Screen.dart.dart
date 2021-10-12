@@ -11,6 +11,15 @@ class Definition2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: theme(context).scaffoldBackgroundColor,
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios,
+            ),
+            onPressed: () {},
+          ),
+        ),
         body: Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,

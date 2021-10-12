@@ -28,84 +28,103 @@ class HmayaDetailsScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Constants.lightBgColor,
         body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-            child: Column(
-              children: [
-                Stack(
+          child: Stack(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
+                child: Column(
                   children: [
-                    Container(
-                      height: MediaQuery.of(context).size.height/4.8,
-                      color: theme(context).accentColor,
+                    Stack(
+                      children: [
+                        Container(
+                          height: MediaQuery.of(context).size.height/4.8,
+                          color: theme(context).accentColor,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(Constants.handHeader,height:MediaQuery.of(context).size.height/5.3,),
+                        )
+                      ],
+                    ),
+
+                    Padding(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "آليات حامية حقوق الإنسان",
+                        style: theme(context)
+                            .textTheme
+                            .headline2!
+                            .copyWith(color: Colors.black87, fontSize: 38,fontFamily: 'R016'),
+                      ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset(Constants.handHeader,height:MediaQuery.of(context).size.height/5.3,),
-                    )
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "من الضروري الوعي بأن حقوق الإنسان الأساسية ليست امتيازات وإمنا التزامات أساسية يجب على الدولة تعزيزها وحاميتها",
+                        style: theme(context)
+                            .textTheme
+                            .bodyText1!
+                            .copyWith(color: Colors.black54, fontSize: 20),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    rowQuestionWidget(
+                        text: "ما هي التزامات الدول بتطبيق حقوق الإنسان؟",
+                        onPressed: () =>
+                            Navigator.pushNamed(context, IltzamatScreen.route),
+                        context: context),
+                    rowQuestionWidget(
+                        onPressed: () =>
+                            Navigator.pushNamed(context, ItarScreen.route),
+                        text: "ما هو الإطار القانوين الدولي لحقوق الإنسان؟",
+                        context: context),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    GestureDetector(
+                      onTap: ()=>Navigator.pushNamed(context, MasadrHmayaScreen.route),
+                      child: CategoryWidget(
+                          title: "مصادر الحامية الدولية لحقوق الإنسان",
+                          bgColor: theme(context).accentColor,
+                          textColor: theme(context).backgroundColor,
+                          onPressed: () =>
+                              Navigator.pushNamed(context, MasadrHmayaScreen.route)),
+                    ),
+                    CategoryWidget(
+                        title: "الآليات التعاقدية لحامية حقوق الإنسان",
+                        bgColor: theme(context).primaryColor,
+                        textColor: theme(context).backgroundColor,
+                        onPressed: () =>
+                            Navigator.pushNamed(context, Hquuq1Screen.route)),
+                    CategoryWidget(
+                        title: "الآليات غير التعاقدية لحامية حقوق الإنسان",
+                        bgColor: theme(context).primaryColor,
+                        textColor: theme(context).backgroundColor,
+                        onPressed: () =>
+                            Navigator.pushNamed(context, GhairTahaqdyaScreen.route)),
                   ],
                 ),
-
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Text(
-                    "آليات حامية حقوق الإنسان",
-                    style: theme(context)
-                        .textTheme
-                        .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 38,fontFamily: 'R016'),
+              ),
+              Positioned(child:  SafeArea(
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                  radius: 20,
+                  child: IconButton(
+                    padding: EdgeInsets.only(right: 5),
+                    icon: Icon(
+                      Icons.arrow_back_ios,
+                    ),
+                    onPressed: () =>Navigator.pop(context),
                   ),
                 ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Text(
-                    "من الضروري الوعي بأن حقوق الإنسان الأساسية ليست امتيازات وإمنا التزامات أساسية يجب على الدولة تعزيزها وحاميتها",
-                    style: theme(context)
-                        .textTheme
-                        .bodyText1!
-                        .copyWith(color: Colors.black54, fontSize: 20),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                rowQuestionWidget(
-                    text: "ما هي التزامات الدول بتطبيق حقوق الإنسان؟",
-                    onPressed: () =>
-                        Navigator.pushNamed(context, IltzamatScreen.route),
-                    context: context),
-                rowQuestionWidget(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, ItarScreen.route),
-                    text: "ما هو الإطار القانوين الدولي لحقوق الإنسان؟",
-                    context: context),
-                SizedBox(
-                  height: 20,
-                ),
-                GestureDetector(
-                  onTap: ()=>Navigator.pushNamed(context, MasadrHmayaScreen.route),
-                  child: CategoryWidget(
-                      title: "مصادر الحامية الدولية لحقوق الإنسان",
-                      bgColor: theme(context).accentColor,
-                      textColor: theme(context).backgroundColor,
-                      onPressed: () =>
-                          Navigator.pushNamed(context, MasadrHmayaScreen.route)),
-                ),
-                CategoryWidget(
-                    title: "الآليات التعاقدية لحامية حقوق الإنسان",
-                    bgColor: theme(context).primaryColor,
-                    textColor: theme(context).backgroundColor,
-                    onPressed: () =>
-                        Navigator.pushNamed(context, Hquuq1Screen.route)),
-                CategoryWidget(
-                    title: "الآليات غير التعاقدية لحامية حقوق الإنسان",
-                    bgColor: theme(context).primaryColor,
-                    textColor: theme(context).backgroundColor,
-                    onPressed: () =>
-                        Navigator.pushNamed(context, GhairTahaqdyaScreen.route)),
-              ],
-            ),
+              ),
+                top: 10,right: 20,)
+            ],
           ),
         ));
   }

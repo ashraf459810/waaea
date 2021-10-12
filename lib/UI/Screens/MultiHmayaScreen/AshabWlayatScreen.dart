@@ -12,16 +12,15 @@ class AshabWlayatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Constants.lightPinkColor,
-        //   leading: IconButton(
-        //     icon: Icon(
-        //       Icons.arrow_back_ios,
-        //       color: Colors.white,
-        //     ),
-        //     onPressed: () => Navigator.pop(context),
-        //   ),
-        // ),
+        appBar: AppBar(
+          backgroundColor: theme(context).scaffoldBackgroundColor,
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios,
+            ),
+            onPressed: () {},
+          ),
+        ),
         body: Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
