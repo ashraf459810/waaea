@@ -46,7 +46,7 @@ class HadadMqrrinScreen extends StatelessWidget {
                     child: Text(
                       "عدد المقررين الخواص مبوضوعات هو 44",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: Constants.lightPinkColor, fontSize: 32),
+                          color: Constants.lightPinkColor, fontSize: 32,fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
                   ),

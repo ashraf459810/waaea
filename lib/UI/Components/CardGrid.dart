@@ -60,7 +60,7 @@ class CardGrid extends StatelessWidget {
                         style: theme(context)
                             .textTheme
                             .headline5!
-                            .copyWith(color: textColor, fontSize: 22),
+                            .copyWith(color: textColor, fontSize: 22,fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                       Text(

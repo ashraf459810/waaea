@@ -53,7 +53,7 @@ class HmayaDetailsScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 38),
+                        .copyWith(color: Colors.black87, fontSize: 38,fontFamily: 'R016'),
                   ),
                 ),
                 Padding(

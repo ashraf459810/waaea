@@ -47,7 +47,7 @@ class AlhnfNawhScreen extends StatelessWidget {
                       child: Text(
                         "أنواع العنف القائم على أساس النوع الاجتامعي",
                         style: theme(context).textTheme.headline5!.copyWith(
-                            color: Constants.orangeColor, fontSize: 30),
+                            color: Constants.orangeColor, fontSize: 30,fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),

@@ -27,7 +27,7 @@ class SubCategoriesScreen extends StatelessWidget {
           style: theme(context)
               .textTheme
               .headline5!
-              .copyWith(color: theme(context).primaryColor),
+              .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
         ),
       ),
       body: Container(
@@ -113,7 +113,7 @@ class SubCategoriesScreen extends StatelessWidget {
                         style: theme(context)
                             .textTheme
                             .headline5!
-                            .copyWith(color: theme(context).primaryColor),
+                            .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),

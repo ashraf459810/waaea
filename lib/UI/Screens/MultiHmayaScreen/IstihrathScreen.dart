@@ -50,7 +50,7 @@ class IstihrathScreen extends StatelessWidget {
                     child: Text(
                       "آلية الاستعراض الدوري الشامل",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: theme(context).primaryColor, fontSize: 28),
+                          color: theme(context).primaryColor, fontSize: 28,fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
@@ -203,7 +203,7 @@ class IstihrathScreen extends StatelessWidget {
           style: theme(context)
               .textTheme
               .headline2!
-              .copyWith(color: Colors.black54, fontSize: 20),
+              .copyWith(color: Colors.black54, fontSize: 20,fontFamily: 'R016'),
         ),
       ),
     );

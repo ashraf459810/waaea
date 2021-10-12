@@ -53,7 +53,7 @@ class AshabWlayatScreen extends StatelessWidget {
                       style: theme(context)
                           .textTheme
                           .headline5!
-                          .copyWith(color: Constants.orangeColor, fontSize: 32),
+                          .copyWith(color: Constants.orangeColor, fontSize: 32,fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
                   ),

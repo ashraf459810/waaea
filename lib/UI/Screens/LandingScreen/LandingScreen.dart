@@ -27,8 +27,8 @@ class LandingScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(height: 20,),
-                  Text("واعیة",style: theme(context).textTheme.headline1,),
-                  Text(" ! لوريم ايبسوم أميت",style: theme(context).textTheme.bodyText1,),
+                  Text("واعیة",style: theme(context).textTheme.headline1?.copyWith(fontFamily: 'R016',),),
+                  Text(" ! لوريم ايبسوم أميت",style: theme(context).textTheme.bodyText1?.copyWith(fontFamily: 'R016',),),
                   Expanded(child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,

@@ -56,7 +56,7 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 32),
+                        .copyWith(color: Colors.black87, fontSize: 32,fontFamily: 'R016'),
                   ),
                 ),
                 Padding(

@@ -46,7 +46,9 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                       child: Text(
                         "الآليات غري التعاقدية لحامية حقوق الإنسان",
                         style: theme(context).textTheme.headline5!.copyWith(
-                            color: theme(context).primaryColor, fontSize: 30),
+                            color: theme(context).primaryColor,
+                            fontSize: 30,
+                            fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),
@@ -58,18 +60,22 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                           .copyWith(color: Colors.black54, fontSize: 20),
                       textDirection: TextDirection.rtl,
                     ),
-                    SizedBox(height: 25,),
+                    SizedBox(
+                      height: 25,
+                    ),
                     TahaqdyWidget(
                       title: "الإجراءات الخاصة",
                       label: "1235",
                       bgColor: Constants.lightPinkColor,
-                      onPressed: () =>Navigator.pushNamed(context, IjraatXassScreen.route),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, IjraatXassScreen.route),
                     ),
                     TahaqdyWidget(
                       title: "آلية الاستعراض الدوري الشامل",
                       label: "UPR",
                       bgColor: theme(context).primaryColor,
-                      onPressed: () => Navigator.pushNamed(context, IstihrathScreen.route),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, IstihrathScreen.route),
                     ),
                     TahaqdyWidget(
                       title: "الشكاوي السرية",

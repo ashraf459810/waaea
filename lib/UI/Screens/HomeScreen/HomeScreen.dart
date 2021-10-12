@@ -34,12 +34,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Text(
                           "اعرفي حقوقك",
-                          style: theme(context).textTheme.headline2!.copyWith(fontSize: 45),
+                          style: theme(context).textTheme.headline2!.copyWith(fontSize: 45,fontFamily: 'R016'),
                         ),
                         SizedBox(height: 6,),
                         Text(
                           " لوريم ايبسوم دولار سيت أميت !",
-                          style: theme(context).textTheme.bodyText1!.copyWith(fontSize: 20),
+                          style: theme(context).textTheme.bodyText1!.copyWith(fontSize: 20,fontFamily: 'R016'),
                         ),
                       ],
                     ),

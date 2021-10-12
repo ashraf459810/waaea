@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
+import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/ItarScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
@@ -49,7 +50,7 @@ class HalamyaDetailsScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 32),
+                        .copyWith(color: Colors.black87, fontSize: 32,fontFamily: 'R016'),
                   ),
                 ),
                 Padding(
@@ -103,7 +104,7 @@ class HalamyaDetailsScreen extends StatelessWidget {
                   onPressed: () =>
                       Navigator.pushNamed(context, TawattawrScreen.route),
                 ),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () =>
                         Navigator.pushNamed(context, ItarScreen.route),
                     text:
@@ -124,27 +125,27 @@ class HalamyaDetailsScreen extends StatelessWidget {
         ));
   }
 
-  Widget rowQuestionWidget(
-      {required BuildContext context,
-      required String text,
-      required void Function() onPressed}) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        margin: EdgeInsets.symmetric(
-          vertical: 6,
-        ),
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-        child: Text(
-          text,
-          style: theme(context)
-              .textTheme
-              .headline2!
-              .copyWith(color: Colors.black87, fontSize: 20),
-        ),
-      ),
-    );
-  }
+  // Widget rowQuestionWidget(
+  //     {required BuildContext context,
+  //     required String text,
+  //     required void Function() onPressed}) {
+  //   return GestureDetector(
+  //     onTap: onPressed,
+  //     child: Container(
+  //       margin: EdgeInsets.symmetric(
+  //         vertical: 6,
+  //       ),
+  //       color: Colors.white,
+  //       width: MediaQuery.of(context).size.width,
+  //       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+  //       child: Text(
+  //         text,
+  //         style: theme(context)
+  //             .textTheme
+  //             .headline2!
+  //             .copyWith(color: Colors.black87, fontSize: 20),
+  //       ),
+  //     ),
+  //   );
+  // }
 }

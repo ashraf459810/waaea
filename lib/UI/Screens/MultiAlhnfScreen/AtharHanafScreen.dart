@@ -47,7 +47,7 @@ class AtharHanafScreen extends StatelessWidget {
                       child: Text(
                         "آثار العنف القائم على النوع الإجتامعي",
                         style: theme(context).textTheme.headline5!.copyWith(
-                            color: theme(context).primaryColor, fontSize: 30),
+                            color: theme(context).primaryColor, fontSize: 30,fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),

@@ -161,7 +161,7 @@ class IjraatXassScreen extends StatelessWidget {
           style: theme(context)
               .textTheme
               .headline2!
-              .copyWith(color: Colors.black54, fontSize: 20),
+              .copyWith(color: Colors.black54, fontSize: 20,fontFamily: 'R016'),
         ),
       ),
     );

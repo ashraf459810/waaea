@@ -20,7 +20,6 @@ class AppTheme {
     primaryColor: primaryColor,
     accentColor: accentColor,
     textTheme: lightTextTheme,
-    fontFamily: 'R032',
     primarySwatch: Colors.green,
     appBarTheme: AppBarTheme(
       iconTheme: IconThemeData(color: blackTwo),
@@ -57,69 +56,82 @@ class AppTheme {
 
   static final TextStyle _headline1 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w300,
     fontSize: 60,
   );
   static final TextStyle _headline2 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 48,
   );
   static final TextStyle _headline3 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 34,
   );
   static final TextStyle _headline4 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 28,
   );
   static final TextStyle _headline5 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 24,
   );
   static final TextStyle _headline6 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w600,
     fontSize: 20,
   );
 
   static final TextStyle _thin1 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w100,
     fontSize: 28,
   );
   static final TextStyle _thin2 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w100,
     fontSize: 22,
   );
 
   static final TextStyle _bodyText1 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w600,
     fontSize: 16,
   );
 
   static final TextStyle _bodyText2 = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w300,
     fontSize: 16,
   );
   static final TextStyle _button = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w600,
     fontSize: 14,
   );
   static final TextStyle _caption = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 10,
   );
   static final TextStyle _overline = TextStyle(
     color: AppTheme.backgroundColor,
+    fontFamily: 'R032',
     fontWeight: FontWeight.w400,
     fontSize: 8,
   );

@@ -35,7 +35,7 @@ class IraqProtocolScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline5!
-                        .copyWith(color: Constants.orangeColor, fontSize: 30),
+                        .copyWith(color: Constants.orangeColor, fontSize: 30,fontFamily: 'R016'),
                     textDirection: TextDirection.rtl,
                   ),
                 ),

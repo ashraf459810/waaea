@@ -9,7 +9,10 @@ class MainButton extends StatelessWidget {
   final void Function() onPressed;
 
   MainButton(
-      {required this.label,required this.onPressed, required this.color, required this.textColor});
+      {required this.label,
+      required this.onPressed,
+      required this.color,
+      required this.textColor});
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +24,20 @@ class MainButton extends StatelessWidget {
           backgroundColor: MaterialStateProperty.resolveWith<Color>(
             (Set<MaterialState> states) {
               if (states.contains(MaterialState.pressed))
-                return Theme.of(context).colorScheme.onSecondary.withOpacity(0.5);
+                return Theme.of(context)
+                    .colorScheme
+                    .onSecondary
+                    .withOpacity(0.5);
               return color;
             },
           ),
         ),
         child: Text(
           label,
-          style: theme(context).textTheme.bodyText2!.copyWith(color: textColor,fontSize: 24),
+          style: theme(context)
+              .textTheme
+              .bodyText2!
+              .copyWith(color: textColor, fontSize: 24, fontFamily: 'R016'),
         ),
       ),
     );

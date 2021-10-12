@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition1Screen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition2Screen.dart.dart';
 import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq1Screen.dart';
@@ -39,7 +40,7 @@ class HquqDetailsScreen extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 38),
+                        .copyWith(color: Colors.black87, fontSize: 38,fontFamily: 'R016'),
                   ),
                 ),
                 Padding(
@@ -56,17 +57,17 @@ class HquqDetailsScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     text: "ما هو المقصود بالنهج الشامل لحقوق الإنسان؟",
                     onPressed: () =>
                         Navigator.pushNamed(context, QuestionsScreen.route),
                     context: context),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () =>
                         Navigator.pushNamed(context, Quote1Screen.route),
                     text: "ماذا تضمن حقوق الإنسان؟",
                     context: context),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () =>
                         Navigator.pushNamed(context, Quote2Screen.route),
                     text: "ما هي المبادئ الأساسية لحقوق الإنسان؟",
@@ -76,7 +77,7 @@ class HquqDetailsScreen extends StatelessWidget {
                 //         Navigator.pushNamed(context, Definition1Screen.route),
                 //     text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
                 //     context: context),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () =>
                         Navigator.pushNamed(context, Definition2Screen.route),
                     text: "كيف تُصنف حقوق الإنسان؟",
@@ -167,7 +168,7 @@ class HquqDetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -179,7 +180,7 @@ class HquqDetailsScreen extends StatelessWidget {
                         ),
                     text: "هل يواجه الجميع نفس التحديات؟",
                     context: context),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -193,7 +194,7 @@ class HquqDetailsScreen extends StatelessWidget {
                     text:
                         "هل تُعتبر المساواة بني الجنسني أساسيا من حقا حقوق الإنسان؟",
                     context: context),
-                rowQuestionWidget(
+                RowQuestionWidget(
                     onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -241,25 +242,25 @@ class HquqDetailsScreen extends StatelessWidget {
         ));
   }
 
-  Widget rowQuestionWidget(
-      {required BuildContext context,
-      required String text,
-      required void Function() onPressed}) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        margin: EdgeInsets.symmetric(vertical: 6),
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        child: Text(
-          text,
-          style: theme(context)
-              .textTheme
-              .headline2!
-              .copyWith(color: Colors.black87, fontSize: 20),
-        ),
-      ),
-    );
-  }
+  // Widget rowQuestionWidget(
+  //     {required BuildContext context,
+  //     required String text,
+  //     required void Function() onPressed}) {
+  //   return GestureDetector(
+  //     onTap: onPressed,
+  //     child: Container(
+  //       margin: EdgeInsets.symmetric(vertical: 6),
+  //       color: Colors.white,
+  //       width: MediaQuery.of(context).size.width,
+  //       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+  //       child: Text(
+  //         text,
+  //         style: theme(context)
+  //             .textTheme
+  //             .headline2!
+  //             .copyWith(color: Colors.black87, fontSize: 20),
+  //       ),
+  //     ),
+  //   );
+  // }
 }

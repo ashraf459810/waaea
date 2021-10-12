@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -50,11 +51,11 @@ class Hquuq3Screen extends StatelessWidget {
                       label:"هي حقوق الإنسان التي ترتبط بالتضامن والتسامح. وتحتاج إلى التعاون الدولي وتضافر الجهود الدولية من أجل حل مشاكل عالمية كالبيئة والتنمية والهجرة.",
                       define:
                           "مثال تحتاج مشكلة اللاجئني التعاون الدولي من أجل إيجاد الحلول اللازمة لأسباب اللجوء وتقاسم أعباء وتقديم الحامية والرعاية الإنسانية لهم."),
-                  rowQuestionWidget(
+                  RowQuestionWidget(
                       context: context,
                       text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
                       onPressed: () {}),
-                  rowQuestionWidget(
+                  RowQuestionWidget(
                       context: context,
                       text: "ما هي أبرز هذه الحقوق؟",
                       onPressed: () {}),
@@ -68,27 +69,27 @@ class Hquuq3Screen extends StatelessWidget {
         ));
   }
 
-  Widget rowQuestionWidget(
-      {required BuildContext context,
-      required String text,
-      required void Function() onPressed}) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        margin: EdgeInsets.symmetric(vertical: 6),
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        child: Text(
-          text,
-          style: theme(context)
-              .textTheme
-              .headline2!
-              .copyWith(color: Colors.black87, fontSize: 20),
-        ),
-      ),
-    );
-  }
+  // Widget rowQuestionWidget(
+  //     {required BuildContext context,
+  //     required String text,
+  //     required void Function() onPressed}) {
+  //   return GestureDetector(
+  //     onTap: onPressed,
+  //     child: Container(
+  //       margin: EdgeInsets.symmetric(vertical: 6),
+  //       color: Colors.white,
+  //       width: MediaQuery.of(context).size.width,
+  //       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+  //       child: Text(
+  //         text,
+  //         style: theme(context)
+  //             .textTheme
+  //             .headline2!
+  //             .copyWith(color: Colors.black87, fontSize: 20),
+  //       ),
+  //     ),
+  //   );
+  // }
 
   Widget quoteCard({
     required BuildContext context,

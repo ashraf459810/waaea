@@ -44,7 +44,7 @@ class NawhIconWidget extends StatelessWidget {
                     style: theme(context)
                         .textTheme
                         .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 20),
+                        .copyWith(color: Colors.black87, fontSize: 20,fontFamily: 'R016'),
                   ),
                 ),
                 // Spacer(),

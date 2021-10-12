@@ -30,7 +30,7 @@ class CategoryWidget extends StatelessWidget {
               style: theme(context)
                   .textTheme
                   .headline2!
-                  .copyWith(color: textColor, fontSize: 20),
+                  .copyWith(color: textColor, fontSize: 20,fontFamily: 'R016'),
             ),
             trailing: Icon(
               Icons.arrow_forward_ios_outlined,

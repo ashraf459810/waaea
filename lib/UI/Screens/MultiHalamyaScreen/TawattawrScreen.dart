@@ -34,7 +34,7 @@ class TawattawrScreen extends StatelessWidget {
                   child: Text(
                     "التطور الزمني لحقوق النساء في المواثيق الدولية",
                     style: theme(context).textTheme.headline5!.copyWith(
-                        color: Constants.orangeColor, fontSize: 30),
+                        color: Constants.orangeColor, fontSize: 30,fontFamily: 'R016'),
                     textDirection: TextDirection.rtl,
                   ),
                 ),
