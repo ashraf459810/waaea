@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
@@ -33,13 +32,13 @@ class SubCategoriesScreen extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Constants.lightBgColor,
-        // decoration: BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage(Constants.bgFlower),
-        //     fit: BoxFit.cover,
-        //   ),
-        // ),
+        // color: Constants.lightBgColor,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(Constants.bgFlower),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: SingleChildScrollView(
           child: Wrap(
             crossAxisAlignment: WrapCrossAlignment.end,

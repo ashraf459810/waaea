@@ -74,11 +74,11 @@ class HquqDetailsScreen extends StatelessWidget {
                             Navigator.pushNamed(context, Quote2Screen.route),
                         text: "ما هي المبادئ الأساسية لحقوق الإنسان؟",
                         context: context),
-                    // rowQuestionWidget(
-                    //     onPressed: () =>
-                    //         Navigator.pushNamed(context, Definition1Screen.route),
-                    //     text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
-                    //     context: context),
+                    RowQuestionWidget(
+                        onPressed: () =>
+                            Navigator.pushNamed(context, Definition1Screen.route),
+                        text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
+                        context: context),
                     RowQuestionWidget(
                         onPressed: () =>
                             Navigator.pushNamed(context, Definition2Screen.route),

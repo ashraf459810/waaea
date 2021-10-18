@@ -34,22 +34,24 @@ class CardCategory extends StatelessWidget {
                   blurRadius: 9)
             ]),
         margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        child: Column(
+        child: Stack(
           children: [
-            Expanded(
+            Align(
+              alignment: Alignment.topCenter,
               child: Container(
-                width: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width,
                   child: Image.asset(
-                asset,
-                fit: BoxFit.fitWidth,
-              )),
+                    asset,
+                    fit: BoxFit.fitWidth,
+                  )),
             ),
-            Expanded(
+            Align(
+              alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 8),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
                       title,

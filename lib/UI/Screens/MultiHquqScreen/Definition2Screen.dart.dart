@@ -74,7 +74,7 @@ class Definition2Screen extends StatelessWidget {
                 ),
                 Constants.definitionModel2.extra != "null"
                     ? Text(
-                        Constants.definitionModel.extra,
+                        Constants.definitionModel2.extra,
                         style: theme(context)
                             .textTheme
                             .headline5!

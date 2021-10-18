@@ -33,6 +33,7 @@ import 'UI/Screens/MultiHquqScreen/Hquuq4Screen.dart';
 import 'UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote1Screen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote2Screen.dart';
+import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 
@@ -68,6 +69,7 @@ class MyApp extends StatelessWidget {
             LandingScreen.route: (context) => LandingScreen(),
             CategoriesScreen.route: (context) => CategoriesScreen(),
             SubCategoriesScreen.route: (context) => SubCategoriesScreen(),
+            // SecondSubCategoryScreen.route: (context) => SecondSubCategoryScreen(),
             //Hquuq Screens (Section 1)
             HquqDetailsScreen.route: (context) => HquqDetailsScreen(),
             QuestionsScreen.route: (context) => QuestionsScreen(),
