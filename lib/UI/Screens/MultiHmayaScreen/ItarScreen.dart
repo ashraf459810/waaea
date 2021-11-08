@@ -17,7 +17,7 @@ class ItarScreen extends StatelessWidget {
             icon: Icon(
               Icons.arrow_back_ios,
             ),
-            onPressed: () {},
+            onPressed: () => Navigator.pop(context),
           ),
         ),
         body: Container(

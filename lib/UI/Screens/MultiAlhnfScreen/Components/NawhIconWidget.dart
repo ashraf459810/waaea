@@ -41,19 +41,19 @@ class NawhIconWidget extends StatelessWidget {
                   child: Text(
                     label,
                     // overflow: TextOverflow.ellipsis,
-                    style: theme(context)
-                        .textTheme
-                        .headline2!
-                        .copyWith(color: Colors.black87, fontSize: 20,fontFamily: 'R016'),
+                    style: theme(context).textTheme.headline2!.copyWith(
+                        color: Colors.black87,
+                        fontSize: 20,
+                        fontFamily: 'R016'),
                   ),
                 ),
                 // Spacer(),
                 icon != 'null'
-                    ?
-                Image.asset(
-                  icon,
-                  height: MediaQuery.of(context).size.height / 10,
-                ): SizedBox.shrink(),
+                    ? Image.asset(
+                        icon,
+                        height: MediaQuery.of(context).size.height / 10,
+                      )
+                    : SizedBox.shrink(),
               ],
             ),
             SizedBox(
@@ -73,27 +73,28 @@ class NawhIconWidget extends StatelessWidget {
             ),
             hasSideColor
                 ? Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        color: color,
-                        width: MediaQuery.of(context).size.width / 30,
-                        height: MediaQuery.of(context).size.height / 6,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize:MainAxisSize.min,
+                  children: [
+                    Container(
+                      color: color,
+                      width: MediaQuery.of(context).size.width / 30,
+                      height: extra.characters.length * MediaQuery.of(context).size.width /560,
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Expanded(
+                      child: Text(
+                        extra,
+                        style: theme(context)
+                            .textTheme
+                            .headline2!
+                            .copyWith(color: Colors.black54, fontSize: 20),
                       ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Expanded(
-                        child: Text(
-                          extra,
-                          style: theme(context)
-                              .textTheme
-                              .headline2!
-                              .copyWith(color: Colors.black54, fontSize: 20),
-                        ),
-                      ),
-                    ],
-                  )
+                    ),
+                  ],
+                )
                 : Text(
                     extra,
                     style: theme(context)

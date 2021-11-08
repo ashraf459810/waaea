@@ -131,7 +131,7 @@ class AlhnfDetailsScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 30),
                       child: quoteCard(
                           context: context,
-                          label: "ُُميارس ضد النساء أنهن نساء/ فتيات"),
+                          label: "ُميارس ضد النساء أنهن نساء/ فتيات"),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30),

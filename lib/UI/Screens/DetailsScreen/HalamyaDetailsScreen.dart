@@ -87,7 +87,7 @@ class HalamyaDetailsScreen extends StatelessWidget {
                       height: 20,
                     ),
                     CategoryWidget(
-                      title: "ّالتطور الزمني لحقوق النساء في المواثيق الدولية",
+                      title: "التطور الزمني لحقوق النساء في المواثيق الدولية",
                       bgColor: Constants.orangeColor,
                       textColor: theme(context).backgroundColor,
                       onPressed: () =>

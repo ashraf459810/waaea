@@ -55,7 +55,7 @@ class SubCategoriesScreen extends StatelessWidget {
               CardGrid(
                 onPressed: () =>
                     Navigator.pushNamed(context, HmayaDetailsScreen.route),
-                title: "آليات حامية حقوق الإنسان",
+                title: "آليات حماية حقوق الإنسان",
                 subTitle: "في الإطار الدولي والوطني",
                 color: theme(context).accentColor,
                 textColor: theme(context).backgroundColor,

@@ -51,7 +51,7 @@ class HmayaDetailsScreen extends StatelessWidget {
                       padding:
                           const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                       child: Text(
-                        "آليات حامية حقوق الإنسان",
+                        "آليات حماية حقوق الإنسان",
                         style: theme(context)
                             .textTheme
                             .headline2!
