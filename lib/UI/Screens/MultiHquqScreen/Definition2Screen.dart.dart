@@ -21,73 +21,71 @@ class Definition2Screen extends StatelessWidget {
           ),
         ),
         body: Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(Constants.bgFlower),
-          fit: BoxFit.cover,
-        ),
-      ),
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-                  child: Text(
-                    Constants.definitionModel2.title,
-                    style: theme(context)
-                        .textTheme
-                        .headline5!
-                        .copyWith(color: Constants.orangeColor, fontSize: 30),
-                    textDirection: TextDirection.rtl,
-                  ),
-                ),
-                Container(
-                    margin: EdgeInsets.symmetric(vertical: 4),
-                    height: 2,
-                    width: MediaQuery.of(context).size.width / 3,
-                    color: Constants.orangeColor),
-                SizedBox(
-                  height: 6,
-                ),
-                Constants.definitionModel2.subTitle != "null"
-                    ? Text(
-                        Constants.definitionModel2.subTitle,
-                        style: theme(context)
-                            .textTheme
-                            .headline5!
-                            .copyWith(color: Colors.black54, fontSize: 20),
-                        textDirection: TextDirection.rtl,
-                      )
-                    : SizedBox.shrink(),
-                SizedBox(
-                  height: 10,
-                ),
-                Column(
-                  children: getListWidgets(context),
-                ),
-                Constants.definitionModel2.extra != "null"
-                    ? Text(
-                        Constants.definitionModel2.extra,
-                        style: theme(context)
-                            .textTheme
-                            .headline5!
-                            .copyWith(color: Colors.black, fontSize: 22),
-                        textDirection: TextDirection.rtl,
-                      )
-                    : SizedBox.shrink()
-              ],
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(Constants.bgFlower),
+              fit: BoxFit.cover,
             ),
           ),
-        ),
-      ),
-    ));
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 0, vertical: 10),
+                      child: Text(
+                        Constants.definitionModel2.title,
+                        style: theme(context).textTheme.headline5!.copyWith(
+                            color: Constants.orangeColor, fontSize: 30),
+                        textDirection: TextDirection.rtl,
+                      ),
+                    ),
+                    Container(
+                        margin: EdgeInsets.symmetric(vertical: 4),
+                        height: 2,
+                        width: MediaQuery.of(context).size.width / 3,
+                        color: Constants.orangeColor),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    Constants.definitionModel2.subTitle != "null"
+                        ? Text(
+                            Constants.definitionModel2.subTitle,
+                            style: theme(context)
+                                .textTheme
+                                .headline5!
+                                .copyWith(color: Colors.black54, fontSize: 20),
+                            textDirection: TextDirection.rtl,
+                          )
+                        : SizedBox.shrink(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Column(
+                      children: getListWidgets(context),
+                    ),
+                    Constants.definitionModel2.extra != "null"
+                        ? Text(
+                            Constants.definitionModel2.extra,
+                            style: theme(context)
+                                .textTheme
+                                .headline5!
+                                .copyWith(color: Colors.black, fontSize: 22),
+                            textDirection: TextDirection.rtl,
+                          )
+                        : SizedBox.shrink()
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ));
   }
 
   Widget quoteCard({
@@ -123,10 +121,12 @@ class Definition2Screen extends StatelessWidget {
                       .headline5!
                       .copyWith(color: Colors.black, fontSize: 20),
                 ),
-                TextSpan(text: define,style:theme(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(color: Colors.black54, fontSize: 20)),
+                TextSpan(
+                    text: define,
+                    style: theme(context)
+                        .textTheme
+                        .headline5!
+                        .copyWith(color: Colors.black54, fontSize: 20)),
               ],
             ),
           ))

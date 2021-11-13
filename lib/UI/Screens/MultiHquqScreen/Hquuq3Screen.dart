@@ -54,11 +54,11 @@ class Hquuq3Screen extends StatelessWidget {
                   RowQuestionWidget(
                       context: context,
                       text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
-                      onPressed: () {}),
+                      onPressed: (context) {}),
                   RowQuestionWidget(
                       context: context,
                       text: "ما هي أبرز هذه الحقوق؟",
-                      onPressed: () {}),
+                      onPressed: (context) {}),
                   SizedBox(
                     height: 40,
                   )

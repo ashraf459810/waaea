@@ -5,7 +5,7 @@ class RowQuestionWidget extends StatelessWidget {
 
   final BuildContext context;
   final String text;
-  final void Function() onPressed;
+  final void Function(BuildContext) onPressed;
 
   RowQuestionWidget({required this.context,
   required this.text,
@@ -14,7 +14,7 @@ class RowQuestionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPressed,
+      onTap:()=> onPressed(context),
       child: Container(
         margin: EdgeInsets.symmetric(
           vertical: 6,

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/AshabWlayatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/HadadMqrrinScreen.dart';
@@ -53,59 +54,163 @@ class IjraatXassScreen extends StatelessWidget {
                     ),
                   ),
                   quoteCard(
-                      context: context,
-                      label:
-                          "آلية أنشئت من قبل لجنة حقوق الإنسان ويتابع العمل بها الآن مجلس حقوق الإنسان"),
+                    context: context,
+                    label:
+                        "آلية أنشئت من قبل لجنة حقوق الإنسان ويتابع العمل بها الآن مجلس حقوق الإنسان",
+                  ),
                   quoteCard(
-                      context: context,
-                      label:
-                          "تغطّي جميع حقوق الإنسان: المدنية والسياسية تغط والاقتصادية والاجتامعية والثقافية"),
+                    context: context,
+                    label:
+                        "تغطّي جميع حقوق الإنسان: المدنية والسياسية تغط والاقتصادية والاجتامعية والثقافية",
+                  ),
                   quoteCard(
-                      context: context,
-                      label:
-                          "تضم مجموعة من الخبراء المستقلني في مجال حقوق الإنسان"),
+                    context: context,
+                    label:
+                        "تضم مجموعة من الخبراء المستقلني في مجال حقوق الإنسان",
+                  ),
                   quoteCard(
-                      context: context,
-                      label:
-                          " تُعنى مبتابعة أو قضية معينة في كل أنحاء العامل او كل أنواع حقوق الإنسان في دولة معينة"),
+                    context: context,
+                    label:
+                        " تُعنى مبتابعة أو قضية معينة في كل أنحاء العامل او كل أنواع حقوق الإنسان في دولة معينة",
+                  ),
                   SizedBox(
                     height: 25,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset(Constants.ijraatTableScreenshot),
+                    child: Image.asset(
+                      Constants.ijraatTableScreenshot,
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   rowQuestionWidget(
+                    context: context,
+                    text:
+                        "هل يمكن اللجوء إلى هذه الآلية مبعزل عن مصادقة الدول على الاتفاقيات؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text:
-                          "هل ميكن اللجوء إلى هذه الآلية مبعزل عن مصادقة الدول على الاتفاقيات؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'هل يمكن اللجوء إلى هذه الآلية مبعزل عن مصادقة الدول على الاتفاقيات?',
+                        listAnswer: [
+                          'نعم، يمكن للأفراد اللجوء إلى هذه الآلية سواء أكانت الدولة طرفاً في إتفاقية ما أم لم تكن.'
+                        ],
+                      ),
+                    ),
+                  ),
                   rowQuestionWidget(
-                      context: context,
-                      text: "من هم أصحاب الولايات في الإجراءات الخاصة؟",
-                      onPressed: () => Navigator.pushNamed(
-                          context, AshabWlayatScreen.route)),
+                    context: context,
+                    text: "من هم أصحاب الولايات في الإجراءات الخاصة؟",
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      AshabWlayatScreen.route,
+                    ),
+                  ),
                   rowQuestionWidget(
-                      context: context,
-                      text: "ما هو عدد المقررين الخواص مبوضوعات معينة؟",
-                      onPressed: () => Navigator.pushNamed(
-                          context, HadadMqrrinScreen.route)),
+                    context: context,
+                    text: "ما هو عدد المقررين الخواص مبوضوعات معينة؟",
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      HadadMqrrinScreen.route,
+                    ),
+                  ),
                   rowQuestionWidget(
+                    context: context,
+                    text: "ما هي الولايات القطرية؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "ما هي أهمية الإجراءات الخاصة؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هي الولايات القطرية؟',
+                        listAnswer: [
+                          'عددها 11 الصومال ايران بلاروس سوريا مالي كمبوديا اريتريا ميانمار أفريقيا الوسطى الأراضي الفلسطينية كوريا الشمالية '
+                        ],
+                      ),
+                    ),
+                  ),
                   rowQuestionWidget(
+                    context: context,
+                    text: "ما هي أهمية الإجراءات الخاصة؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
                       context: context,
-                      text:
-                          "هل وجه العراق دعوة دامئة إلى جميع الإجراءات الخاصة المواضيعية؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هي أهمية الإجراءات الخاصة؟',
+                        listAnswer: [
+                          'تلقّي وتحليل المعلومات عن حالة حقوق الإنسان.',
+                          'تلقّي شكاوى من الأفراد.',
+                          'القيام بزيارات قطرية وإصدار تقارير مع التوصيات.',
+                          'إرسال رسائل إلى الدول التي يوجهون فيها انتهاكات أو انتهاكات مزعومة لحقوق الإنسان.',
+                          'رفع تقرير حول القضايا المتعلقة بولايتها إلى مجلس حقوق الإنسان والجمعية العامة.',
+                          'إجراء دراسات مواضيعية وعقد حلقات دراسية / مشاورات للخبراء.',
+                          'رفع مستوى الوعي العام حول القضايا التي تقع ضمن ولاياتهم.',
+                          'إصدار البيانات الصحفية والبيانات العامة.',
+                        ],
+                      ),
+                    ),
+                  ),
                   rowQuestionWidget(
+                    context: context,
+                    text:
+                        "هل وجه العراق دعوة دامئة إلى جميع الإجراءات الخاصة المواضيعية؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
                       context: context,
-                      text: "هل هناك مقررة خاصة بالعنف ضد المرأة؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'هل وجه العراق دعوة دامئة إلى جميع الإجراءات الخاصة المواضيعية؟',
+                        listAnswer: [
+                          'نعم، وجّه العراق في 16 شباط/فبراير 2010 دعوة دائمة مفتوحة معلناً أنه يستقبل دائماً طلبات الزيارة المقدمة من جميع الإجراءات الخاصة.',
+                        ],
+                      ),
+                    ),
+                  ),
+                  rowQuestionWidget(
+                    context: context,
+                    text: "هل زار العراق أي من المقررين الخواص؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'هل هناك مقررة خاصة بالعنف ضد المرأة؟',
+                        listAnswer: [
+                          'نعم، نُظمت عدة بعثات إلى العراق مثال المقرر الخاص المعني بحقوق الإنسان للمشردين داخليا، المقررة الخاصة المعنية بقضايا الأقليات.',
+                        ],
+                      ),
+                    ),
+                  ),
+                  rowQuestionWidget(
+                    context: context,
+                    text: "هل هناك مقررة خاصة بالعنف ضد المرأة؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'هل هناك مقررة خاصة بالعنف ضد المرأة؟',
+                        listAnswer: [
+                          'نعم قررت لجنة حقوق الإنسان التابعة للأمم المتحدة عام  1994 تعيين مقررة خاصة معنية بالعنف ضد المرأة "تلتمس وتتلقى معلومات عن العنف المرتكب ضد النساء وأسبابه وعواقبه من الحكومات وهيئات المعاهدات والوكالات المتخصصة والمقررين الخاصين الآخرين المسؤولين عن شتى مسائل حقوق الإنسان ومن المنظمات الحكومية الدولية والمنظمات غير الحكومية، بما فيها منظمات النساء،  وتستجيب بفعالية لتلك المعلومات…."',
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ),
@@ -158,10 +263,8 @@ class IjraatXassScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
         child: Text(
           text,
-          style: theme(context)
-              .textTheme
-              .headline2!
-              .copyWith(color: Colors.black54, fontSize: 20,fontFamily: 'R016'),
+          style: theme(context).textTheme.headline2!.copyWith(
+              color: Colors.black54, fontSize: 20, fontFamily: 'R016'),
         ),
       ),
     );

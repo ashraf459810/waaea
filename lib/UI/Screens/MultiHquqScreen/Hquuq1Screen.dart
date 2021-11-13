@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wa3iaa/Models/QuotesModel.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -60,11 +58,11 @@ class Hquuq1Screen extends StatelessWidget {
                   RowQuestionWidget(
                       context: context,
                       text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
-                      onPressed: () {}),
+                      onPressed: (context) {},),
                   RowQuestionWidget(
                       context: context,
                       text: "ما هي أبرز هذه الحقوق؟",
-                      onPressed: () {}),
+                      onPressed: (context) {},),
                   SizedBox(
                     height: 40,
                   )

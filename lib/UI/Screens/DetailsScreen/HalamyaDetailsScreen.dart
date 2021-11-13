@@ -94,7 +94,7 @@ class HalamyaDetailsScreen extends StatelessWidget {
                           Navigator.pushNamed(context, TawattawrScreen.route),
                     ),
                     RowQuestionWidget(
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, ItarScreen.route),
                         text:
                             "ما هي الاتفاقيات الدولية التي صادق عليھا العراق والتي تعد أساس للعمل وفق مفھوم النوع الاجتامعي؟",

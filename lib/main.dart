@@ -17,6 +17,8 @@ import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AtharHanafScreen.dart';
+import 'UI/Screens/MultiCedawScreen/NmathjCedawScreen.dart';
+import 'UI/Screens/MultiCedawScreen/TahfithCedawScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/HadadMqrrinScreen.dart';
 import 'UI/Screens/MultiHmayaScreen/IjraatXassScreen.dart';
@@ -75,7 +77,7 @@ class MyApp extends StatelessWidget {
             QuestionsScreen.route: (context) => QuestionsScreen(),
             Quote1Screen.route: (context) => Quote1Screen(),
             Quote2Screen.route: (context) => Quote2Screen(),
-            // Definition1Screen.route: (context) => Definition1Screen(),
+            Definition1Screen.route: (context) => Definition1Screen(),
             Definition2Screen.route: (context) => Definition2Screen(),
             Hquuq1Screen.route: (context) => Hquuq1Screen(),
             Hquuq2Screen.route: (context) => Hquuq2Screen(),
@@ -102,6 +104,8 @@ class MyApp extends StatelessWidget {
             IstihrathScreen.route: (context) => IstihrathScreen(),
             //Cedaw Screens (Section 5)
             CedawDetailsScreen.route: (context) => CedawDetailsScreen(),
+            TahfithCedawScreen.route: (context) => TahfithCedawScreen(),
+            NmathjCedawScreen.route: (context) => NmathjCedawScreen(),
             //Gender Screens (Section 6)
             GenderDetailsScreen.route: (context) => GenderDetailsScreen(),
           },

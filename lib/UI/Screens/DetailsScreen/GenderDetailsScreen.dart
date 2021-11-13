@@ -127,7 +127,7 @@ class GenderDetailsScreen extends StatelessWidget {
                   RowQuestionWidget(
                       context: context,
                       text: "لماذا الاهتامم بقضايا النوع الاجتامعي؟",
-                      onPressed: () {}),
+                      onPressed: (context) {}),
                   SizedBox(
                     height: 10,
                   ),

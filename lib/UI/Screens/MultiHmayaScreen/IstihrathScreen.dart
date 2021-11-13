@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/AshabWlayatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/Components/WarningContainer.dart';
@@ -50,7 +51,9 @@ class IstihrathScreen extends StatelessWidget {
                     child: Text(
                       "آلية الاستعراض الدوري الشامل",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: theme(context).primaryColor, fontSize: 28,fontFamily: 'R016'),
+                          color: theme(context).primaryColor,
+                          fontSize: 28,
+                          fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
@@ -73,10 +76,78 @@ class IstihrathScreen extends StatelessWidget {
                     height: 20,
                   ),
                   rowQuestionWidget(
+                    context: context,
+                    text: "ما هو الاستعراض الدوري الشامل ؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
                       context: context,
-                      text:
-                          "ما هي المبادئ التي يستند إليها الاستعراض الدوري الشامل؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هو الاستعراض الدوري الشامل ؟',
+                        listAnswer: [
+                          'أحدث آلية لحقوق الإنسان',
+                        ],
+                      ),
+                    ),
+                  ),
+                  rowQuestionWidget(
+                    context: context,
+                    text: "كيف أنشئ الاستعراض الدوري الشامل؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'كيف أنشئ الاستعراض الدوري الشامل؟؟',
+                        listAnswer: [
+                          'أُنشئ بموجب قرار الجمعية العامة للأمم المتحدة 60/251.',
+                        ],
+                      ),
+                    ),
+                  ),
+                  rowQuestionWidget(
+                    context: context,
+                    text: "إلى ماذا يستند الاستعراض الدوري الشامل؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'إلى ماذا يستند الاستعراض الدوري الشامل؟',
+                        listAnswer: [
+                          'يستند إلى معلومات موضوعية وموثوق بها ، لبيان مدى وفاء كل دولة بالتزاماتها وتعهداتها في مجال حقوق الإنسان في على نحو يكفل شمولية التطبيق والمساواة في المعاملة بين جميع الدول.',
+                        ],
+                      ),
+                    ),
+                  ),
+                  rowQuestionWidget(
+                    context: context,
+                    text:
+                        "ما هي المبادئ التي يستند إليها الاستعراض الدوري الشامل؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'ما هي المبادئ التي يستند إليها الاستعراض الدوري الشامل؟',
+                        listAnswer: [
+                          'يعزّز عالمية حقوق الإنسان وترابطها وعدم قابليتها للتجزئة.',
+                          'يعتمد على معلومات موضوعية وموثوق بها وعلى حوار تفاعلي.',
+                          'يكفل شمولية التطبيق والمساواة في المعاملة بين جميع الدول.',
+                          'يتكامل مع آليات حقوق الإنسان الأُخرى ويشكّل قيمة إضافية وليس تكرارا لها.',
+                          'يجري بطريقة موضوعية وشفافة.',
+                          'يُشرِك بصورة كاملة البلد موضوع الاستعراض.',
+                          'يكفل اشتراك جميع أصحاب المصلحة ذوي الصلة بما فيها المنظمات غير الحكومية والمؤسسات الوطنية لحقوق الإنسان.',
+                        ],
+                      ),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 25, vertical: 10),
@@ -103,9 +174,25 @@ class IstihrathScreen extends StatelessWidget {
                   WarningContainer(
                       text: "دعم التعاون في مجال تعزيز وحامية حقوق الإنسان."),
                   rowQuestionWidget(
+                    context: context,
+                    text: "ما هو الأساس الذي تستعرض مبوجبه الدولة؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "ما هو الأساس الذي تستعرض مبوجبه الدولة؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'ما هو الأساس الذي تستعرض مبوجبه الدولة؟',
+                        listAnswer: [
+                          'نظام الحماية الوطني- التشريعات الوطنية، ',
+                          'نظام الحماية الدولي- الإعلان العالمي لحقوق الإنسان، الاتفاقيات الدولية الأساسية ',
+                          'الهيئات والإجراءات الخاصة الملاحظات الختامية- التعليقات العامة- تقارير المقررين الخواص',
+                          'الاستعراض الدوري الشامل: توصيات الاستعراض ومتابعة التنفيذ',
+                        ],
+                      ),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 25, vertical: 10),
@@ -147,14 +234,49 @@ class IstihrathScreen extends StatelessWidget {
                   warningContainer(
                       context: context, text: "الاستعداد للاستعراض الكامل"),
                   rowQuestionWidget(
+                    context: context,
+                    text: "كيف ميكن للمنظامت غري الحكومية أن تشارك؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "كيف ميكن للمنظامت غري الحكومية أن تشارك؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'كيف ميكن للمنظامت غري الحكومية أن تشارك؟',
+                        listAnswer: [
+                          'المشاركة في إعداد التقرير الوطني.',
+                          'التأثير على الدولة لإقرار التقرير النهائي بعد الأخذ بعين الاعتبار التوصيات.',
+                          'متابعة التوصيات بعد اعتماد التقرير.',
+                          'تقديم تقرير مرحلي بعد سنة من اعتماد التقرير.',
+                        ],
+                      ),
+                    ),
+                  ),
                   rowQuestionWidget(
+                    context: context,
+                    text: "كيف ميكنك متابعة نتائج الاستعراض الدوري الشامل؟",
+                    onPressed: () => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "كيف ميكنك متابعة نتائج الاستعراض الدوري الشامل؟",
-                      onPressed: () {}),
-                  SizedBox(height: 20,)
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'كيف ميكنك متابعة نتائج الاستعراض الدوري الشامل؟',
+                        listAnswer: [
+                          'العمل مع الجهات الوطنية بما فيها الحكومة والبرلمان والقضاء والمؤسسات الوطنية لحقوق الانسان من اجل مساعدة الدولة على الوفاء بالتزامات.',
+                          'دراسة حالة حقوق الإنسان والخطوات المتخذة محلياً لتنفيذ نتائج الاستعراض الدوري الشامل.',
+                          'اثارة  الاستعراض الدوري الشامل والنتائج.',
+                          'الاشتراك مع الجهات الوطنية في إعداد معلومات الاستعراض الدوري التالي.',
+                          'التعاون مع عناصر المجتمع المدني في إعداد معلومات متابعة تنفيذ نتائج الاستعراض وتقديمها الى المفوضية. ',
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  )
                 ],
               ),
             ),
@@ -200,10 +322,8 @@ class IstihrathScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
         child: Text(
           text,
-          style: theme(context)
-              .textTheme
-              .headline2!
-              .copyWith(color: Colors.black54, fontSize: 20,fontFamily: 'R016'),
+          style: theme(context).textTheme.headline2!.copyWith(
+              color: Colors.black54, fontSize: 20, fontFamily: 'R016'),
         ),
       ),
     );

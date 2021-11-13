@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/MainButton.dart';
+import 'package:wa3iaa/UI/Components/MiniButton.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IraqProtocolScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
@@ -152,28 +155,120 @@ class MasadrHmayaScreen extends StatelessWidget {
                               "صادق العراق عليها 23 تشرين الثاين/نوفمبر 2010"),
 
                   RowQuestionWidget(
+                    context: context,
+                    text: "ماذا تشكّل هذه الصكوك؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "ماذا تشكّل هذه الصكوك؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ماذا تشكّل هذه الصكوك؟',
+                        listAnswer: [
+                          'تشكّل هذه الاتفاقيات التسع وبروتوكولاتها الاختيارية الصكوك الدولية الأساسية لحقوق الإنسان التي أعدّتها الأمم المتحدة.'
+                        ],
+                      ),
+                    ),
+                  ),
                   RowQuestionWidget(
+                    context: context,
+                    text:
+                        "كيف تعبّر الدولة عن موافقتها على الالتزام بهذه الاتفاقيات؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text:
-                          "بهذه الاتفاقيات؟ ّ كيف تعبر الدولة عن موافقتها على الالتزام",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'كيف تعبّر الدولة عن موافقتها على الالتزام بهذه الاتفاقيات؟',
+                        listAnswer: [
+                          'من خلال المصادقة أو الانضمام وتصبح الدولة طرفاً في المعاهدة. أما التوقيع فيعني الموافقة الأولية، ولكن عندما توقّع دولة على المعاهدة فلا يجوز لها، وفقاً لقواعد القانون الدولي، أن تتصرّف على نحوٍ يتعارض مع أهداف المعاهدة ومقاصدها.'
+                        ],
+                      ),
+                    ),
+                  ),
                   RowQuestionWidget(
+                    context: context,
+                    text: "ما هو التزام الدول في أحكام هذه الاتفاقيات؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "ما هو التزام الدول في أحكام هذه الاتفاقيات؟",
-                      onPressed: () {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel:
+                            'ما هو التزام الدول في أحكام هذه الاتفاقيات؟',
+                        listAnswer: [
+                          'عندما تصادق أو تنضم الدول إلى هذه الاتفاقيات فإنها تُعتبر ملتزمة باحترام وحماية وإعمال هذه الحقوق على الصعيد الوطني. ',
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  Container(
+                    margin: EdgeInsets.symmetric(
+                      vertical: 6,
+                    ),
+                    color: Colors.white,
+                    width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 25, vertical: 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          ' ما هي الآليات الناجمة عن هذه الاتفاقيات?',
+                          style: theme(context).textTheme.headline2!.copyWith(
+                              color: Colors.black54,
+                              fontSize: 20,
+                              fontFamily: 'R016'),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          'الآليات التعاقدية. وهي تُنشأ بموجب اللجان التابعة لكل اتفاقية والتي تساعد على تعزيز واحترام حقوق الإنسان وحرياته الأساسية وإرساء مبدأ المساءلة و. يندرج ضمن اختصاصها: ',
+                          style: theme(context).textTheme.headline5!.copyWith(
+                              color: Colors.black54,
+                              fontSize: 16,
+                              fontFamily: 'R016'),
+                        ),
+                        MiniButton(
+                            label: ' رصد ومراقبة تطبيق الاتفاقية',
+                            onPressed: () =>  showModalBottomSheet(
+                              enableDrag: false,
+                              isScrollControlled: true,
+                              context: context,
+                              builder: (builder) => QuestionAndListAnswer(
+                                context: context,
+                                questionLabel: ' رصد ومراقبة تطبيق الاتفاقية',
+                                listAnswer: [
+                                  'تتلّقى التقارير التي تُقدمّها الدول الأطراف بصفةٍ دوريـة مُبينّة فيها كيفية التطبيق على الصعيد الوطني.',
+                                  'تدرس التقارير والإجراءات التي اتخذتها الدول.',
+                                  'تطرح تساؤلات للدول.',
+                                  'تتلقى تقارير من المنظمات غير الحكومية (تقارير الظل).',
+                                  'تتلقى تقرير من المنظمات المتخصصة التابعة للأمم المتحدة.',
+                                  'تصدر الملاحظات الختامية.',
+                                  'تُصدر مبادئ توجيهية لمساعدة الدول على إعداد تقاريرها مواضيع المتصلّة بالمعاهدات .',
+                                  'النظر في الشكاوى أو البلاغات المُقدمة من أفراد يدّعون فيها أن إحدى الدول الأطراف قد انتهكت حقوقهم، شرط أن تكون هـذه الدولـة قـد اختارت هذا الإجراء.',
+                                ],
+                              ),
+                            ),
+                            color: theme(context).primaryColor,
+                            textColor: theme(context).backgroundColor,),
+
+                      ],
+                    ),
+                  ),
                   RowQuestionWidget(
-                      context: context,
-                      text: "ما هي الآليات الناجمة عن هذه الاتفاقيات؟",
-                      onPressed: () {}),
-                  RowQuestionWidget(
-                      context: context,
-                      text:
-                          "ما هو موقف العراق من هذه الاتفاقيات والبروتوكولات؟",
-                      onPressed: () => Navigator.pushNamed(
-                          context, IraqProtocolScreen.route)),
+                    context: context,
+                    text: "ما هو موقف العراق من هذه الاتفاقيات والبروتوكولات؟",
+                    onPressed: (context) => Navigator.pushNamed(
+                      context,
+                      IraqProtocolScreen.route,
+                    ),
+                  ),
                   SizedBox(
                     height: 30,
                   ),
@@ -183,28 +278,6 @@ class MasadrHmayaScreen extends StatelessWidget {
           ),
         ));
   }
-
-  // Widget rowQuestionWidget(
-  //     {required BuildContext context,
-  //     required String text,
-  //     required void Function() onPressed}) {
-  //   return GestureDetector(
-  //     onTap: onPressed,
-  //     child: Container(
-  //       margin: EdgeInsets.symmetric(vertical: 6),
-  //       color: Colors.white,
-  //       width: MediaQuery.of(context).size.width,
-  //       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-  //       child: Text(
-  //         text,
-  //         style: theme(context)
-  //             .textTheme
-  //             .headline2!
-  //             .copyWith(color: Colors.black87, fontSize: 20),
-  //       ),
-  //     ),
-  //   );
-  // }
 
   Widget messageWidget({
     required BuildContext context,

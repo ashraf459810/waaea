@@ -61,26 +61,26 @@ class HquqDetailsScreen extends StatelessWidget {
                     ),
                     RowQuestionWidget(
                         text: "ما هو المقصود بالنهج الشامل لحقوق الإنسان؟",
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, QuestionsScreen.route),
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, Quote1Screen.route),
                         text: "ماذا تضمن حقوق الإنسان؟",
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, Quote2Screen.route),
                         text: "ما هي المبادئ الأساسية لحقوق الإنسان؟",
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, Definition1Screen.route),
                         text: "ما هي الخصائص الأساسية لحقوق الإنسان؟",
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () =>
+                        onPressed: (context) =>
                             Navigator.pushNamed(context, Definition2Screen.route),
                         text: "كيف تُصنف حقوق الإنسان؟",
                         context: context),
@@ -171,7 +171,7 @@ class HquqDetailsScreen extends StatelessWidget {
                       ),
                     ),
                     RowQuestionWidget(
-                        onPressed: () => Navigator.push(
+                        onPressed: (context) => Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PointScreen(
@@ -183,7 +183,7 @@ class HquqDetailsScreen extends StatelessWidget {
                         text: "هل يواجه الجميع نفس التحديات؟",
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () => Navigator.push(
+                        onPressed: (context) => Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PointScreen(
@@ -197,7 +197,7 @@ class HquqDetailsScreen extends StatelessWidget {
                             "هل تُعتبر المساواة بني الجنسني أساسيا من حقا حقوق الإنسان؟",
                         context: context),
                     RowQuestionWidget(
-                        onPressed: () => Navigator.push(
+                        onPressed: (context) => Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => MultiPointScreen(
