@@ -6,6 +6,7 @@ import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 import '../../../Constants.dart';
 
@@ -121,7 +122,7 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, GenderDetailsScreen.route),
+                    Navigator.pushNamed(context, MaraaDetailsScreen.route),
                 title: "المشاركة السياسية للنساء",
                 subTitle: "",
                 color: theme(context).accentColor,

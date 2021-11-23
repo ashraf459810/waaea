@@ -48,6 +48,11 @@ class Constants {
   static String genderImage = 'assets/images/gender/genderImage.png';
   static String screenshotGender = 'assets/images/gender/screenshotGender.png';
 
+  //Images Maraa
+  static String maraaCover = 'assets/images/maraa/maraaCover.png';
+  static String mhawrQarar = 'assets/images/maraa/mhawrQarar.png';
+  static String ajndahScreen = 'assets/images/maraa/ajndahScreen.png';
+
 
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);

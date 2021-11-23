@@ -13,6 +13,7 @@ import 'UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
+import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
@@ -35,6 +36,10 @@ import 'UI/Screens/MultiHquqScreen/Hquuq4Screen.dart';
 import 'UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote1Screen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote2Screen.dart';
+import 'UI/Screens/MultiMaraaScreen/AjendaMaraaScreen.dart';
+import 'UI/Screens/MultiMaraaScreen/MhawarQararScreen.dart';
+import 'UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
+import 'UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
 import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
@@ -108,6 +113,12 @@ class MyApp extends StatelessWidget {
             NmathjCedawScreen.route: (context) => NmathjCedawScreen(),
             //Gender Screens (Section 6)
             GenderDetailsScreen.route: (context) => GenderDetailsScreen(),
+            // Maraa Screens (Section 8)
+            MaraaDetailsScreen.route: (context) => MaraaDetailsScreen(),
+            Qarar1325Screen.route: (context) => Qarar1325Screen(),
+            MhawarQararScreen.route: (context) => MhawarQararScreen(),
+            AjendaMaraaScreen.route: (context) => AjendaMaraaScreen(),
+            XuttatWatanyaScreen.route: (context) => XuttatWatanyaScreen(),
           },
         ));
   }
