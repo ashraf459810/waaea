@@ -52,6 +52,9 @@ class Constants {
   static String maraaCover = 'assets/images/maraa/maraaCover.png';
   static String mhawrQarar = 'assets/images/maraa/mhawrQarar.png';
   static String ajndahScreen = 'assets/images/maraa/ajndahScreen.png';
+  static String marhala1 = 'assets/images/maraa/marhala1.png';
+  static String marhala2 = 'assets/images/maraa/marhala2.png';
+  static String marhala3 = 'assets/images/maraa/marhala3.png';
 
 
   //colors

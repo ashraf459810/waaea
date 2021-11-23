@@ -37,7 +37,9 @@ import 'UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote1Screen.dart';
 import 'UI/Screens/MultiHquqScreen/Quote2Screen.dart';
 import 'UI/Screens/MultiMaraaScreen/AjendaMaraaScreen.dart';
+import 'UI/Screens/MultiMaraaScreen/MarahlScreen.dart';
 import 'UI/Screens/MultiMaraaScreen/MhawarQararScreen.dart';
+import 'UI/Screens/MultiMaraaScreen/MusharakaScreen.dart';
 import 'UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
 import 'UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
 import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
@@ -119,6 +121,9 @@ class MyApp extends StatelessWidget {
             MhawarQararScreen.route: (context) => MhawarQararScreen(),
             AjendaMaraaScreen.route: (context) => AjendaMaraaScreen(),
             XuttatWatanyaScreen.route: (context) => XuttatWatanyaScreen(),
+            MarahlScreen.route: (context) => MarahlScreen(),
+            MusharakaScreen.route: (context) => MusharakaScreen(),
+
           },
         ));
   }

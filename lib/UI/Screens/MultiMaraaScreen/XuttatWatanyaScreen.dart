@@ -6,6 +6,8 @@ import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/Components/TahaqdyWidget.dart
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
+import 'MarahlScreen.dart';
+import 'MusharakaScreen.dart';
 
 class XuttatWatanyaScreen extends StatelessWidget {
   static const route = '/XuttatWatanya';
@@ -119,7 +121,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                     onPressed: (context) {},
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () =>Navigator.pushNamed(context, MarahlScreen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       margin: const EdgeInsets.symmetric(
@@ -167,7 +169,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                       title: "المشاركة",
                       label: "",
                       bgColor: theme(context).primaryColor,
-                      onPressed: () {},
+                      onPressed: () =>Navigator.pushNamed(context, MusharakaScreen.route),
                     ),
                   ),
                   Padding(
