@@ -3,10 +3,13 @@ import 'package:wa3iaa/UI/Components/CardGrid.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 import '../../../Constants.dart';
 
@@ -30,113 +33,131 @@ class SubCategoriesScreen extends StatelessWidget {
               .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
         ),
       ),
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        // color: Constants.lightBgColor,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(Constants.bgFlower),
-            fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Container(
+          height: MediaQuery.of(context).size.height + MediaQuery.of(context).size.height/8,
+          width: MediaQuery.of(context).size.width,
+          // color: Constants.lightBgColor,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(Constants.bgFlower),
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        child: SingleChildScrollView(
-          child: Wrap(
-            crossAxisAlignment: WrapCrossAlignment.end,
-            alignment: WrapAlignment.center,
-            children: [
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, HquqDetailsScreen.route),
-                title: "مفهوم حقوق الإنسان",
-                subTitle: "",
-                color: theme(context).primaryColor,
-                textColor: theme(context).backgroundColor,
-              ),
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, HmayaDetailsScreen.route),
-                title: "آليات حماية حقوق الإنسان",
-                subTitle: "في الإطار الدولي والوطني",
-                color: theme(context).accentColor,
-                textColor: theme(context).backgroundColor,
-              ),
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, CedawDetailsScreen.route),
-                title: "المشاركة في حل النزاع وبناء السلام",
-                subTitle: "",
-                color: Colors.white,
-                textColor: Colors.black87,
-              ),
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, HalamyaDetailsScreen.route),
-                title: "حقوق النساء   ",
-                subTitle: "",
-                color: Constants.orangeColor,
-                textColor: theme(context).backgroundColor,
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, AlhnfDetailsScreen.route),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 6.5,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black12,
-                          spreadRadius: 0.5,
-                          offset: Offset.zero,
-                          blurRadius: 0.9),
-                      BoxShadow(
-                          color: Colors.black12,
-                          spreadRadius: 0.2,
-                          offset: Offset(1, 0.5),
-                          blurRadius: 9)
-                    ],
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.white,
-                    image: DecorationImage(
-                      image: AssetImage(Constants.symbol),
-                      fit: BoxFit.cover,
+          child: SingleChildScrollView(
+            child: Wrap(
+              crossAxisAlignment: WrapCrossAlignment.end,
+              alignment: WrapAlignment.center,
+              children: [
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, HquqDetailsScreen.route),
+                  title: "مفهوم حقوق الإنسان",
+                  subTitle: "",
+                  color: theme(context).primaryColor,
+                  textColor: theme(context).backgroundColor,
+                ),
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, HmayaDetailsScreen.route),
+                  title: "آليات حماية حقوق الإنسان",
+                  subTitle: "في الإطار الدولي والوطني",
+                  color: theme(context).accentColor,
+                  textColor: theme(context).backgroundColor,
+                ),
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, CedawDetailsScreen.route),
+                  title: "المشاركة في حل النزاع وبناء السلام",
+                  subTitle: "",
+                  color: Colors.white,
+                  textColor: Colors.black87,
+                ),
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, HalamyaDetailsScreen.route),
+                  title: "حقوق النساء   ",
+                  subTitle: "",
+                  color: Constants.orangeColor,
+                  textColor: theme(context).backgroundColor,
+                ),
+                GestureDetector(
+                  onTap: () => Navigator.pushNamed(context, AlhnfDetailsScreen.route),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height / 6.5,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black12,
+                            spreadRadius: 0.5,
+                            offset: Offset.zero,
+                            blurRadius: 0.9),
+                        BoxShadow(
+                            color: Colors.black12,
+                            spreadRadius: 0.2,
+                            offset: Offset(1, 0.5),
+                            blurRadius: 9)
+                      ],
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white,
+                      image: DecorationImage(
+                        image: AssetImage(Constants.symbol),
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                  margin: EdgeInsets.symmetric(horizontal: 30, vertical: 14),
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: Padding(
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      child: Text(
-                        "مناهضة العنف القائم على النوع الاجتامعي",
-                        style: theme(context)
-                            .textTheme
-                            .headline5!
-                            .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
-                        textDirection: TextDirection.rtl,
+                    margin: EdgeInsets.symmetric(horizontal: 30, vertical: 14),
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      child: Padding(
+                        padding:
+                            const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                        child: Text(
+                          "مناهضة العنف القائم على النوع الاجتامعي",
+                          style: theme(context)
+                              .textTheme
+                              .headline5!
+                              .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
+                          textDirection: TextDirection.rtl,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, MaraaDetailsScreen.route),
-                title: "المشاركة السياسية للنساء",
-                subTitle: "",
-                color: theme(context).accentColor,
-                textColor: Colors.white,
-              ),
-              CardGrid(
-                onPressed: () =>
-                    Navigator.pushNamed(context, GenderDetailsScreen.route),
-                title: "التنمية المستدامة",
-                subTitle: "",
-                color: theme(context).primaryColor,
-                textColor: theme(context).backgroundColor,
-              ),
-            ],
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, MaraaDetailsScreen.route),
+                  title: "المشاركة السياسية للنساء",
+                  subTitle: "",
+                  color: theme(context).accentColor,
+                  textColor: Colors.white,
+                ),
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, GenderDetailsScreen.route),
+                  title: "التنمية المستدامة",
+                  subTitle: "",
+                  color: theme(context).primaryColor,
+                  textColor: theme(context).backgroundColor,
+                ),
+                CardGrid(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, MaraaTamnyaDetailsScreen.route),
+                  title: "المرأة والتنمية المستدامة",
+                  subTitle: "",
+                  color: Constants.orangeColor,
+                  textColor: theme(context).backgroundColor,
+                ),
+                CardGrid(
+                  onPressed: () {},
+                  title: "%%%%%%%%%%%%%%",
+                  subTitle: "",
+                  color: theme(context).backgroundColor,
+                  textColor: theme(context).primaryColor,
+                ),
+
+              ],
+            ),
           ),
         ),
       ),

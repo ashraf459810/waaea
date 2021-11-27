@@ -14,6 +14,7 @@ import 'UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
+import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
@@ -123,6 +124,8 @@ class MyApp extends StatelessWidget {
             XuttatWatanyaScreen.route: (context) => XuttatWatanyaScreen(),
             MarahlScreen.route: (context) => MarahlScreen(),
             MusharakaScreen.route: (context) => MusharakaScreen(),
+            // Maraa Tamnya Screen (section 9)
+            MaraaTamnyaDetailsScreen.route: (context) => MaraaTamnyaDetailsScreen(),
 
           },
         ));
