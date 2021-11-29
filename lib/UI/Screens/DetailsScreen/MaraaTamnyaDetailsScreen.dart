@@ -16,6 +16,7 @@ import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/AjendaMaraaScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/MhawarQararScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -99,7 +100,7 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
                     GestureDetector(
                       onTap: () => Navigator.pushNamed(
                         context,
-                        XuttatWatanyaScreen.route,
+                        Ta7qeeqMasawatScreen.route,
                       ),
                       child: Container(
                         width: MediaQuery.of(context).size.width,

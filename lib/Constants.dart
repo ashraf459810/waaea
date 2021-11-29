@@ -62,6 +62,7 @@ class Constants {
   static String sections17 = 'assets/images/maraatamnya/17sections.png';
   static String msawatjnsain = 'assets/images/maraatamnya/msawatjnsain.png';
   static String mthl5 = 'assets/images/maraatamnya/mthl5.png';
+  static String ta7qeeq5 = 'assets/images/maraatamnya/ta7qeeq5.png';
 
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);

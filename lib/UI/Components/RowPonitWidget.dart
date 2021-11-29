@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 class RowPointWidget extends StatelessWidget {
-
   final String label;
   RowPointWidget({required this.label});
 
@@ -16,7 +15,7 @@ class RowPointWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 12),
           child: CircleAvatar(
-            radius: 4,
+            radius: 3.5,
             backgroundColor: Colors.black87,
           ),
         ),
@@ -25,11 +24,11 @@ class RowPointWidget extends StatelessWidget {
         ),
         Expanded(
           child: Text(
-    label,
+            label,
             style: theme(context)
                 .textTheme
                 .headline5!
-                .copyWith(color: Colors.black54, fontSize: 20),
+                .copyWith(color: Colors.black87, fontSize: 20),
           ),
         ),
       ],
