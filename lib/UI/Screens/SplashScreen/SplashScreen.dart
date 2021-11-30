@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Screens/HomeScreen/HomeScreen.dart';
-import 'package:wa3iaa/UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';

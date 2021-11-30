@@ -7,6 +7,7 @@ import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/AlmasawatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/TawattawrScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/AshabWlayatScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IraqProtocolScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiMaraaTamnyaScreen/VnrReportScreen.dart';
 import 'Helper/Language.dart';
 import 'Helper/Theme.dart';
 import 'UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
@@ -44,6 +45,9 @@ import 'UI/Screens/MultiMaraaScreen/MusharakaScreen.dart';
 import 'UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
 import 'UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
 import 'UI/Screens/MultiMaraaTamnyaScreen/HawajzThxmaScreen.dart';
+import 'UI/Screens/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
+import 'UI/Screens/MultiMaraaTamnyaScreen/MrajhWaRawabtScreen.dart';
+import 'UI/Screens/MultiMaraaTamnyaScreen/MsawatBainJnsainScreen.dart';
 import 'UI/Screens/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
 import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
@@ -130,6 +134,10 @@ class MyApp extends StatelessWidget {
             MaraaTamnyaDetailsScreen.route: (context) => MaraaTamnyaDetailsScreen(),
             Ta7qeeqMasawatScreen.route: (context) => Ta7qeeqMasawatScreen(),
             HawajzThxmaScreen.route: (context) => HawajzThxmaScreen(),
+            VnrReportScreen.route: (context) => VnrReportScreen(),
+            MrajhWaRawabtScreen.route: (context) => MrajhWaRawabtScreen(),
+            MsawatBainJnsainScreen.route: (context) => MsawatBainJnsainScreen(),
+            MaqasdMuashratHadaf5.route: (context) => MaqasdMuashratHadaf5(),
 
           },
         ));

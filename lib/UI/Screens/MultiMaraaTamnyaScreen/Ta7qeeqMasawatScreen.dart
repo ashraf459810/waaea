@@ -2,10 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/MultiAlhnfScreen/Components/NawhIconWidget.dart';
+import 'package:wa3iaa/UI/Screens/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
 import 'HawajzThxmaScreen.dart';
+import 'MrajhWaRawabtScreen.dart';
+import 'MsawatBainJnsainScreen.dart';
+import 'VnrReportScreen.dart';
 
 class Ta7qeeqMasawatScreen extends StatelessWidget {
   static const route = '/Ta7qeeqMasawat';
@@ -146,7 +150,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(
                       context,
-                      Ta7qeeqMasawatScreen.route,
+                      MsawatBainJnsainScreen.route,
                     ),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -176,7 +180,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(
                       context,
-                      Ta7qeeqMasawatScreen.route,
+                      MaqasdMuashratHadaf5.route,
                     ),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -233,7 +237,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                         GestureDetector(
                           onTap: () => Navigator.pushNamed(
                             context,
-                            Ta7qeeqMasawatScreen.route,
+                            VnrReportScreen.route,
                           ),
                           child: Container(
                             width: MediaQuery.of(context).size.width,
@@ -274,7 +278,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(
                       context,
-                      Ta7qeeqMasawatScreen.route,
+                      MrajhWaRawabtScreen.route,
                     ),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
