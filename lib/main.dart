@@ -16,6 +16,7 @@ import 'UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
+import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
 import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
 import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
@@ -131,14 +132,16 @@ class MyApp extends StatelessWidget {
             MarahlScreen.route: (context) => MarahlScreen(),
             MusharakaScreen.route: (context) => MusharakaScreen(),
             // Maraa Tamnya Screen (section 9)
-            MaraaTamnyaDetailsScreen.route: (context) => MaraaTamnyaDetailsScreen(),
+            MaraaTamnyaDetailsScreen.route: (context) =>
+                MaraaTamnyaDetailsScreen(),
             Ta7qeeqMasawatScreen.route: (context) => Ta7qeeqMasawatScreen(),
             HawajzThxmaScreen.route: (context) => HawajzThxmaScreen(),
             VnrReportScreen.route: (context) => VnrReportScreen(),
             MrajhWaRawabtScreen.route: (context) => MrajhWaRawabtScreen(),
             MsawatBainJnsainScreen.route: (context) => MsawatBainJnsainScreen(),
             MaqasdMuashratHadaf5.route: (context) => MaqasdMuashratHadaf5(),
-
+            // Msharaka Screen (section 7)
+            MsharakaDetailsScreen.route: (context) => MsharakaDetailsScreen(),
           },
         ));
   }

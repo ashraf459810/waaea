@@ -5,6 +5,9 @@ import 'package:wa3iaa/Models/QuestionModel.dart';
 import 'Models/QuotesModel.dart';
 
 class Constants {
+
+  /// --------------------Assets----------------------
+
   //images
   static String logo = 'assets/images/logo.png';
   static String bgFit = 'assets/images/bgFit.png';
@@ -67,6 +70,20 @@ class Constants {
   static String bainjnsain = 'assets/images/maraatamnya/bainjnsain.png';
   static String maqasdScreenshot = 'assets/images/maraatamnya/maqasdScreenshot.png';
 
+  //Images Msharaka
+  static String msharakaCover = 'assets/images/msharaka/msharakaCover.png';
+  static String vote = 'assets/images/msharaka/vote.png';
+  static String tahbeer = 'assets/images/msharaka/tahbeer.png';
+  static String wathefe = 'assets/images/msharaka/wathefe.png';
+  static String mjtamahy = 'assets/images/msharaka/mjtamahy.png';
+  static String mjtamah = 'assets/images/msharaka/mjtamah.png';
+  static String duwaly = 'assets/images/msharaka/mjtamah.png';
+
+
+
+
+  /// --------------------Colors----------------------
+
   //colors
   static Color extraLightPinkColor = Color(0xfff2d0d0);
   static Color lightPinkColor = Color(0xfff28779);
@@ -75,6 +92,11 @@ class Constants {
   static Color lightBlueColor = Color(0xffd5d7ff);
   static Color purpleColor = Color(0xff463066);
   static Color lightBgColor = Color(0xfff6f5f1);
+
+
+
+
+  /// --------------------Data----------------------
 
   //data
   static QuestionModel questionModel = new QuestionModel(
