@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowCategoryWidget.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition1Screen.dart';
@@ -18,6 +19,8 @@ import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/MhawarQararScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
 import 'package:wa3iaa/UI/Screens/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiMsharakaScreen/MsharakaHquqScreen.dart';
+import 'package:wa3iaa/UI/Screens/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -109,29 +112,71 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       text:
                           "هل تقتصر مشاركة المرأة في صنع القرار على المشاركة السياسية؟",
-                      onPressed: (context) {},
+                      onPressed: (context) => showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel:
+                              'هل تقتصر مشاركة المرأة في صنع القرار على المشاركة السياسية؟',
+                          listAnswer: [
+                            'لا يرتبط تعزيز مشاركة النساء في صنع القرار بالمشاركة السياسية، وإنما بالمساهمة الفعالة في اتخاذ القرارات الحيوية ضمن مختلف المجالات الاقتصادية والاجتماعية والثقافية. '
+                          ],
+                        ),
+                      ),
+                    ),
+                    RowQuestionWidget(
+                      context: context,
+                      text: "ما هي أهمية مشاركة المرأة في صنع القرار؟ ",
+                      onPressed: (context) => showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel:
+                              'ما هي أهمية مشاركة المرأة في صنع القرار؟ ',
+                          listAnswer: [
+                            'تُعتبر مشاركة النساء في صنع القرار عاملاً أساسياً للارتقاء بالمساواة بين الجنسين على مستوى السياسات العامة، ومساراً أساسياً من أجل تحقيق التنمية العادلة الشاملة والمستدامة وتعزيز الديمقراطية واستدامتها.'
+                          ],
+                        ),
+                      ),
                     ),
                     RowQuestionWidget(
                       context: context,
                       text: "ّ كيف نعزز مشاركة المرأة في صنع القرار؟",
-                      onPressed: (context) {},
+                      onPressed: (context) => showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel:
+                              'ّ كيف نعزز مشاركة المرأة في صنع القرار؟',
+                          listAnswer: [
+                            "التمثيل الكمّي: قياس عدد النساء اللواتي تقلّدت مناصب قيادية.",
+                            "التمثل النوعي: قياس الحضور الفعّال من منظورٍ جندري لمشاركة النساء في الجهود التنموية وسنّ التشريعات ورسم السياسات العامة في مختلف القطاعات."
+                          ],
+                        ),
+                      ),
                     ),
                     RowCategoryWidget(
                       context: context,
                       text: "المشاركة وحقوق الإنسان",
                       color: Constants.lightPinkColor,
                       textColor: Colors.white,
-                      onPressed: (context) {},
+                      onPressed: (context) => Navigator.pushNamed(
+                          context, MsharakaHquqScreen.route),
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "مستويات المشاركة في صناعة القرار",
                       color: Constants.orangeColor,
                       textColor: Colors.white,
-                      onPressed: (context) {},
+                      onPressed: (context) => Navigator.pushNamed(
+                          context, MstawyatMsharakaScreen.route),
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "تحديات دستورية وقانونية",
@@ -139,7 +184,6 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       textColor: theme(context).primaryColor,
                       onPressed: (context) {},
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "الصورة النمطية للمرأة",
@@ -147,7 +191,6 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       textColor: theme(context).primaryColor,
                       onPressed: (context) {},
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "تحديات ثقافية واجتامعية",
@@ -155,7 +198,6 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       textColor: theme(context).primaryColor,
                       onPressed: (context) {},
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "تحديات مؤسسية",
@@ -163,7 +205,6 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       textColor: theme(context).primaryColor,
                       onPressed: (context) {},
                     ),
-
                     RowCategoryWidget(
                       context: context,
                       text: "تحديات المضايقات الالكترونية",
@@ -177,7 +218,8 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       color: Constants.purpleColor,
                       textColor: Colors.white,
                       onPressed: (context) {},
-                    ),RowCategoryWidget(
+                    ),
+                    RowCategoryWidget(
                       context: context,
                       text: "الاستراتيجيات والخطط والقوانني الوطنية العراقية",
                       color: Constants.extraLightPinkColor,

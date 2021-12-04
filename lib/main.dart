@@ -50,6 +50,8 @@ import 'UI/Screens/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
 import 'UI/Screens/MultiMaraaTamnyaScreen/MrajhWaRawabtScreen.dart';
 import 'UI/Screens/MultiMaraaTamnyaScreen/MsawatBainJnsainScreen.dart';
 import 'UI/Screens/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
+import 'UI/Screens/MultiMsharakaScreen/MsharakaHquqScreen.dart';
+import 'UI/Screens/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
 import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
@@ -142,6 +144,9 @@ class MyApp extends StatelessWidget {
             MaqasdMuashratHadaf5.route: (context) => MaqasdMuashratHadaf5(),
             // Msharaka Screen (section 7)
             MsharakaDetailsScreen.route: (context) => MsharakaDetailsScreen(),
+            MsharakaHquqScreen.route: (context) => MsharakaHquqScreen(),
+            MstawyatMsharakaScreen.route: (context) => MstawyatMsharakaScreen(),
+
           },
         ));
   }
