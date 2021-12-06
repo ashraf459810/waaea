@@ -74,10 +74,10 @@ class Constants {
   static String msharakaCover = 'assets/images/msharaka/msharakaCover.png';
   static String vote = 'assets/images/msharaka/vote.png';
   static String tahbeer = 'assets/images/msharaka/tahbeer.png';
-  static String wathefe = 'assets/images/msharaka/wathefe.png';
-  static String mjtamahy = 'assets/images/msharaka/mjtamahy.png';
+  static String collectionImg = 'assets/images/msharaka/collection.png';
   static String mjtamah = 'assets/images/msharaka/mjtamah.png';
-  static String duwaly = 'assets/images/msharaka/mjtamah.png';
+  static String syasyaScreenshot = 'assets/images/msharaka/syasyaScreensot.png';
+  static String strategyScreenshot = 'assets/images/msharaka/strategyScreenshot.png';
 
 
 

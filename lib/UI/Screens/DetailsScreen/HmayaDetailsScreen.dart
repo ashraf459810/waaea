@@ -1,21 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/ItarScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen//Definition1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Definition2Screen.dart.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq2Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq3Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Hquuq4Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/MultiPointScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/PointScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote1Screen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHquqScreen/Quote2Screen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/IltzamatScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/ItarScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/MasadrHmayaScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Hquuq1Screen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';

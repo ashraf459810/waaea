@@ -10,6 +10,7 @@ class ExpandableCard extends StatefulWidget {
     this.description,
     this.image,
     this.widgets,
+    this.color,
   }) : super(key: key);
 
   final int index;
@@ -17,6 +18,7 @@ class ExpandableCard extends StatefulWidget {
   final String? description;
   final String? image;
   final List<Widget>? widgets;
+  final Color? color;
 
   @override
   State<ExpandableCard> createState() => _ExpandableCardState();
@@ -29,25 +31,40 @@ class _ExpandableCardState extends State<ExpandableCard> {
     return Container(
       width: MediaQuery.of(context).size.width,
       margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
-      decoration: BoxDecoration(boxShadow: [
-        BoxShadow(
-            color: Colors.black26, blurRadius: 10, blurStyle: BlurStyle.outer)
-      ], borderRadius: BorderRadius.circular(10), color: Colors.white),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black26,
+            blurRadius: 10,
+            blurStyle: BlurStyle.outer,
+          )
+        ],
+        borderRadius: BorderRadius.circular(10),
+        color: widget.color == null ? Colors.white : widget.color,
+      ),
       child: isOpened
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 4,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(
+                   widget.index == 0 ?  Text(
+                     widget.title,
+                     style:
+                     theme(context).textTheme.headline2!.copyWith(
+                       color: theme(context).primaryColor,
+                       fontSize: 24,
+                       // overflow: TextOverflow.ellipsis
+                     ),
+                   ) : SizedBox(
                       width: MediaQuery.of(context).size.width / 1.9,
-                      child: Row(
+                      child:  Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -55,14 +72,12 @@ class _ExpandableCardState extends State<ExpandableCard> {
                             flex: 1,
                             child: Text(
                               widget.index.toString(),
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(
-                                    color: theme(context).primaryColor,
-                                    fontSize: 24,
-                                    // overflow: TextOverflow.ellipsis
-                                  ),
+                              style:
+                                  theme(context).textTheme.headline2!.copyWith(
+                                        color: theme(context).primaryColor,
+                                        fontSize: 24,
+                                        // overflow: TextOverflow.ellipsis
+                                      ),
                             ),
                           ),
                           SizedBox(
@@ -72,14 +87,12 @@ class _ExpandableCardState extends State<ExpandableCard> {
                             flex: 20,
                             child: Text(
                               widget.title,
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(
-                                    color: theme(context).primaryColor,
-                                    fontSize: 24,
-                                    // overflow: TextOverflow.ellipsis
-                                  ),
+                              style:
+                                  theme(context).textTheme.headline2!.copyWith(
+                                        color: theme(context).primaryColor,
+                                        fontSize: 24,
+                                        // overflow: TextOverflow.ellipsis
+                                      ),
                             ),
                           ),
                         ],
@@ -136,13 +149,13 @@ class _ExpandableCardState extends State<ExpandableCard> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 4,
                 ),
               ],
             )
           : Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               SizedBox(
-                height: 10,
+                height: 4,
               ),
               GestureDetector(
                 onTap: () {
@@ -154,7 +167,18 @@ class _ExpandableCardState extends State<ExpandableCard> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(
+                    widget.index == 0 ?  Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Text(
+                        widget.title,
+                        style:
+                        theme(context).textTheme.headline2!.copyWith(
+                          color: theme(context).primaryColor,
+                          fontSize: 24,
+                          // overflow: TextOverflow.ellipsis
+                        ),
+                      ),
+                    ) : SizedBox(
                       width: MediaQuery.of(context).size.width / 1.9,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,11 +188,12 @@ class _ExpandableCardState extends State<ExpandableCard> {
                             flex: 1,
                             child: Text(
                               widget.index.toString(),
-                              style: theme(context).textTheme.headline2!.copyWith(
-                                    color: theme(context).primaryColor,
-                                    fontSize: 24,
-                                    // overflow: TextOverflow.ellipsis
-                                  ),
+                              style:
+                                  theme(context).textTheme.headline2!.copyWith(
+                                        color: theme(context).primaryColor,
+                                        fontSize: 24,
+                                        // overflow: TextOverflow.ellipsis
+                                      ),
                             ),
                           ),
                           SizedBox(
@@ -178,11 +203,12 @@ class _ExpandableCardState extends State<ExpandableCard> {
                             flex: 20,
                             child: Text(
                               widget.title,
-                              style: theme(context).textTheme.headline2!.copyWith(
-                                    color: theme(context).primaryColor,
-                                    fontSize: 24,
-                                    // overflow: TextOverflow.ellipsis
-                                  ),
+                              style:
+                                  theme(context).textTheme.headline2!.copyWith(
+                                        color: theme(context).primaryColor,
+                                        fontSize: 24,
+                                        // overflow: TextOverflow.ellipsis
+                                      ),
                             ),
                           ),
                         ],
@@ -205,9 +231,6 @@ class _ExpandableCardState extends State<ExpandableCard> {
                     ),
                   ],
                 ),
-              ),
-              SizedBox(
-                height: 10,
               ),
             ]),
     );

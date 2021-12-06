@@ -3,11 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/AlmasawatScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHalamyaScreen/TawattawrScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/AshabWlayatScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiHmayaScreen/IraqProtocolScreen.dart';
-import 'package:wa3iaa/UI/Screens/MultiMaraaTamnyaScreen/VnrReportScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/AlmasawatScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/TawattawrScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/AshabWlayatScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/IraqProtocolScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaTamnyaScreen/VnrReportScreen.dart';
 import 'Helper/Language.dart';
 import 'Helper/Theme.dart';
 import 'UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
@@ -17,43 +17,47 @@ import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/MarahlScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
+import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaHquqScreen.dart';
+import 'UI/Screens/FirstPart/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
 import 'UI/Screens/HomeScreen/HomeScreen.dart';
 import 'UI/Screens/LandingScreen/LandingScreen.dart';
-import 'UI/Screens/MultiAlhnfScreen/AlhnfNawhScreen.dart';
-import 'UI/Screens/MultiAlhnfScreen/AtharHanafScreen.dart';
-import 'UI/Screens/MultiCedawScreen/NmathjCedawScreen.dart';
-import 'UI/Screens/MultiCedawScreen/TahfithCedawScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/HadadMqrrinScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/IjraatXassScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/IltzamatScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/IstihrathScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/ItarScreen.dart';
-import 'UI/Screens/MultiHmayaScreen/MasadrHmayaScreen.dart';
-import 'UI/Screens/MultiHquqScreen/Definition1Screen.dart';
-import 'UI/Screens/MultiHquqScreen/Definition2Screen.dart.dart';
-import 'UI/Screens/MultiHquqScreen/Hquuq1Screen.dart';
-import 'UI/Screens/MultiHquqScreen/Hquuq2Screen.dart';
-import 'UI/Screens/MultiHquqScreen/Hquuq3Screen.dart';
-import 'UI/Screens/MultiHquqScreen/Hquuq4Screen.dart';
-import 'UI/Screens/MultiHquqScreen/QuestionsScreen.dart';
-import 'UI/Screens/MultiHquqScreen/Quote1Screen.dart';
-import 'UI/Screens/MultiHquqScreen/Quote2Screen.dart';
-import 'UI/Screens/MultiMaraaScreen/AjendaMaraaScreen.dart';
-import 'UI/Screens/MultiMaraaScreen/MarahlScreen.dart';
-import 'UI/Screens/MultiMaraaScreen/MhawarQararScreen.dart';
-import 'UI/Screens/MultiMaraaScreen/MusharakaScreen.dart';
-import 'UI/Screens/MultiMaraaScreen/Qarar1325Screen.dart';
-import 'UI/Screens/MultiMaraaScreen/XuttatWatanyaScreen.dart';
-import 'UI/Screens/MultiMaraaTamnyaScreen/HawajzThxmaScreen.dart';
-import 'UI/Screens/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
-import 'UI/Screens/MultiMaraaTamnyaScreen/MrajhWaRawabtScreen.dart';
-import 'UI/Screens/MultiMaraaTamnyaScreen/MsawatBainJnsainScreen.dart';
-import 'UI/Screens/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
-import 'UI/Screens/MultiMsharakaScreen/MsharakaHquqScreen.dart';
-import 'UI/Screens/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
-import 'UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
+import 'UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfNawhScreen.dart';
+import 'UI/Screens/FirstPart/MultiAlhnfScreen/AtharHanafScreen.dart';
+import 'UI/Screens/FirstPart/MultiCedawScreen/NmathjCedawScreen.dart';
+import 'UI/Screens/FirstPart/MultiCedawScreen/TahfithCedawScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/HadadMqrrinScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/IjraatXassScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/IltzamatScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/IstihrathScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/ItarScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/MasadrHmayaScreen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Definition1Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Definition2Screen.dart.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Hquuq1Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Hquuq2Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Hquuq3Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Hquuq4Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/QuestionsScreen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Quote1Screen.dart';
+import 'UI/Screens/FirstPart/MultiHquqScreen/Quote2Screen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/AjendaMaraaScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/MhawarQararScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/MusharakaScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/Qarar1325Screen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaScreen/XuttatWatanyaScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/HawajzThxmaScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/MrajhWaRawabtScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/MsawatBainJnsainScreen.dart';
+import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
+import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaStrategyScreen.dart';
+import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaSyasyaScreen.dart';
+import 'UI/Screens/FirstPart/MultiMsharakaScreen/TaqtasrMsharakaScreen.dart';
+import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/TamkeenMaharatScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
+import 'UI/Screens/SubCategories2Screen/SubCategories2Screen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 
 void main() {
@@ -87,8 +91,9 @@ class MyApp extends StatelessWidget {
             HomeScreen.route: (context) => HomeScreen(),
             LandingScreen.route: (context) => LandingScreen(),
             CategoriesScreen.route: (context) => CategoriesScreen(),
+
+            /// First part
             SubCategoriesScreen.route: (context) => SubCategoriesScreen(),
-            // SecondSubCategoryScreen.route: (context) => SecondSubCategoryScreen(),
             //Hquuq Screens (Section 1)
             HquqDetailsScreen.route: (context) => HquqDetailsScreen(),
             QuestionsScreen.route: (context) => QuestionsScreen(),
@@ -146,6 +151,13 @@ class MyApp extends StatelessWidget {
             MsharakaDetailsScreen.route: (context) => MsharakaDetailsScreen(),
             MsharakaHquqScreen.route: (context) => MsharakaHquqScreen(),
             MstawyatMsharakaScreen.route: (context) => MstawyatMsharakaScreen(),
+            MsharakaSyasyaScreen.route: (context) => MsharakaSyasyaScreen(),
+            MsharakaStrategyScreen.route: (context) => MsharakaStrategyScreen(),
+            TaqtasrMsharakaScreen.route: (context) => TaqtasrMsharakaScreen(),
+
+            /// Second Part
+            SubCategories2Screen.route: (context) => SubCategories2Screen(),
+            TamkeenMaharatDetaillsScreen.route: (context) => TamkeenMaharatDetaillsScreen(),
 
           },
         ));

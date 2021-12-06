@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardCategory.dart';
-import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
-import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
-import 'package:wa3iaa/UI/Screens/SecondSubCategoryScreen/SecondSubCategoryScreen.dart';
+import 'package:wa3iaa/UI/Screens/SubCategories2Screen/SubCategories2Screen.dart';
 import 'package:wa3iaa/UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -41,7 +39,7 @@ class CategoriesScreen extends StatelessWidget {
             Expanded(
                 child: CardCategory(
               onPressed: () =>
-                  Navigator.pushNamed(context, SubCategoriesScreen.route),
+                  Navigator.pushNamed(context, SubCategories2Screen.route),
               title: "الإطار العملي",
               description:
                   "وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور" +
