@@ -8,6 +8,8 @@ class Constants {
 
   /// --------------------Assets----------------------
 
+  /// First Part
+
   //images
   static String logo = 'assets/images/logo.png';
   static String bgFit = 'assets/images/bgFit.png';
@@ -80,6 +82,9 @@ class Constants {
   static String strategyScreenshot = 'assets/images/msharaka/strategyScreenshot.png';
 
 
+  /// Second Part
+  //Images Xattab
+  static String xattabChart = 'assets/images/xattab/xattabChart.png';
 
 
   /// --------------------Colors----------------------

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CardGrid.dart';
 import 'package:wa3iaa/UI/Components/ExpandableCard.dart';
 import 'package:wa3iaa/UI/Components/RowPonitWidget.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/AdawatIntexabDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
@@ -13,7 +14,7 @@ import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
-import 'package:wa3iaa/UI/Screens/SecondPart/MultiTamkeenMaharatScreen/TamkeenMaharatScreen.dart';
+import 'package:wa3iaa/UI/Screens/DetailsScreen/TamkeenMaharatDetailsScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 import '../../../Constants.dart';
 
@@ -64,7 +65,7 @@ class SubCategories2Screen extends StatelessWidget {
                 ),
                 CardGrid(
                   onPressed: () => Navigator.pushNamed(
-                      context, TamkeenMaharatDetaillsScreen.route),
+                      context, AdawatIntexabDetailsScreen.route),
                   title: "ادوات الحملة الانتخابية",
                   subTitle: "",
                   color: theme(context).accentColor,

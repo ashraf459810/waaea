@@ -10,6 +10,7 @@ import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/IraqProtocolScreen.
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaTamnyaScreen/VnrReportScreen.dart';
 import 'Helper/Language.dart';
 import 'Helper/Theme.dart';
+import 'UI/Screens/DetailsScreen/AdawatIntexabDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/AlhnfDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/CedawDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/GenderDetailsScreen.dart';
@@ -55,7 +56,12 @@ import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/Ta7qeeqMasawatScreen.dart';
 import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaStrategyScreen.dart';
 import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaSyasyaScreen.dart';
 import 'UI/Screens/FirstPart/MultiMsharakaScreen/TaqtasrMsharakaScreen.dart';
-import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/TamkeenMaharatScreen.dart';
+import 'UI/Screens/DetailsScreen/TamkeenMaharatDetailsScreen.dart';
+import 'UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthAfkarScreen.dart';
+import 'UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthTahdyatScreen.dart';
+import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/ElqaaXattabScreen.dart';
+import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MakunatXattabScreen.dart';
+import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MathmuunXattabScreen.dart';
 import 'UI/Screens/SplashScreen/SplashScreen.dart';
 import 'UI/Screens/SubCategories2Screen/SubCategories2Screen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
@@ -157,7 +163,15 @@ class MyApp extends StatelessWidget {
 
             /// Second Part
             SubCategories2Screen.route: (context) => SubCategories2Screen(),
+            // Tamkeen Maharat Screens
             TamkeenMaharatDetaillsScreen.route: (context) => TamkeenMaharatDetaillsScreen(),
+            MathmuunXattabScreen.route: (context) => MathmuunXattabScreen(),
+            MakunatXattabScreen.route: (context) => MakunatXattabScreen(),
+            ElqaaXattabScreen.route: (context) => ElqaaXattabScreen(),
+            // Adawat Intexab Screens
+            AdawatIntexabDetailsScreen.route: (context) => AdawatIntexabDetailsScreen(),
+            BahthTahdyatScreen.route: (context) => BahthTahdyatScreen(),
+            BahthAfkarScreen.route: (context) => BahthAfkarScreen(),
 
           },
         ));

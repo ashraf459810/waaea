@@ -5,9 +5,10 @@ import 'package:wa3iaa/UI/Components/RowCategoryWidget.dart';
 import 'package:wa3iaa/UI/Components/RowPonitWidget.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaHquqScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
+import 'package:wa3iaa/UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MathmuunXattabScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
-import '../../../../Constants.dart';
+import '../../../Constants.dart';
 
 class TamkeenMaharatDetaillsScreen extends StatelessWidget {
   static const route = '/TamkeenMaharatDetails';
@@ -155,7 +156,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).primaryColor,
                       textColor: Colors.white,
                       onPressed: (context) => Navigator.pushNamed(
-                          context, MstawyatMsharakaScreen.route),
+                          context, MathmuunXattabScreen.route),
                     ),
                     SizedBox(
                       height: 20,

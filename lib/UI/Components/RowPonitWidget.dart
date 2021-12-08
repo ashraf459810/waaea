@@ -4,7 +4,8 @@ import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 class RowPointWidget extends StatelessWidget {
   final String label;
-  RowPointWidget({required this.label});
+  final Color? color;
+  RowPointWidget({required this.label, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class RowPointWidget extends StatelessWidget {
             padding: const EdgeInsets.only(top: 12),
             child: CircleAvatar(
               radius: 3.5,
-              backgroundColor: Colors.black87,
+              backgroundColor: color == null ? Colors.black87 : color,
             ),
           ),
           SizedBox(
