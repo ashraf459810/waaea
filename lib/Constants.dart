@@ -5,7 +5,6 @@ import 'package:wa3iaa/Models/QuestionModel.dart';
 import 'Models/QuotesModel.dart';
 
 class Constants {
-
   /// --------------------Assets----------------------
 
   /// First Part
@@ -23,12 +22,17 @@ class Constants {
   static String women2 = 'assets/images/women2.png';
   static String tableScreenshot = 'assets/images/tableScreenshot.png';
   static String tattawratScreenshot = 'assets/images/tattawratScreenshot.png';
-  static String ijraatTableScreenshot = 'assets/images/ijraatTableScreenshot.png';
-  static String ashabWlayatScreenshot = 'assets/images/ashabWlayatScreenshot.png';
-  static String hadadMqrrinScreenshot = 'assets/images/hadadMqrrinScreenshot.png';
+  static String ijraatTableScreenshot =
+      'assets/images/ijraatTableScreenshot.png';
+  static String ashabWlayatScreenshot =
+      'assets/images/ashabWlayatScreenshot.png';
+  static String hadadMqrrinScreenshot =
+      'assets/images/hadadMqrrinScreenshot.png';
   static String istihrathScreenshot = 'assets/images/istihrathScreenshot.png';
   static String cedaw = 'assets/images/cedaw.png';
   static String iraqImage = 'assets/images/iraqImage.png';
+  static String genderEquality = 'assets/images/genderEquality.png';
+  static String genders = 'assets/images/genders.png';
 
   //images / gender-violence
   static String topBg = 'assets/images/gender-violence/topBg.png';
@@ -65,12 +69,12 @@ class Constants {
   static String circle1 = 'assets/images/maraatamnya/circle.png';
   static String circle2 = 'assets/images/maraatamnya/circle2.png';
   static String sections17 = 'assets/images/maraatamnya/17sections.png';
-  static String msawatjnsain = 'assets/images/maraatamnya/msawatjnsain.png';
   static String mthl5 = 'assets/images/maraatamnya/mthl5.png';
   static String ta7qeeq5 = 'assets/images/maraatamnya/ta7qeeq5.png';
   static String vnrReport = 'assets/images/maraatamnya/vnrReport.png';
   static String bainjnsain = 'assets/images/maraatamnya/bainjnsain.png';
-  static String maqasdScreenshot = 'assets/images/maraatamnya/maqasdScreenshot.png';
+  static String maqasdScreenshot =
+      'assets/images/maraatamnya/maqasdScreenshot.png';
 
   //Images Msharaka
   static String msharakaCover = 'assets/images/msharaka/msharakaCover.png';
@@ -79,13 +83,20 @@ class Constants {
   static String collectionImg = 'assets/images/msharaka/collection.png';
   static String mjtamah = 'assets/images/msharaka/mjtamah.png';
   static String syasyaScreenshot = 'assets/images/msharaka/syasyaScreensot.png';
-  static String strategyScreenshot = 'assets/images/msharaka/strategyScreenshot.png';
-
+  static String strategyScreenshot =
+      'assets/images/msharaka/strategyScreenshot.png';
 
   /// Second Part
   //Images Xattab
   static String xattabChart = 'assets/images/xattab/xattabChart.png';
 
+  // Images adawatIntxab
+  static String rsalla = 'assets/images/adawatIntxab/rsala.png';
+  static String rahn = 'assets/images/adawatIntxab/rahn.png';
+  static String intxabScreenshot1 =
+      'assets/images/adawatIntxab/intxabScreenshot1.png';
+  static String intxabScreenshot2 =
+      'assets/images/adawatIntxab/intxabScreenshot2.png';
 
   /// --------------------Colors----------------------
 
@@ -97,9 +108,6 @@ class Constants {
   static Color lightBlueColor = Color(0xffd5d7ff);
   static Color purpleColor = Color(0xff463066);
   static Color lightBgColor = Color(0xfff6f5f1);
-
-
-
 
   /// --------------------Data----------------------
 

@@ -157,7 +157,8 @@ class MathmuunXattabScreen extends StatelessWidget {
                           const Spacer(),
                           IconButton(
                             padding: EdgeInsets.zero,
-                            onPressed: () {},
+                            onPressed: () => Navigator.pushNamed(
+                                context, MakunatXattabScreen.route),
                             icon: Icon(
                               Icons.arrow_back_ios_new,
                               color: theme(context).primaryColor,
@@ -237,7 +238,8 @@ class MathmuunXattabScreen extends StatelessWidget {
                           const Spacer(),
                           IconButton(
                             padding: EdgeInsets.zero,
-                            onPressed: () {},
+                            onPressed: () => Navigator.pushNamed(
+                                context, ElqaaXattabScreen.route),
                             icon: Icon(
                               Icons.arrow_back_ios_new,
                               color: theme(context).primaryColor,

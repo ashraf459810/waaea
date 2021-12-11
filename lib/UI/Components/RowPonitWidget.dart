@@ -5,7 +5,8 @@ import 'package:wa3iaa/Utilities/ThemeOf.dart';
 class RowPointWidget extends StatelessWidget {
   final String label;
   final Color? color;
-  RowPointWidget({required this.label, this.color});
+  final bool? isUnchecked;
+  RowPointWidget({required this.label, this.color, this.isUnchecked});
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +16,34 @@ class RowPointWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 12),
-            child: CircleAvatar(
-              radius: 3.5,
-              backgroundColor: color == null ? Colors.black87 : color,
-            ),
-          ),
+          isUnchecked != null && isUnchecked!
+              ? Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: Stack(
+                    children: [
+                      Center(
+                        child: CircleAvatar(
+                          radius: 3.5,
+                          backgroundColor:
+                              color == null ? Colors.black87 : color,
+                          child: Center(
+                            child: CircleAvatar(
+                              radius: 2.3,
+                              backgroundColor: theme(context).backgroundColor,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              : Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: CircleAvatar(
+                    radius: 3.5,
+                    backgroundColor: color == null ? Colors.black87 : color,
+                  ),
+                ),
           SizedBox(
             width: 12,
           ),

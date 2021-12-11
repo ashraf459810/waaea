@@ -83,9 +83,35 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).errorColor.withOpacity(0.3),
                       widgets: [
                         RowPointWidget(
-                          label: "",
+                          label: "المناصب",
                         ),
-
+                        RowPointWidget(
+                          label: "الوظيفة",
+                        ),
+                        RowPointWidget(
+                          label: "المستوى التعليمي",
+                        ),
+                        RowPointWidget(
+                          label: "متوسط أعمارهم",
+                        ),
+                        RowPointWidget(
+                          label: "الاحتياجات والتطلعات",
+                        ),
+                        RowPointWidget(
+                          label: "التوقعات",
+                        ),
+                        RowPointWidget(
+                          label: "الاختلافات بين الذكور والإناث",
+                        ),
+                        RowPointWidget(
+                          label: "الثقافة",
+                        ),
+                        RowPointWidget(
+                          label: "التقاليد",
+                        ),
+                        RowPointWidget(
+                          label: "الأعراف",
+                        ),
                       ],
                     ),
                     ExpandableCard(
@@ -95,12 +121,13 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).errorColor.withOpacity(0.3),
                       widgets: [
                         RowPointWidget(
-                          label: "",
+                          label: "الأسباب",
                         ),
-
+                        RowPointWidget(
+                          label: "القضية التي تؤمنين بها",
+                        ),
                       ],
                     ),
-
                     ExpandableCard(
                       index: 0,
                       title: "الموضوع (ماذا؟)",
@@ -108,12 +135,22 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).errorColor.withOpacity(0.3),
                       widgets: [
                         RowPointWidget(
-                          label: "",
+                          label: "حددي أهدافك",
                         ),
-
+                        RowPointWidget(
+                          label: "المصادر",
+                        ),
+                        RowPointWidget(
+                          label: " ابحثي عن  قصص واقعية ومؤثرة",
+                        ),
+                        RowPointWidget(
+                          label: " إحصائيات و أرقام ودلائل ",
+                        ),
+                        RowPointWidget(
+                          label: "ضبط الوقت",
+                        ),
                       ],
                     ),
-
                     ExpandableCard(
                       index: 0,
                       title: "الوقت المناسب (متى؟)",
@@ -121,12 +158,13 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).errorColor.withOpacity(0.3),
                       widgets: [
                         RowPointWidget(
-                          label: "",
+                          label: "وقت التقديم (مدة اللقاء)",
                         ),
-
+                        RowPointWidget(
+                          label: "مدة التقديم ",
+                        ),
                       ],
                     ),
-
                     ExpandableCard(
                       index: 0,
                       title: "المكان (أين؟)",
@@ -134,9 +172,18 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                       color: theme(context).errorColor.withOpacity(0.3),
                       widgets: [
                         RowPointWidget(
-                          label: "",
+                          label: 'الوصول "مبكرًا كفاية"',
                         ),
-
+                        RowPointWidget(
+                          label: "قومي بزيارة المكان في وقت مبكر",
+                        ),
+                        RowPointWidget(
+                          label: "مكونات القاعة وتنظيمها",
+                        ),
+                        RowPointWidget(
+                          label:
+                              "تدربي على استخدام الميكروفون أو/و المساعدات البصرية",
+                        ),
                       ],
                     ),
                     SizedBox(

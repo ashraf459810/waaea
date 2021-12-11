@@ -7,6 +7,7 @@ import 'package:wa3iaa/UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaHquqScre
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMsharakaScreen/MstawyatMsharakaScreen.dart';
 import 'package:wa3iaa/UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthAfkarScreen.dart';
 import 'package:wa3iaa/UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthTahdyatScreen.dart';
+import 'package:wa3iaa/UI/Screens/SecondPart/MultiAdawatIntexabScreen/ThahyStrategytScreen.dart';
 import 'package:wa3iaa/UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MathmuunXattabScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -272,7 +273,7 @@ class AdawatIntexabDetailsScreen extends StatelessWidget {
                       color: Constants.orangeColor,
                       textColor: Colors.white,
                       onPressed: (context) => Navigator.pushNamed(
-                          context, MathmuunXattabScreen.route),
+                          context, ThahyStrategytScreen.route),
                     ),
                     SizedBox(
                       height: 30,

@@ -59,6 +59,7 @@ import 'UI/Screens/FirstPart/MultiMsharakaScreen/TaqtasrMsharakaScreen.dart';
 import 'UI/Screens/DetailsScreen/TamkeenMaharatDetailsScreen.dart';
 import 'UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthAfkarScreen.dart';
 import 'UI/Screens/SecondPart/MultiAdawatIntexabScreen/BahthTahdyatScreen.dart';
+import 'UI/Screens/SecondPart/MultiAdawatIntexabScreen/ThahyStrategytScreen.dart';
 import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/ElqaaXattabScreen.dart';
 import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MakunatXattabScreen.dart';
 import 'UI/Screens/SecondPart/MultiTamkeenMaharatScreen/MathmuunXattabScreen.dart';
@@ -172,6 +173,7 @@ class MyApp extends StatelessWidget {
             AdawatIntexabDetailsScreen.route: (context) => AdawatIntexabDetailsScreen(),
             BahthTahdyatScreen.route: (context) => BahthTahdyatScreen(),
             BahthAfkarScreen.route: (context) => BahthAfkarScreen(),
+            ThahyStrategytScreen.route: (context) => ThahyStrategytScreen(),
 
           },
         ));
