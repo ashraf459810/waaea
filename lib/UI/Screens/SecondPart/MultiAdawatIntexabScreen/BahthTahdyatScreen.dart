@@ -36,7 +36,7 @@ class BahthTahdyatScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "بعض التحديات التي قد تواجهكبعض التحديات التي قد تواجهك",
+                      "بعض التحديات التي قد تواجهك",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Colors.black87,
                           fontSize: 30,

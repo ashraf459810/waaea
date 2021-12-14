@@ -207,9 +207,10 @@ class CedawDetailsScreen extends StatelessWidget {
                             context: context,
                             builder: (builder) => QuestionAndListAnswer(
                               context: context,
-                              questionLabel:
-                                  'ما هو التحفظ؟',
-                              listAnswer: ['التحفظ هو إعلان رسمي تقدمه الدول المصادقة على الاتفاقية الى الامين العام للامم المتحدة تصرح فيه عن عدم التزامها جزء أو أجزاء معينّة من الاتفاقية.'],
+                              questionLabel: 'ما هو التحفظ؟',
+                              listAnswer: [
+                                'التحفظ هو إعلان رسمي تقدمه الدول المصادقة على الاتفاقية الى الامين العام للامم المتحدة تصرح فيه عن عدم التزامها جزء أو أجزاء معينّة من الاتفاقية.'
+                              ],
                             ),
                           ),
                       text: "ما هو التحفظ؟",
@@ -220,8 +221,8 @@ class CedawDetailsScreen extends StatelessWidget {
                       text: "هل تحفظ العراق على أحد المواد؟",
                       context: context),
                   RowQuestionWidget(
-                      onPressed: (context) => Navigator.pushNamed(
-                          context, NmathjCedawScreen.route),
+                      onPressed: (context) =>
+                          Navigator.pushNamed(context, NmathjCedawScreen.route),
                       text:
                           "مناذج من النصوص الوطنية العراقية التي تتناقض مع أحكام الاتفاقية",
                       context: context),

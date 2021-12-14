@@ -44,7 +44,7 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 0, vertical: 10),
                       child: Text(
-                        "الآليات غري التعاقدية لحامية حقوق الإنسان",
+                        "الآليات غير التعاقدية لحامية حقوق الإنسان",
                         style: theme(context).textTheme.headline5!.copyWith(
                             color: theme(context).primaryColor,
                             fontSize: 30,

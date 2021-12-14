@@ -234,7 +234,7 @@ class IstihrathScreen extends StatelessWidget {
                       context: context, text: "الاستعداد للاستعراض الكامل"),
                   rowQuestionWidget(
                     context: context,
-                    text: "كيف ميكن للمنظامت غري الحكومية أن تشارك؟",
+                    text: "كيف يمكن للمنظامت غري الحكومية أن تشارك؟",
                     onPressed: () => showModalBottomSheet(
                       enableDrag: true,
                       isScrollControlled: true,
@@ -242,7 +242,7 @@ class IstihrathScreen extends StatelessWidget {
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
                         questionLabel:
-                            'كيف ميكن للمنظامت غري الحكومية أن تشارك؟',
+                            'كيف يمكن للمنظامت غري الحكومية أن تشارك؟',
                         listAnswer: [
                           'المشاركة في إعداد التقرير الوطني.',
                           'التأثير على الدولة لإقرار التقرير النهائي بعد الأخذ بعين الاعتبار التوصيات.',
@@ -254,7 +254,7 @@ class IstihrathScreen extends StatelessWidget {
                   ),
                   rowQuestionWidget(
                     context: context,
-                    text: "كيف ميكنك متابعة نتائج الاستعراض الدوري الشامل؟",
+                    text: "كيف يمكن متابعة نتائج الاستعراض الدوري الشامل؟",
                     onPressed: () => showModalBottomSheet(
                       enableDrag: true,
                       isScrollControlled: true,
@@ -262,7 +262,7 @@ class IstihrathScreen extends StatelessWidget {
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
                         questionLabel:
-                            'كيف ميكنك متابعة نتائج الاستعراض الدوري الشامل؟',
+                            'كيف يمكن متابعة نتائج الاستعراض الدوري الشامل؟',
                         listAnswer: [
                           'العمل مع الجهات الوطنية بما فيها الحكومة والبرلمان والقضاء والمؤسسات الوطنية لحقوق الانسان من اجل مساعدة الدولة على الوفاء بالتزامات.',
                           'دراسة حالة حقوق الإنسان والخطوات المتخذة محلياً لتنفيذ نتائج الاستعراض الدوري الشامل.',
