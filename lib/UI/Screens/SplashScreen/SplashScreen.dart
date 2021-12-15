@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Screens/HomeScreen/HomeScreen.dart';
+import 'package:wa3iaa/UI/Screens/LandingScreen/LandingScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../Constants.dart';
@@ -16,9 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 1300), () {
+    Future.delayed(const Duration(milliseconds: 1000), () {
       // Do Something Before it Goes to Home Screen
-      Navigator.pushNamed(context, HomeScreen.route);
+      Navigator.pushNamed(context, LandingScreen.route);
     });
   }
 

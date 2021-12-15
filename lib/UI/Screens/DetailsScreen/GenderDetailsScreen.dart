@@ -21,7 +21,6 @@ class GenderDetailsScreen extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Stack(
                     children: [
                       Container(
@@ -29,8 +28,8 @@ class GenderDetailsScreen extends StatelessWidget {
                         color: theme(context).primaryColor,
                       ),
                       Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(Constants.headerGender,height:MediaQuery.of(context).size.height/4.5,),
+                        padding: const EdgeInsets.only(top: 40.0),
+                        child: Image.asset(Constants.headerGender,height:MediaQuery.of(context).size.height/5.5,),
                       ))
                     ],
                   ),

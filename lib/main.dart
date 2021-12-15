@@ -167,16 +167,17 @@ class MyApp extends StatelessWidget {
             /// Second Part
             SubCategories2Screen.route: (context) => SubCategories2Screen(),
             // Tamkeen Maharat Screens
-            TamkeenMaharatDetaillsScreen.route: (context) => TamkeenMaharatDetaillsScreen(),
+            TamkeenMaharatDetaillsScreen.route: (context) =>
+                TamkeenMaharatDetaillsScreen(),
             MathmuunXattabScreen.route: (context) => MathmuunXattabScreen(),
             MakunatXattabScreen.route: (context) => MakunatXattabScreen(),
             ElqaaXattabScreen.route: (context) => ElqaaXattabScreen(),
             // Adawat Intexab Screens
-            AdawatIntexabDetailsScreen.route: (context) => AdawatIntexabDetailsScreen(),
+            AdawatIntexabDetailsScreen.route: (context) =>
+                AdawatIntexabDetailsScreen(),
             BahthTahdyatScreen.route: (context) => BahthTahdyatScreen(),
             BahthAfkarScreen.route: (context) => BahthAfkarScreen(),
             ThahyStrategytScreen.route: (context) => ThahyStrategytScreen(),
-
           },
         ));
   }

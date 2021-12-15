@@ -30,24 +30,23 @@ class MaraaDetailsScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Stack(
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-                child: Column(
-                  children: [
-                    Container(
-                      child: Image.asset(
-                        Constants.maraaCover,
-                        fit: BoxFit.contain,
-                      ),
-                      height: MediaQuery.of(context).size.height / 4,
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.symmetric(vertical: 25),
-                      color: theme(context).primaryColor,
+              Column(
+                children: [
+                  Container(
+                    child: Image.asset(
+                      Constants.maraaCover,
+                      fit: BoxFit.contain,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
+                    height: MediaQuery.of(context).size.height / 4,
+                    width: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.only(top: 50,bottom: 10),
+                    color: theme(context).primaryColor,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: Align(
+                      alignment: Alignment.centerRight,
                       child: Text(
                         "المرأة والأمن والسلام",
                         style: theme(context).textTheme.headline2!.copyWith(
@@ -56,157 +55,157 @@ class MaraaDetailsScreen extends StatelessWidget {
                             fontFamily: 'R016'),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 10),
-                      child: Text(
-                        "لا يقتصر الأمن على مفهومه العسكري بل يعنينا بنظوره الإنسان أي القدرة على الالتحاق بالمدرسة وعلى الوصول إلى الخدمات الصحية والقدرة على العمل والوصول إلى العدالة، وبناء قدراتنا في مواجهة التهديدات.",
-                        style: theme(context).textTheme.bodyText1!.copyWith(
-                              color: Colors.black54,
-                              fontSize: 20,
-                            ),
-                      ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: Text(
+                      "لا يقتصر الأمن على مفهومه العسكري بل يعنينا بنظوره الإنسان أي القدرة على الالتحاق بالمدرسة وعلى الوصول إلى الخدمات الصحية والقدرة على العمل والوصول إلى العدالة، وبناء قدراتنا في مواجهة التهديدات.",
+                      style: theme(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.black54,
+                            fontSize: 20,
+                          ),
                     ),
-                    SizedBox(
-                      height: 10,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 4),
+                    child: Row(
+                      children: [
+                        Expanded(child: circleWidget(context: context,label: "7.9%",title: "من الأرامل لسنة 2016")),
+                        Expanded(child: circleWidget(context: context,label: "4.3%",title: "من الأطفال المتوفي \n أحد والديهم أو كلاهم في عام 2018")),
+                      ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 4),
-                      child: Row(
-                        children: [
-                          Expanded(child: circleWidget(context: context,label: "7.9%",title: "من الأرامل لسنة 2016")),
-                          Expanded(child: circleWidget(context: context,label: "4.3%",title: "من الأطفال المتوفي \n أحد والديهم أو كلاهم في عام 2018")),
-                        ],
-                      ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 4),
+                    child: Row(
+                      children: [
+                        Expanded(child: circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام 2014 وأغلبها أسر تعيلها النساء")),
+                        Expanded(child: circleWidget(context: context,label: "14.8%",title: "من الأميي لسنة 2016")),
+                      ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 4),
-                      child: Row(
-                        children: [
-                          Expanded(child: circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام 2014 وأغلبها أسر تعيلها النساء")),
-                          Expanded(child: circleWidget(context: context,label: "14.8%",title: "من الأميي لسنة 2016")),
-                        ],
-                      ),
-                    ),
-                    circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام  2014  \n وأغلبها أسر تعيلها النساء"),
+                  ),
+                  circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام  2014  \n وأغلبها أسر تعيلها النساء"),
 
-                    Padding(
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 1),
+                    child: Text(
+                      "بلغ عدد العوائل النازحة للفترة من حزيران/2014 ولغاية توز/2018) 892311 (ألف عائلة منهم (123135 (ألف امرأة معيلة لأسرة بالإضافة إلى شريحة من الأطفال المنتسبي لداعش نتيجة للعنف الجنسي الذي سلط على أمهاتهم، وهم يفتقدون لكافة حقوقهم المدنية والإنسانية.",
+                      style: theme(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.black54,
+                            fontSize: 12,
+                          ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: Text(
+                      "تنطوي النزاعات التي على عنف يؤدي إلى تأثي غي متكافئ على النساء والفتيات، ويضاعف من حدة عدم المساواة والتمييز بي الجنسي. ورغم أن النساء عناصر فاعلة أيضاً في إحلال السلام في النزاعات المسلحة، لكن أدوارهن كلاعبات أساسيات في التغيي وإحلال ُعترف به بشكل كافي.  \n\n السلام ل ي يحتاج تحقيق السلام وحفظه إلى مواجهة العوائق ُّ الاجتمعية والثقافية والسياسية التي تحد من المشاركة الكاملة للمرأة في حل النزاعات وإحلال السلام إذ تزيد النزاعات من حدة مخاطر انتهاكات حقوقهن الإنسانية وتزايد العنف الجنسي ضد النساء والفتيات.\n\n  إن قضايا الأمن والسلام للنساء ل تقتصر فقـط على القانون الدولي لحقوق الإنسان، بل تناولها أيضاً القانون الدولي الإنسان (اتفاقيات جنيف لعام 1949 وبروتوكولاتها الإضافية لعام 1977 (حيث اعترف بأن ّ النساء يواجهن مشـاكل محددة فـي النزاعات المسلحة، ّع المرأة أثناء النزاع بحقوق مساوية وأكد على ضـرورة تت لحقوق الرجل ســواء كانــت مقاتلة أو شخصاً محمياً، بالإضافـة إلـى حميتها مـن الإغتصاب أو الإكراه علـى البغاء أو أي شكل مــن أشـكال العنف المهي",
+                      style: theme(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.black54,
+                            fontSize: 20,
+                          ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  GestureDetector(
+                    onTap: () =>Navigator.pushNamed(context, Qarar1325Screen.route),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 1),
-                      child: Text(
-                        "بلغ عدد العوائل النازحة للفترة من حزيران/2014 ولغاية توز/2018) 892311 (ألف عائلة منهم (123135 (ألف امرأة معيلة لأسرة بالإضافة إلى شريحة من الأطفال المنتسبي لداعش نتيجة للعنف الجنسي الذي سلط على أمهاتهم، وهم يفتقدون لكافة حقوقهم المدنية والإنسانية.",
-                        style: theme(context).textTheme.bodyText1!.copyWith(
-                              color: Colors.black54,
-                              fontSize: 12,
-                            ),
-                        textAlign: TextAlign.center,
+                          horizontal: 10, vertical: 2),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: theme(context).primaryColor),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "القرار رقم 1325",
+                            style: theme(context)
+                                .textTheme
+                                .headline2!
+                                .copyWith(color: Colors.white, fontSize: 20),
+                          ),
+                          trailing: Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Padding(
+                  ),
+                  GestureDetector(
+                    onTap: () =>Navigator.pushNamed(context, AjendaMaraaScreen.route),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 10),
-                      child: Text(
-                        "تنطوي النزاعات التي على عنف يؤدي إلى تأثي غي متكافئ على النساء والفتيات، ويضاعف من حدة عدم المساواة والتمييز بي الجنسي. ورغم أن النساء عناصر فاعلة أيضاً في إحلال السلام في النزاعات المسلحة، لكن أدوارهن كلاعبات أساسيات في التغيي وإحلال ُعترف به بشكل كافي.  \n\n السلام ل ي يحتاج تحقيق السلام وحفظه إلى مواجهة العوائق ُّ الاجتمعية والثقافية والسياسية التي تحد من المشاركة الكاملة للمرأة في حل النزاعات وإحلال السلام إذ تزيد النزاعات من حدة مخاطر انتهاكات حقوقهن الإنسانية وتزايد العنف الجنسي ضد النساء والفتيات.\n\n  إن قضايا الأمن والسلام للنساء ل تقتصر فقـط على القانون الدولي لحقوق الإنسان، بل تناولها أيضاً القانون الدولي الإنسان (اتفاقيات جنيف لعام 1949 وبروتوكولاتها الإضافية لعام 1977 (حيث اعترف بأن ّ النساء يواجهن مشـاكل محددة فـي النزاعات المسلحة، ّع المرأة أثناء النزاع بحقوق مساوية وأكد على ضـرورة تت لحقوق الرجل ســواء كانــت مقاتلة أو شخصاً محمياً، بالإضافـة إلـى حميتها مـن الإغتصاب أو الإكراه علـى البغاء أو أي شكل مــن أشـكال العنف المهي",
-                        style: theme(context).textTheme.bodyText1!.copyWith(
-                              color: Colors.black54,
-                              fontSize: 20,
-                            ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    GestureDetector(
-                      onTap: () =>Navigator.pushNamed(context, Qarar1325Screen.route),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 8),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 2),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: theme(context).primaryColor),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: ListTile(
-                            title: Text(
-                              "القرار رقم 1325",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(color: Colors.white, fontSize: 20),
-                            ),
-                            trailing: Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
+                          horizontal: 10, vertical: 2),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: theme(context).accentColor),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "أجندة ”المرأة والأمن والسلام“",
+                            style: theme(context)
+                                .textTheme
+                                .headline2!
+                                .copyWith(color: Colors.white, fontSize: 20),
                           ),
+                          trailing: Icon(Icons.arrow_forward_ios_outlined,
+                              color: Colors.white),
                         ),
                       ),
                     ),
-                    GestureDetector(
-                      onTap: () =>Navigator.pushNamed(context, AjendaMaraaScreen.route),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 8),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 2),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: theme(context).accentColor),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: ListTile(
-                            title: Text(
-                              "أجندة ”المرأة والأمن والسلام“",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(color: Colors.white, fontSize: 20),
-                            ),
-                            trailing: Icon(Icons.arrow_forward_ios_outlined,
-                                color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: () =>Navigator.pushNamed(context, XuttatWatanyaScreen.route,),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.deepOrangeAccent),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "الخطة الوطنية للقرار 1325",
+                            style: theme(context)
+                                .textTheme
+                                .headline2!
+                                .copyWith(color: Colors.white, fontSize: 20),
                           ),
+                          trailing: Icon(Icons.arrow_forward_ios_outlined,
+                              color: Colors.white),
                         ),
                       ),
                     ),
-                    GestureDetector(
-                      onTap: () =>Navigator.pushNamed(context, XuttatWatanyaScreen.route,),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 8),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 2),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.deepOrangeAccent),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: ListTile(
-                            title: Text(
-                              "الخطة الوطنية للقرار 1325",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(color: Colors.white, fontSize: 20),
-                            ),
-                            trailing: Icon(Icons.arrow_forward_ios_outlined,
-                                color: Colors.white),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 20,),
-                  ],
-                ),
+                  ),
+                  SizedBox(height: 20,),
+                ],
               ),
               Positioned(
                 child: SafeArea(

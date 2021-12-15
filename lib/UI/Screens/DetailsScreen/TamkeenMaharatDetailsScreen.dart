@@ -20,196 +20,192 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Stack(
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-                child: Column(
-                  children: [
-                    Container(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "العامل يحتاجك لتكوين صوته",
-                        style: theme(context).textTheme.headline2!.copyWith(
-                            color: Colors.white,
-                            fontSize: 35,
-                            fontFamily: 'R016'),
+              Column(
+                children: [
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "العامل يحتاجك لتكوين صوته",
+                      style: theme(context).textTheme.headline2!.copyWith(
+                          color: Colors.white,
+                          fontSize: 35,
+                          fontFamily: 'R016'),
+                    ),
+                    height: MediaQuery.of(context).size.height / 4,
+                    width: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.only(left: 25, right: 25, top: 55),
+                    color: theme(context).primaryColor,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 30),
+                    child: Text(
+                      "العامل سيكون آمناً بنسائه التي لها صوت ورؤية وبصمة في المجتمع ًا في التغيري في هذا العامل نحو ميكنك أن تكون سبب الأفضل اذا استطعتي ان تقولي الكلمة المناسبة في الوقت المناسب بالطريقة المناسبة للأشخاص المناسبني",
+                      style: theme(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.black54,
+                            fontSize: 20,
+                          ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "توليد الثقة",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: "ابحثي عن نقاط قوتك",
                       ),
-                      height: MediaQuery.of(context).size.height / 4,
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.only(left: 25, right: 25, top: 55),
-                      color: theme(context).primaryColor,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 30),
-                      child: Text(
-                        "العامل سيكون آمناً بنسائه التي لها صوت ورؤية وبصمة في المجتمع ًا في التغيري في هذا العامل نحو ميكنك أن تكون سبب الأفضل اذا استطعتي ان تقولي الكلمة المناسبة في الوقت المناسب بالطريقة المناسبة للأشخاص المناسبني",
-                        style: theme(context).textTheme.bodyText1!.copyWith(
-                              color: Colors.black54,
-                              fontSize: 20,
-                            ),
+                      RowPointWidget(
+                        label: "ضعي أهداف واضحة قابلة للتحقيق",
                       ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "توليد الثقة",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: "ابحثي عن نقاط قوتك",
-                        ),
-                        RowPointWidget(
-                          label: "ضعي أهداف واضحة قابلة للتحقيق",
-                        ),
-                        RowPointWidget(
-                          label: "استخدمي التصور الإبداعي",
-                        ),
-                        RowPointWidget(
-                          label: "توقعي الأفضل في الآخرين",
-                        ),
-                        RowPointWidget(
-                          label: "كوين واضحة ومحددة",
-                        ),
-                      ],
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "الفئة المستهدفة (من؟)",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: "المناصب",
-                        ),
-                        RowPointWidget(
-                          label: "الوظيفة",
-                        ),
-                        RowPointWidget(
-                          label: "المستوى التعليمي",
-                        ),
-                        RowPointWidget(
-                          label: "متوسط أعمارهم",
-                        ),
-                        RowPointWidget(
-                          label: "الاحتياجات والتطلعات",
-                        ),
-                        RowPointWidget(
-                          label: "التوقعات",
-                        ),
-                        RowPointWidget(
-                          label: "الاختلافات بين الذكور والإناث",
-                        ),
-                        RowPointWidget(
-                          label: "الثقافة",
-                        ),
-                        RowPointWidget(
-                          label: "التقاليد",
-                        ),
-                        RowPointWidget(
-                          label: "الأعراف",
-                        ),
-                      ],
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "الدوافع (لماذا؟)",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: "الأسباب",
-                        ),
-                        RowPointWidget(
-                          label: "القضية التي تؤمنين بها",
-                        ),
-                      ],
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "الموضوع (ماذا؟)",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: "حددي أهدافك",
-                        ),
-                        RowPointWidget(
-                          label: "المصادر",
-                        ),
-                        RowPointWidget(
-                          label: " ابحثي عن  قصص واقعية ومؤثرة",
-                        ),
-                        RowPointWidget(
-                          label: " إحصائيات و أرقام ودلائل ",
-                        ),
-                        RowPointWidget(
-                          label: "ضبط الوقت",
-                        ),
-                      ],
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "الوقت المناسب (متى؟)",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: "وقت التقديم (مدة اللقاء)",
-                        ),
-                        RowPointWidget(
-                          label: "مدة التقديم ",
-                        ),
-                      ],
-                    ),
-                    ExpandableCard(
-                      index: 0,
-                      title: "المكان (أين؟)",
-                      image: null,
-                      color: theme(context).errorColor.withOpacity(0.3),
-                      widgets: [
-                        RowPointWidget(
-                          label: 'الوصول "مبكرًا كفاية"',
-                        ),
-                        RowPointWidget(
-                          label: "قومي بزيارة المكان في وقت مبكر",
-                        ),
-                        RowPointWidget(
-                          label: "مكونات القاعة وتنظيمها",
-                        ),
-                        RowPointWidget(
-                          label:
-                              "تدربي على استخدام الميكروفون أو/و المساعدات البصرية",
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    RowCategoryWidget(
-                      context: context,
-                      text: "مضمون الخطاب",
-                      color: Constants.orangeColor,
-                      textColor: Colors.white,
-                      onPressed: (context) => Navigator.pushNamed(
-                          context, MsharakaHquqScreen.route),
-                    ),
-                    RowCategoryWidget(
-                      context: context,
-                      text: "القواعد الذهبية للتواصل الفعال",
-                      color: theme(context).primaryColor,
-                      textColor: Colors.white,
-                      onPressed: (context) => Navigator.pushNamed(
-                          context, MathmuunXattabScreen.route),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                  ],
-                ),
+                      RowPointWidget(
+                        label: "استخدمي التصور الإبداعي",
+                      ),
+                      RowPointWidget(
+                        label: "توقعي الأفضل في الآخرين",
+                      ),
+                      RowPointWidget(
+                        label: "كوين واضحة ومحددة",
+                      ),
+                    ],
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "الفئة المستهدفة (من؟)",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: "المناصب",
+                      ),
+                      RowPointWidget(
+                        label: "الوظيفة",
+                      ),
+                      RowPointWidget(
+                        label: "المستوى التعليمي",
+                      ),
+                      RowPointWidget(
+                        label: "متوسط أعمارهم",
+                      ),
+                      RowPointWidget(
+                        label: "الاحتياجات والتطلعات",
+                      ),
+                      RowPointWidget(
+                        label: "التوقعات",
+                      ),
+                      RowPointWidget(
+                        label: "الاختلافات بين الذكور والإناث",
+                      ),
+                      RowPointWidget(
+                        label: "الثقافة",
+                      ),
+                      RowPointWidget(
+                        label: "التقاليد",
+                      ),
+                      RowPointWidget(
+                        label: "الأعراف",
+                      ),
+                    ],
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "الدوافع (لماذا؟)",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: "الأسباب",
+                      ),
+                      RowPointWidget(
+                        label: "القضية التي تؤمنين بها",
+                      ),
+                    ],
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "الموضوع (ماذا؟)",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: "حددي أهدافك",
+                      ),
+                      RowPointWidget(
+                        label: "المصادر",
+                      ),
+                      RowPointWidget(
+                        label: " ابحثي عن  قصص واقعية ومؤثرة",
+                      ),
+                      RowPointWidget(
+                        label: " إحصائيات و أرقام ودلائل ",
+                      ),
+                      RowPointWidget(
+                        label: "ضبط الوقت",
+                      ),
+                    ],
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "الوقت المناسب (متى؟)",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: "وقت التقديم (مدة اللقاء)",
+                      ),
+                      RowPointWidget(
+                        label: "مدة التقديم ",
+                      ),
+                    ],
+                  ),
+                  ExpandableCard(
+                    index: 0,
+                    title: "المكان (أين؟)",
+                    image: null,
+                    color: theme(context).errorColor.withOpacity(0.3),
+                    widgets: [
+                      RowPointWidget(
+                        label: 'الوصول "مبكرًا كفاية"',
+                      ),
+                      RowPointWidget(
+                        label: "قومي بزيارة المكان في وقت مبكر",
+                      ),
+                      RowPointWidget(
+                        label: "مكونات القاعة وتنظيمها",
+                      ),
+                      RowPointWidget(
+                        label:
+                            "تدربي على استخدام الميكروفون أو/و المساعدات البصرية",
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  RowCategoryWidget(
+                    context: context,
+                    text: "مضمون الخطاب",
+                    color: Constants.orangeColor,
+                    textColor: Colors.white,
+                    onPressed: (context) => Navigator.pushNamed(
+                        context, MsharakaHquqScreen.route),
+                  ),
+                  RowCategoryWidget(
+                    context: context,
+                    text: "القواعد الذهبية للتواصل الفعال",
+                    color: theme(context).primaryColor,
+                    textColor: Colors.white,
+                    onPressed: (context) => Navigator.pushNamed(
+                        context, MathmuunXattabScreen.route),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
               ),
               Positioned(
                 child: SafeArea(

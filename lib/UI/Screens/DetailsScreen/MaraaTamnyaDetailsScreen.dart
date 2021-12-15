@@ -31,107 +31,103 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Stack(
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-                child: Column(
-                  children: [
-                    Container(
-                      child: Image.asset(
-                        Constants.circle1,
-                        fit: BoxFit.contain,
-                      ),
-                      height: MediaQuery.of(context).size.height / 4,
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.symmetric(vertical: 25),
-                      color: theme(context).primaryColor,
+              Column(
+                children: [
+                  Container(
+                    child: Image.asset(
+                      Constants.circle1,
+                      fit: BoxFit.contain,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 20),
-                      child: Text(
-                        "المرأة والتنمية المستدامة رؤية جديدة للعامل الذي نريده",
-                        style: theme(context).textTheme.headline2!.copyWith(
-                            color: Colors.black87,
-                            fontSize: 30,
-                            fontFamily: 'R016'),
-                      ),
+                    height: MediaQuery.of(context).size.height / 4,
+                    width: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.symmetric(vertical: 25),
+                    color: theme(context).primaryColor,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 20),
+                    child: Text(
+                      "المرأة والتنمية المستدامة رؤية جديدة للعامل الذي نريده",
+                      style: theme(context).textTheme.headline2!.copyWith(
+                          color: Colors.black87,
+                          fontSize: 30,
+                          fontFamily: 'R016'),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 10),
-                      child: Text(
-                        " في بداية الألفية، اجتمع قادة العامل عام 2000 في الأمم المُتحدة لوضع رؤية واسعة لمُحاربة الفقر بأبعاده المُتعددة. تُرجمت هذه الرؤية إلى أهداف الألفية الإمنائية الثامنية التي استهدفت الدول النامية والتزمت الدول بتحقيقها خلال فترة 2000-2015 .جرت مراجعتها على المستوى الدولي، وفي عام 2015 تبنت الدول الأعضاء في الهيئة العامة للأمم المتحدة وثيقة \"تحويل عالمنا: خطة التنمية المستدامة لعام 2030.\" اعتمدت جميع الدول الأعضاء في الأمم المتحدة في عام 2015 أهداف التنمية المستدامة (SDGs ،(والتي تُ ً عرف أيضا باسم الأهداف العالمية ، باعتبارها دعوة عالمية للعمل على إنهاء الفقر وحامية الكوكب وضامن متتع جميع الناس بالسلام والازدهار بحلول عام 0302 وبجوانب الأبعاد الثلاثة للتنمية المستدامة: الأبعاد البيئية والاقتصادية والاجتامعية.",
-                        style: theme(context).textTheme.bodyText1!.copyWith(
-                              color: Colors.black54,
-                              fontSize: 20,
-                            ),
-                      ),
-                    ),
-
-                    SizedBox(
-                      height: 10,
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 10),
-                      child: Image.asset(
-                        Constants.sections17,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 10),
-                      child: Image.asset(
-                        Constants.mthl5,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-
-                    GestureDetector(
-                      onTap: () => Navigator.pushNamed(
-                        context,
-                        Ta7qeeqMasawatScreen.route,
-                      ),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 8),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 2),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Constants.orangeColor),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: ListTile(
-                            title: Text(
-                              "الهدف الخامس تحقيق المساواة بني الجنسني",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline2!
-                                  .copyWith(color: Colors.white, fontSize: 22),
-                            ),
-                            trailing: Icon(Icons.arrow_forward_ios_outlined,
-                                color: Colors.white),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: Text(
+                      " في بداية الألفية، اجتمع قادة العامل عام 2000 في الأمم المُتحدة لوضع رؤية واسعة لمُحاربة الفقر بأبعاده المُتعددة. تُرجمت هذه الرؤية إلى أهداف الألفية الإمنائية الثامنية التي استهدفت الدول النامية والتزمت الدول بتحقيقها خلال فترة 2000-2015 .جرت مراجعتها على المستوى الدولي، وفي عام 2015 تبنت الدول الأعضاء في الهيئة العامة للأمم المتحدة وثيقة \"تحويل عالمنا: خطة التنمية المستدامة لعام 2030.\" اعتمدت جميع الدول الأعضاء في الأمم المتحدة في عام 2015 أهداف التنمية المستدامة (SDGs ،(والتي تُ ً عرف أيضا باسم الأهداف العالمية ، باعتبارها دعوة عالمية للعمل على إنهاء الفقر وحامية الكوكب وضامن متتع جميع الناس بالسلام والازدهار بحلول عام 0302 وبجوانب الأبعاد الثلاثة للتنمية المستدامة: الأبعاد البيئية والاقتصادية والاجتامعية.",
+                      style: theme(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.black54,
+                            fontSize: 20,
                           ),
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: Image.asset(
+                      Constants.sections17,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: Image.asset(
+                      Constants.mthl5,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  GestureDetector(
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      Ta7qeeqMasawatScreen.route,
+                    ),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Constants.orangeColor),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "الهدف الخامس تحقيق المساواة بني الجنسني",
+                            style: theme(context)
+                                .textTheme
+                                .headline2!
+                                .copyWith(color: Colors.white, fontSize: 22),
+                          ),
+                          trailing: Icon(Icons.arrow_forward_ios_outlined,
+                              color: Colors.white),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                  ],
-                ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
               ),
               Positioned(
                 child: SafeArea(
