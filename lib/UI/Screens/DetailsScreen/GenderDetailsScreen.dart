@@ -155,7 +155,7 @@ class GenderDetailsScreen extends StatelessWidget {
                     height: 10,
                   ),
                   CategoryWidget(
-                    title: "الفرق بني النوع الاجتامعي والجنس",
+                    title: "الفرق بين النوع الاجتامعي والجنس",
                     bgColor: Constants.lightPinkColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>

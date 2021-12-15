@@ -38,42 +38,35 @@ class SubCategories2Screen extends StatelessWidget {
               .copyWith(color: theme(context).primaryColor, fontFamily: 'R016'),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: MediaQuery.of(context).size.height +
-              MediaQuery.of(context).size.height / 8,
-          width: MediaQuery.of(context).size.width,
-          // color: Constants.lightBgColor,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(Constants.bgFlower),
-              fit: BoxFit.cover,
-            ),
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(Constants.bgFlower),
+            fit: BoxFit.cover,
           ),
-          child: SingleChildScrollView(
-            child: Wrap(
-              crossAxisAlignment: WrapCrossAlignment.end,
-              alignment: WrapAlignment.center,
-              children: [
-                CardGrid(
-                  onPressed: () => Navigator.pushNamed(
-                      context, TamkeenMaharatDetaillsScreen.route),
-                  title: "تمكين مهارات الخطاب",
-                  subTitle: "",
-                  color: theme(context).primaryColor,
-                  textColor: theme(context).backgroundColor,
-                ),
-                CardGrid(
-                  onPressed: () => Navigator.pushNamed(
-                      context, AdawatIntexabDetailsScreen.route),
-                  title: "ادوات الحملة الانتخابية",
-                  subTitle: "",
-                  color: theme(context).accentColor,
-                  textColor: theme(context).backgroundColor,
-                ),
-              ],
+        ),
+        child: Wrap(
+          crossAxisAlignment: WrapCrossAlignment.end,
+          alignment: WrapAlignment.center,
+          children: [
+            CardGrid(
+              onPressed: () => Navigator.pushNamed(
+                  context, TamkeenMaharatDetaillsScreen.route),
+              title: "تمكين مهارات الخطاب",
+              subTitle: "",
+              color: theme(context).primaryColor,
+              textColor: theme(context).backgroundColor,
             ),
-          ),
+            CardGrid(
+              onPressed: () => Navigator.pushNamed(
+                  context, AdawatIntexabDetailsScreen.route),
+              title: "ادوات الحملة الانتخابية",
+              subTitle: "",
+              color: theme(context).accentColor,
+              textColor: theme(context).backgroundColor,
+            ),
+          ],
         ),
       ),
     );
