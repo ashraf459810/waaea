@@ -18,6 +18,7 @@ import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
+import 'UI/Screens/FirstPart/MultiHmayaScreen/AlyatTa3aqudyaScreen.dart';
 import 'UI/Screens/FirstPart/MultiMaraaScreen/MarahlScreen.dart';
 import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
 import 'UI/Screens/FirstPart/MultiMsharakaScreen/MsharakaHquqScreen.dart';
@@ -118,6 +119,7 @@ class MyApp extends StatelessWidget {
             ItarScreen.route: (context) => ItarScreen(),
             MasadrHmayaScreen.route: (context) => MasadrHmayaScreen(),
             IraqProtocolScreen.route: (context) => IraqProtocolScreen(),
+            AlyatTa3aqudyaScreen.route: (context) => AlyatTa3aqudyaScreen(),
             //Halamya Screens (Section 3)
             HalamyaDetailsScreen.route: (context) => HalamyaDetailsScreen(),
             AlmasawatScreen.route: (context) => AlmasawatScreen(),

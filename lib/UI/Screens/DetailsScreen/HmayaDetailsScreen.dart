@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/AlyatTa3aqudyaScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/GhairTahaqdyaScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/IltzamatScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/ItarScreen.dart';
@@ -89,7 +90,7 @@ class HmayaDetailsScreen extends StatelessWidget {
                         bgColor: theme(context).primaryColor,
                         textColor: theme(context).backgroundColor,
                         onPressed: () =>
-                            Navigator.pushNamed(context, Hquuq1Screen.route)),
+                            Navigator.pushNamed(context, AlyatTa3aqudyaScreen.route)),
                     CategoryWidget(
                         title: "الآليات غير التعاقدية لحامية حقوق الإنسان",
                         bgColor: theme(context).primaryColor,

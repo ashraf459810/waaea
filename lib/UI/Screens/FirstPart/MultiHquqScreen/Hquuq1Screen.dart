@@ -73,28 +73,6 @@ class Hquuq1Screen extends StatelessWidget {
         ));
   }
 
-  // Widget rowQuestionWidget(
-  //     {required BuildContext context,
-  //     required String text,
-  //     required void Function() onPressed}) {
-  //   return GestureDetector(
-  //     onTap: onPressed,
-  //     child: Container(
-  //       margin: EdgeInsets.symmetric(vertical: 6),
-  //       color: Colors.white,
-  //       width: MediaQuery.of(context).size.width,
-  //       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-  //       child: Text(
-  //         text,
-  //         style: theme(context)
-  //             .textTheme
-  //             .headline2!
-  //             .copyWith(color: Colors.black87, fontSize: 20),
-  //       ),
-  //     ),
-  //   );
-  // }
-
   Widget quoteCard({
     required BuildContext context,
     required String label,
