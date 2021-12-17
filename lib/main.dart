@@ -19,6 +19,8 @@ import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
+import 'UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfManthurQanunScreen.dart';
+import 'UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfStrategyScreen.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/AdwarGenderScreen.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/AnfQaymIjtmahi.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/HawamlMuathraScreen.dart';
@@ -130,6 +132,8 @@ class MyApp extends StatelessWidget {
             TawattawrScreen.route: (context) => TawattawrScreen(),
             //Alhnf Screens (Section 4)
             AlhnfDetailsScreen.route: (context) => AlhnfDetailsScreen(),
+            AlhnfStrategyScreen.route: (context) => AlhnfStrategyScreen(),
+            AlhnfManthurQanunScreen.route: (context) => AlhnfManthurQanunScreen(),
             AlhnfNawhScreen.route: (context) => AlhnfNawhScreen(),
             AtharHanafScreen.route: (context) => AtharHanafScreen(),
             GhairTahaqdyaScreen.route: (context) => GhairTahaqdyaScreen(),

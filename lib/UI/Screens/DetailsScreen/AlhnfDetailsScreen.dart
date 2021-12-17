@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfManthurQanunScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfNawhScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfStrategyScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiAlhnfScreen/AtharHanafScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/AlmasawatScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/TawattawrScreen.dart';
@@ -165,14 +167,14 @@ class AlhnfDetailsScreen extends StatelessWidget {
                       bgColor: theme(context).primaryColor,
                       textColor: theme(context).backgroundColor,
                       onPressed: () => Navigator.pushNamed(
-                          context, AlmasawatScreen.route)),
+                          context, AlhnfStrategyScreen.route)),
                   CategoryWidget(
                     title:
                         "العنف القائم على النوع الاجتامعي من منظور القانون الدولي لحقوق الإنسان",
                     bgColor: Constants.orangeColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>
-                        Navigator.pushNamed(context, TawattawrScreen.route),
+                        Navigator.pushNamed(context, AlhnfManthurQanunScreen.route),
                   ),
                   SizedBox(
                     height: 20,
