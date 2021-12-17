@@ -75,26 +75,26 @@ class HmayaDetailsScreen extends StatelessWidget {
                     height: 20,
                   ),
                   GestureDetector(
-                    onTap: ()=>Navigator.pushNamed(context, MasadrHmayaScreen.route),
+                    onTap: ()=>Navigator.pushNamed(context, MasadrHmayaScreen.route,),
                     child: CategoryWidget(
                         title: "مصادر الحامية الدولية لحقوق الإنسان",
                         bgColor: theme(context).accentColor,
                         textColor: theme(context).backgroundColor,
                         onPressed: () =>
-                            Navigator.pushNamed(context, MasadrHmayaScreen.route)),
+                            Navigator.pushNamed(context, MasadrHmayaScreen.route),),
                   ),
                   CategoryWidget(
                       title: "الآليات التعاقدية لحامية حقوق الإنسان",
                       bgColor: theme(context).primaryColor,
                       textColor: theme(context).backgroundColor,
                       onPressed: () =>
-                          Navigator.pushNamed(context, AlyatTa3aqudyaScreen.route)),
+                          Navigator.pushNamed(context, AlyatTa3aqudyaScreen.route),),
                   CategoryWidget(
                       title: "الآليات غير التعاقدية لحامية حقوق الإنسان",
                       bgColor: theme(context).primaryColor,
                       textColor: theme(context).backgroundColor,
                       onPressed: () =>
-                          Navigator.pushNamed(context, GhairTahaqdyaScreen.route)),
+                          Navigator.pushNamed(context, GhairTahaqdyaScreen.route),),
                 ],
               ),
               Positioned(child:  SafeArea(

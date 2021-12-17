@@ -235,7 +235,9 @@ class HquqDetailsScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 30,),
+
                 ],
               ),
               Positioned(child:  SafeArea(
