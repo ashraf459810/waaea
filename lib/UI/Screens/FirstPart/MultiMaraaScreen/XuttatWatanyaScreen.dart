@@ -166,6 +166,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                     child: TahaqdyWidget(
                       title: "المشاركة",
                       label: "",
+                      hasNavigation: true,
                       bgColor: theme(context).primaryColor,
                       onPressed: () =>Navigator.pushNamed(context, MusharakaScreen.route),
                     ),
@@ -176,6 +177,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                     child: TahaqdyWidget(
                       title: "الحمية",
                       label: "",
+                      hasNavigation: true,
                       bgColor: Constants.lightPinkColor,
                       onPressed: () {},
                     ),
@@ -186,6 +188,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                     child: TahaqdyWidget(
                       title: "الوقاية",
                       label: "",
+                      hasNavigation: true,
                       bgColor: Constants.orangeColor,
                       onPressed: () {},
                     ),

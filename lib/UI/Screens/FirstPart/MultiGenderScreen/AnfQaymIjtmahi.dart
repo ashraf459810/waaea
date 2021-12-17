@@ -5,8 +5,10 @@ import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
 import '../../../../Constants.dart';
 
-class AnfQaymIjtmahi extends StatelessWidget {
-  const AnfQaymIjtmahi({Key? key}) : super(key: key);
+class AnfQaymIjtmahiScreen extends StatelessWidget {
+  static const route = '/AnfQaymIjtmahi';
+
+  const AnfQaymIjtmahiScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

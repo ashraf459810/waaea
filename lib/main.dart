@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/CompareGenderScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/AlmasawatScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/TawattawrScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/AshabWlayatScreen.dart';
@@ -18,6 +19,9 @@ import 'UI/Screens/DetailsScreen/HmayaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
+import 'UI/Screens/FirstPart/MultiGenderScreen/AdwarGenderScreen.dart';
+import 'UI/Screens/FirstPart/MultiGenderScreen/AnfQaymIjtmahi.dart';
+import 'UI/Screens/FirstPart/MultiGenderScreen/HawamlMuathraScreen.dart';
 import 'UI/Screens/FirstPart/MultiHmayaScreen/AlyatTa3aqudyaScreen.dart';
 import 'UI/Screens/FirstPart/MultiMaraaScreen/MarahlScreen.dart';
 import 'UI/Screens/FirstPart/MultiMaraaTamnyaScreen/MaqasdMuashratHadaf5.dart';
@@ -139,6 +143,10 @@ class MyApp extends StatelessWidget {
             NmathjCedawScreen.route: (context) => NmathjCedawScreen(),
             //Gender Screens (Section 6)
             GenderDetailsScreen.route: (context) => GenderDetailsScreen(),
+            AnfQaymIjtmahiScreen.route: (context) => AnfQaymIjtmahiScreen(),
+            CompareGenderScreen.route: (context) => CompareGenderScreen(),
+            HawamlMuathraScreen.route: (context) => HawamlMuathraScreen(),
+            AdwarGenderScreen.route: (context) => AdwarGenderScreen(),
             // Maraa Screens (Section 8)
             MaraaDetailsScreen.route: (context) => MaraaDetailsScreen(),
             Qarar1325Screen.route: (context) => Qarar1325Screen(),

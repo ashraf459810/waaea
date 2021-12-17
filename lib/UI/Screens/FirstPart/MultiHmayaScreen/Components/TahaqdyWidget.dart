@@ -5,12 +5,14 @@ class TahaqdyWidget extends StatelessWidget {
   final String title;
   final String label;
   final Color bgColor;
+  final bool hasNavigation;
   final void Function() onPressed;
 
   TahaqdyWidget(
       {required this.title,
       required this.bgColor,
       required this.label,
+      required this.hasNavigation,
       required this.onPressed});
   @override
   Widget build(BuildContext context) {
@@ -58,10 +60,10 @@ class TahaqdyWidget extends StatelessWidget {
                     .copyWith(color: Colors.black54, fontSize: 20),
               ),
               Spacer(),
-              Icon(
+              hasNavigation ? Icon(
                 Icons.arrow_forward_ios_outlined,
                 color: Colors.black54,
-              ),
+              ): SizedBox.shrink(),
               SizedBox(
                 width: 6,
               ),

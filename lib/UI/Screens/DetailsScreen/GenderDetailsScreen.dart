@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/AdwarGenderScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/AnfQaymIjtmahi.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/CompareGenderScreen.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/HawamlMuathraScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/AlmasawatScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHalamyaScreen/TawattawrScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
@@ -158,21 +162,21 @@ class GenderDetailsScreen extends StatelessWidget {
                     bgColor: Constants.lightPinkColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>
-                        Navigator.pushNamed(context, TawattawrScreen.route),
+                        Navigator.pushNamed(context, CompareGenderScreen.route),
                   ),
                   CategoryWidget(
                     title: "العوامل المؤثرة في النوع الاجتامعي",
                     bgColor: theme(context).primaryColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>
-                        Navigator.pushNamed(context, TawattawrScreen.route),
+                        Navigator.pushNamed(context, HawamlMuathraScreen.route),
                   ),
                   CategoryWidget(
                       title: "الأدوار المختلفة القامئة على النوع الاجتامعي",
                       bgColor: Constants.orangeColor,
                       textColor: theme(context).backgroundColor,
                       onPressed: () =>
-                          Navigator.pushNamed(context, AlmasawatScreen.route)),
+                          Navigator.pushNamed(context, AdwarGenderScreen.route)),
                   SizedBox(
                     height: 20,
                   ),

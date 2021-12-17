@@ -56,6 +56,8 @@ class Constants {
   static String stealImage = 'assets/images/gender/stealImage.png';
   static String genderImage = 'assets/images/gender/genderImage.png';
   static String screenshotGender = 'assets/images/gender/screenshotGender.png';
+  static String compareScreenshot = 'assets/images/gender/compareScreenshot.png';
+  static String adwarScreenshot = 'assets/images/gender/adwarScreenshot.png';
 
   //Images Maraa
   static String maraaCover = 'assets/images/maraa/maraaCover.png';

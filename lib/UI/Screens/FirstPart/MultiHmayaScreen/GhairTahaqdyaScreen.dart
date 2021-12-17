@@ -64,6 +64,7 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                       height: 25,
                     ),
                     TahaqdyWidget(
+                      hasNavigation: true,
                       title: "الإجراءات الخاصة",
                       label: "1235",
                       bgColor: Constants.lightPinkColor,
@@ -71,6 +72,7 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                           Navigator.pushNamed(context, IjraatXassScreen.route),
                     ),
                     TahaqdyWidget(
+                      hasNavigation: true,
                       title: "آلية الاستعراض الدوري الشامل",
                       label: "UPR",
                       bgColor: theme(context).primaryColor,
@@ -78,6 +80,7 @@ class GhairTahaqdyaScreen extends StatelessWidget {
                           Navigator.pushNamed(context, IstihrathScreen.route),
                     ),
                     TahaqdyWidget(
+                      hasNavigation: false,
                       title: "الشكاوي السرية",
                       label: "1503",
                       bgColor: Constants.orangeColor,

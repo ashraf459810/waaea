@@ -112,12 +112,8 @@ class SubCategoriesScreen extends StatelessWidget {
                               horizontal: 20, vertical: 20),
                           child: Text(
                             "انوع الاجتماعی \" جیندر \"",
-                            style: theme(context)
-                                .textTheme
-                                .headline5!
-                                .copyWith(
-                                    color: Colors.black87,
-                                    fontFamily: 'R016'),
+                            style: theme(context).textTheme.headline5!.copyWith(
+                                color: Colors.black87, fontFamily: 'R016'),
                             textDirection: TextDirection.rtl,
                           ),
                         ),
@@ -195,8 +191,8 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
 
               GestureDetector(
-                onTap: () =>
-                    Navigator.pushNamed(context, AlhnfDetailsScreen.route),
+                onTap: () => Navigator.pushNamed(
+                    context, MaraaTamnyaDetailsScreen.route),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height / 6.5,
@@ -216,7 +212,8 @@ class SubCategoriesScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Constants.orangeColor,
                   ),
-                  margin: EdgeInsets.only(left: 30,right: 30, top: 14,bottom: 50),
+                  margin:
+                      EdgeInsets.only(left: 30, right: 30, top: 14, bottom: 50),
                   child: Stack(
                     children: [
                       Align(
@@ -228,7 +225,7 @@ class SubCategoriesScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
-                                width: MediaQuery.of(context).size.width/1.8,
+                                width: MediaQuery.of(context).size.width / 1.8,
                                 child: Text(
                                   "المرة و التمنیة والمستدامة ",
                                   style: theme(context)
@@ -266,7 +263,6 @@ class SubCategoriesScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
 
               // CardGrid(
               //   onPressed: () => Navigator.pushNamed(
