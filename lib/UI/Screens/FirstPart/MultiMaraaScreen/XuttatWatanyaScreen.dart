@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/Components/TahaqdyWidget.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaScreen/AlhmayaScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 import '../../../../Constants.dart';
+import 'AlwqayaScreen.dart';
 import 'MarahlScreen.dart';
 import 'MusharakaScreen.dart';
 
@@ -116,7 +119,22 @@ class XuttatWatanyaScreen extends StatelessWidget {
                   RowQuestionWidget(
                     context: context,
                     text: "ما هي فوائد وضع الخطة الوطنية لتنفيذ القرار؟",
-                    onPressed: (context) {},
+                    onPressed: (context) =>showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هي فوائد وضع الخطة الوطنية لتنفيذ القرار؟',
+                        listAnswer: [
+                          'التعاون والتنسيق بين الوكالات الحكومية ووضع أهداف تتطلب إجراءات مختلفة لتنفيذها من مختلف القطاعات الحكومية',
+                          'تحسين مستوى الرصد والتقييم والمساءلة من خلال تحديد الأهداف والمؤشرات للخطط الوطنية .',
+                          'زيادة المعرفة والوعي وتوفير منابر حرة للنقاش وتبادل الخبرات حول قضايا المرأة والأمن والسلام',
+                          'تعميق روابط الصلة بين قرارات مجلس الأمن المتعلقة بالمرأة والأمن والسلام والسياسات الداخلية والخارجية  للدول الأعضاء.',
+
+                        ],
+                      ),
+                    ),
                   ),
                   GestureDetector(
                     onTap: () =>Navigator.pushNamed(context, MarahlScreen.route),
@@ -175,11 +193,11 @@ class XuttatWatanyaScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 30, vertical: 2),
                     child: TahaqdyWidget(
-                      title: "الحمية",
+                      title: "الحماية",
                       label: "",
                       hasNavigation: true,
                       bgColor: Constants.lightPinkColor,
-                      onPressed: () {},
+                      onPressed: ()=>Navigator.pushNamed(context, AlhmayaScreen.route) ,
                     ),
                   ),
                   Padding(
@@ -190,7 +208,7 @@ class XuttatWatanyaScreen extends StatelessWidget {
                       label: "",
                       hasNavigation: true,
                       bgColor: Constants.orangeColor,
-                      onPressed: () {},
+                      onPressed: ()=>Navigator.pushNamed(context, AlwqayaScreen.route) ,
                     ),
                   ),
                   SizedBox(

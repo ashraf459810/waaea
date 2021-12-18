@@ -92,6 +92,7 @@ class Constants {
   //Images Xattab
   static String xattabChart = 'assets/images/xattab/xattabChart.png';
   static String sort = 'assets/images/xattab/sort.png';
+  static String elqaScreenshot = 'assets/images/xattab/elqaScreenshot.png';
 
   // Images adawatIntxab
   static String rsalla = 'assets/images/adawatIntxab/rsala.png';

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/AdwarGenderScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiGenderScreen/CompareGenderScreen.dart';
@@ -138,9 +139,26 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     height: 20,
                   ),
                   RowQuestionWidget(
+                    context: context,
+                    text: "لماذا الاهتامم بقضايا النوع الاجتامعي؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "لماذا الاهتامم بقضايا النوع الاجتامعي؟",
-                      onPressed: (context) {}),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'لماذا الاهتامم بقضايا النوع الاجتامعي؟',
+                        description:
+                            'احتلت قضية النوع حيزاً واسعا نتيجة لانعكاس المعاناة الواقعة على المرأة والتي تتمثّل في التمييز المجحف وحرمانها من المساهمه الفاعله في عملية التنمية، ومن ثم تحجيم وتهميش الجهود المبذولة في مشاركة المرأة للنهوض بالمجتمع وتحقيق الرفاهية.',
+                        listAnswer: [
+                          'لقد أثرّت الثقافة المجتمعية في تفضيل الذكور على الإناث وإنقسمت الصفات بين "صفات ذكورية" و"صفات أنثوية". فكانت الطاعة وﺍﻟﻌﺎﻁفة والخضوع والضعف والنعومة والحساسية والخجل والاتكالية صفات النساء في حين القوة والاستقلالية والمبادرة والشجاعة والذكاء والقيادة من صفات الرجال.',
+                          'وعكست هذه الصفات أدواراً جندرية وأصبح هناك أدوار خاصة بالرجال وأدوار خاصة بالنساء. فالعمل في كراج ميكانيك السيارات وإدارة الشركة والانتساب للقوى الأمنية والعمل السياسي والريادة في إدارة الأعمال وتولي منصب سياسي هي أدوار رجولية. أما تنظيف البيت وتحضير الطعام ورعاية الأطفال والحياكة أدواراً نسائية لمجرد أنها وُلدت أنثى تقوم بالحمل والولادة والرضاعة.',
+                          'لكن في الدور الإنجابي للنوع الاجتماعي تختلف المسؤوليات ويصبح من واجب الرجل أن يشارك المرأة هذه المسؤوليات، فلا يُعتبر مصدر الإنتاج الوحيد في البيت، إذ يجب أن يؤخذ بعين الاعتبار الأعمال المنزلية غير المأجورة لذلك من المهم أن يقسم الدور الإنتاجي بين الرجل والمرأة داخل البيت وخارجه. وفي الدور الاجتماعي بين الرجل والمرأة، حتى يكون هناك مساواة  يجب أن تتمكن المرأة من الانضمام إلى الجمعيات المدنية والأحزاب والمشاركة في العمل السياسي مما يساعد على تخفيف الفجوة بين الجنسين وخاصة في مجال التعليم وسوق العمل والمشاركة السياسية.',
+                          'إلغاء التمييز القائم على النوع الاجتماعي والمساواة بين الرجل والمرأة يكفل الحقوق والواجبات والمسؤوليات بما يجعلهم قادرين وقادرات على الانتاج بشكل متساوي ويضمن التنمية الشاملة للمجتمعات.',
+                        ],
+                      ),
+                    ),
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -233,10 +251,11 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                       image: Constants.natureImage,
                       onPressed: () {}),
                   sectionImageWithLabel(
-                      context: context,
-                      text: "هل هناك أعامل لا تستطيع النساء القيام بها؟",
-                      image: Constants.moneyImage,
-                      onPressed: () {}),
+                    context: context,
+                    text: "هل هناك أعامل لا تستطيع النساء القيام بها؟",
+                    image: Constants.moneyImage,
+                    onPressed: () {},
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -244,22 +263,29 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     title: "الفرق بين النوع الاجتامعي والجنس",
                     bgColor: Constants.lightPinkColor,
                     textColor: theme(context).backgroundColor,
-                    onPressed: () =>
-                        Navigator.pushNamed(context, CompareGenderScreen.route),
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      CompareGenderScreen.route,
+                    ),
                   ),
                   CategoryWidget(
                     title: "العوامل المؤثرة في النوع الاجتامعي",
                     bgColor: theme(context).primaryColor,
                     textColor: theme(context).backgroundColor,
-                    onPressed: () =>
-                        Navigator.pushNamed(context, HawamlMuathraScreen.route),
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      HawamlMuathraScreen.route,
+                    ),
                   ),
                   CategoryWidget(
-                      title: "الأدوار المختلفة القامئة على النوع الاجتامعي",
-                      bgColor: Constants.orangeColor,
-                      textColor: theme(context).backgroundColor,
-                      onPressed: () => Navigator.pushNamed(
-                          context, AdwarGenderScreen.route)),
+                    title: "الأدوار المختلفة القامئة على النوع الاجتامعي",
+                    bgColor: Constants.orangeColor,
+                    textColor: theme(context).backgroundColor,
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      AdwarGenderScreen.route,
+                    ),
+                  ),
                   SizedBox(
                     height: 20,
                   ),

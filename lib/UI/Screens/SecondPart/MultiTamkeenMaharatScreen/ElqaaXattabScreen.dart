@@ -138,55 +138,15 @@ class ElqaaXattabScreen extends StatelessWidget {
                       label: "راقبي بعناية حركات يديك",
                       color: Constants.orangeColor,
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
 
-
-                    Text(
-                      "القواعد الذهبية للتواصل الفعال",
-                      style: theme(context).textTheme.headline5!.copyWith(
-                          fontSize: 24,
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold),
-                      textDirection: TextDirection.rtl,
-                      maxLines: 2,
-                    ),
                     SizedBox(
                       height: 10,
                     ),
-                    getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, 'الوضوح:',
-                          ' مضمون الرسائل واضح وقابل الإيصال '),
-                    ),
-        getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, ' المحتوى:',
-                          '  واقعي وملموس '),
-                    ),
-        getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, 'الملاءمة:',
-                          '  تناسب  الرسالة مع الفئة المستهدفة '),
-                    ),
-        getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, ' الانسجام:',
-                          '  ترابط فقرات الخطاب المقدمة والخاتمة '),
-                    ),
-        getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, 'المصداقية:',
-                          ' موضوعات حقيقية  '),
-                    ),        getSpecialComponent(
-                      context: context,
-                      child: getTextRich(context, '',
-                          'الدقة في اختيار الجمل الدقيقة والمعّبرة عن مضمون الرسالة . '),
-                    ),
+                    // sortImageCode(context),
+                    Image.asset(Constants.elqaScreenshot),
 
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                   ]),
             ),
@@ -256,54 +216,6 @@ class ElqaaXattabScreen extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-
-
-
-  Widget getSpecialComponent(
-      {required BuildContext context, required Widget child, Color? color}) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 12),
-            child: CircleAvatar(
-              radius: 3.5,
-              backgroundColor: color == null ? Colors.black87 : color,
-            ),
-          ),
-          SizedBox(
-            width: 12,
-          ),
-          Expanded(child: child),
-        ],
-      ),
-    );
-  }
-
-  Widget getTextRich(BuildContext context, String label, String subLabel) {
-    return Text.rich(
-      TextSpan(
-        text: label,
-        style: theme(context).textTheme.headline5!.copyWith(
-          color: Colors.black,
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
-        children: [
-          TextSpan(
-            text: subLabel,
-            style: theme(context).textTheme.headline5!.copyWith(
-              color: Colors.black54,
-              fontSize: 20,
-            ),
-          ),
-        ],
-      ),
     );
   }
 }

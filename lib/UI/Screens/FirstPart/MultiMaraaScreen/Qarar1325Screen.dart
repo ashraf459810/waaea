@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiAlhnfScreen/Components/NawhIconWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
@@ -157,7 +158,17 @@ class Qarar1325Screen extends StatelessWidget {
                   RowQuestionWidget(
                     context: context,
                     text: 'هل يرتّب القرار موجبات على الدول؟',
-                    onPressed: (context) {},
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'هل يرتّب القرار موجبات على الدول؟',
+                        description: 'يطلب القرار من الدول الأعضاء أن تكفل مساهمة المرأة القائمة على المساواة وتعزيزها في جميع الجهود الرامية إلى صيانة الأمن والسلام. ويحث جميع الأطراف الفاعلة على زيادة مشاركة المرأة في مواقع صنع القرار ولجان المفاوضات وقوات حفظ السلام، وإدراج منظور النوع الاجتماعي في جميع المجالات، وحماية النساء والفتيات أثناء الصراعات المسلحة من كافة أشكال العنف القائم على النوع الاجتماعي.',
+                        listAnswer: [],
+                      ),
+                    ),
                   ),
                   GestureDetector(
                     onTap: () =>Navigator.pushNamed(context, MhawarQararScreen.route),
@@ -190,12 +201,42 @@ class Qarar1325Screen extends StatelessWidget {
                     context: context,
                     text:
                         'ما هو المطلوب لتعزيز وقاية النساء من العنف الجندري؟ ',
-                    onPressed: (context) {},
+                    onPressed: (context) =>showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هو المطلوب لتعزيز وقاية النساء من العنف الجندري؟ ',
+                        listAnswer: [
+                          'التربية على ثقافة السلام وحقوق الإنسان والديمقراطية والوسائل السلمية لحل النزاعات.',
+                          'توعية وتدريب الموظفين المكلفين بإنفاذ القانون على مفهوم النوع الاجتماعي والنتائج السلبية لعدم حمايةً النساء في النزاعات المسلح.',
+                          ' مشاركة النساء في آليات اتخاذ القرار في فترات ما بعد النزاع.',
+                          'التوثيق والتبليغ عن كل الانتهاكات المتعلقة بالأمن والسلم.  ',
+                          'خلق شبكات التواصل بين مختلف القطاعات.',
+                        ],
+                      ),
+                    ),
                   ),
                   RowQuestionWidget(
                     context: context,
                     text: 'ما هو المطلوب لتعزيز حماية النساء من العنف الجندري؟',
-                    onPressed: (context) {},
+                    onPressed: (context) =>showModalBottomSheet(
+                      enableDrag: false,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هو المطلوب لتعزيز حماية النساء من العنف الجندري؟',
+                        listAnswer: [
+                          'إقرار قانون لمناهضة العنف ضد النساء. ',
+                          'تفعيل قانون الإتجار بالبشر. ',
+                          'إقرار قانون اللجوء.',
+                          'تسجيل النساء اللاجئات والنازحات. ',
+                          'توفير برامج الاستماع وتقديم خدمات الدعم النفسي والإجتماعي.',
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
                     height: 10,
