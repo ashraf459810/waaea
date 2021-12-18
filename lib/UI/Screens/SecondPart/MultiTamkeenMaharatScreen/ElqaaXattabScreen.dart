@@ -44,86 +44,12 @@ class ElqaaXattabScreen extends StatelessWidget {
                       textDirection: TextDirection.rtl,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 2),
-                          margin: EdgeInsets.symmetric(
-                              horizontal: MediaQuery.of(context).size.width / 4,
-                              vertical: 5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Constants.lightPinkColor,
-                          ),
-                          child: Center(
-                            child: Text(
-                              "الخطاب",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline5!
-                                  .copyWith(
-                                      fontSize: 22,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 2),
-                          margin: EdgeInsets.symmetric(
-                              horizontal: MediaQuery.of(context).size.width / 5,
-                              vertical: 5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Constants.lightPinkColor,
-                          ),
-                          child: Center(
-                            child: Text(
-                              "صوتك",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline5!
-                                  .copyWith(
-                                      fontSize: 24,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 2),
-                          margin: EdgeInsets.symmetric(
-                              horizontal:
-                                  MediaQuery.of(context).size.width / 7.5,
-                              vertical: 5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Constants.lightPinkColor,
-                          ),
-                          child: Center(
-                            child: Text(
-                              "الخطاب",
-                              style: theme(context)
-                                  .textTheme
-                                  .headline5!
-                                  .copyWith(
-                                      fontSize: 24,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    // sortImageCode(context),
+                    Image.asset(Constants.sort),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     Text(
                       "الإلقاء المؤثر- صوتك",
@@ -220,6 +146,69 @@ class ElqaaXattabScreen extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Widget sortImageCode(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 2),
+          margin: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width / 4, vertical: 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4),
+            color: Constants.lightPinkColor,
+          ),
+          child: Center(
+            child: Text(
+              "الخطاب",
+              style: theme(context).textTheme.headline5!.copyWith(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 2),
+          margin: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width / 5, vertical: 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4),
+            color: Constants.lightPinkColor,
+          ),
+          child: Center(
+            child: Text(
+              "صوتك",
+              style: theme(context).textTheme.headline5!.copyWith(
+                  fontSize: 24,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 2),
+          margin: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width / 7.5, vertical: 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4),
+            color: Constants.lightPinkColor,
+          ),
+          child: Center(
+            child: Text(
+              "الخطاب",
+              style: theme(context).textTheme.headline5!.copyWith(
+                  fontSize: 24,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

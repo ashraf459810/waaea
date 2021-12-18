@@ -151,31 +151,38 @@ class SubCategoriesScreen extends StatelessWidget {
                     ],
                     borderRadius: BorderRadius.circular(20),
                     color: theme(context).primaryColor,
-                    image: DecorationImage(
-                      image: AssetImage(Constants.symbol),
-                      fit: BoxFit.cover,
-                    ),
                   ),
                   margin: EdgeInsets.symmetric(horizontal: 30, vertical: 14),
-                  child: Align(
-                    alignment: Alignment.topCenter,
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
-                      child: Text(
-                        "مناهضة العنف القائم على النوع الاجتامعي",
-                        style: theme(context).textTheme.headline5!.copyWith(
-                            color: theme(context).backgroundColor,
-                            fontFamily: 'R016'),
-                        textDirection: TextDirection.rtl,
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: Alignment.topRight,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 20),
+                          child: Text(
+                            "مناهضة العنف القائم\nعلى النوع الاجتامعي",
+                            style: theme(context).textTheme.headline5!.copyWith(
+                                color: Colors.white, fontFamily: 'R016'),
+                            textDirection: TextDirection.rtl,
+                          ),
+                        ),
                       ),
-                    ),
+                      Positioned(
+                          left: 15,
+                          top: 20,
+                          bottom: 20,
+                          child: Image.asset(
+                            Constants.symbol,
+                            fit: BoxFit.cover,
+                          ))
+                    ],
                   ),
                 ),
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, MaraaDetailsScreen.route),
+                    Navigator.pushNamed(context, MsharakaDetailsScreen.route),
                 title: "المشاركة السياسية للنساء",
                 subTitle: "",
                 color: theme(context).accentColor,
@@ -183,8 +190,8 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               CardGrid(
                 onPressed: () =>
-                    Navigator.pushNamed(context, MsharakaDetailsScreen.route),
-                title: "المشاركة في صنع القرار: مفاهيم عامة",
+                    Navigator.pushNamed(context, MaraaDetailsScreen.route),
+                title: "المرأة والأمن والسلام",
                 subTitle: "",
                 color: theme(context).backgroundColor,
                 textColor: theme(context).primaryColor,
