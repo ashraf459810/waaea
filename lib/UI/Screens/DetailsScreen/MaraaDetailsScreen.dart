@@ -1,19 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Definition1Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Definition2Screen.dart.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Hquuq1Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Hquuq2Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Hquuq3Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Hquuq4Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/MultiPointScreen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/PointScreen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/QuestionsScreen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Quote1Screen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiHquqScreen/Quote2Screen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaScreen/AjendaMaraaScreen.dart';
-import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaScreen/MhawarQararScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaScreen/Qarar1325Screen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiMaraaScreen/XuttatWatanyaScreen.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
@@ -39,12 +25,12 @@ class MaraaDetailsScreen extends StatelessWidget {
                     ),
                     height: MediaQuery.of(context).size.height / 4,
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.only(top: 50,bottom: 10),
+                    padding: EdgeInsets.only(top: 50, bottom: 10),
                     color: theme(context).primaryColor,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
+                        horizontal: 20, vertical: 20),
                     child: Align(
                       alignment: Alignment.centerRight,
                       child: Text(
@@ -71,30 +57,54 @@ class MaraaDetailsScreen extends StatelessWidget {
                     height: 10,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 4),
                     child: Row(
                       children: [
-                        Expanded(child: circleWidget(context: context,label: "7.9%",title: "من الأرامل لسنة 2016")),
-                        Expanded(child: circleWidget(context: context,label: "4.3%",title: "من الأطفال المتوفي \n أحد والديهم أو كلاهم في عام 2018")),
+                        Expanded(
+                          child: circleWidget(
+                              context: context,
+                              label: "4.3%",
+                              title:
+                                  "من الأطفال المتوفي  أحد والديهم  أو كلاهم في عام 2018"),
+                        ),
+                        Expanded(
+                          child: circleWidget(
+                              context: context,
+                              label: "7.9%",
+                              title: "من الأرامل لسنة 2016"),
+                        ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 4),
                     child: Row(
                       children: [
-                        Expanded(child: circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام 2014 وأغلبها أسر تعيلها النساء")),
-                        Expanded(child: circleWidget(context: context,label: "14.8%",title: "من الأميي لسنة 2016")),
+                        Expanded(
+                          child: circleWidget(
+                              context: context,
+                              label: "14.8%",
+                              title: "من الأميين لسنة 2016"),
+                        ),
+                        Expanded(
+                          child: circleWidget(
+                              context: context,
+                              label: "22.5%",
+                              title:
+                                  "تحت خط الفقر في عام 2014 وأغلبها أسر تعيلها النساء"),
+                        ),
                       ],
                     ),
                   ),
-                  circleWidget(context: context,label: "22.5%",title: "تحت خط الفقر في عام  2014  \n وأغلبها أسر تعيلها النساء"),
-
+                  circleWidget(
+                      context: context,
+                      label: "7.3%",
+                      title: "من عملة الأطفال من عمر (5-17) سنة."),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 1),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 0),
                     child: Text(
                       "بلغ عدد العوائل النازحة للفترة من حزيران/2014 ولغاية توز/2018) 892311 (ألف عائلة منهم (123135 (ألف امرأة معيلة لأسرة بالإضافة إلى شريحة من الأطفال المنتسبي لداعش نتيجة للعنف الجنسي الذي سلط على أمهاتهم، وهم يفتقدون لكافة حقوقهم المدنية والإنسانية.",
                       style: theme(context).textTheme.bodyText1!.copyWith(
@@ -122,7 +132,8 @@ class MaraaDetailsScreen extends StatelessWidget {
                     height: 20,
                   ),
                   GestureDetector(
-                    onTap: () =>Navigator.pushNamed(context, Qarar1325Screen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, Qarar1325Screen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       margin: const EdgeInsets.symmetric(
@@ -151,7 +162,8 @@ class MaraaDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () =>Navigator.pushNamed(context, AjendaMaraaScreen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, AjendaMaraaScreen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       margin: const EdgeInsets.symmetric(
@@ -178,7 +190,10 @@ class MaraaDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () =>Navigator.pushNamed(context, XuttatWatanyaScreen.route,),
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      XuttatWatanyaScreen.route,
+                    ),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       margin: const EdgeInsets.symmetric(
@@ -204,7 +219,9 @@ class MaraaDetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
               Positioned(
@@ -230,25 +247,26 @@ class MaraaDetailsScreen extends StatelessWidget {
         ));
   }
 
-  Widget circleWidget(
-      {required BuildContext context,
-      required String label,
-      required String title,}) {
+  Widget circleWidget({
+    required BuildContext context,
+    required String label,
+    required String title,
+  }) {
     return Container(
-      height: MediaQuery.of(context).size.height/4.5,
+      height: MediaQuery.of(context).size.height / 4.7,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CircleAvatar(
             backgroundColor: theme(context).accentColor,
-            radius: MediaQuery.of(context).size.width/7,
+            radius: MediaQuery.of(context).size.width / 7,
             child: Text(
               label,
-              style: theme(context)
-                  .textTheme
-                  .headline2!
-                  .copyWith(color: Colors.white, fontSize: 42,fontWeight: FontWeight.w500),
+              style: theme(context).textTheme.headline2!.copyWith(
+                  color: Colors.white,
+                  fontSize: 46,
+                  fontWeight: FontWeight.w500),
             ),
           ),
           Text(

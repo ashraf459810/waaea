@@ -55,10 +55,9 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                       textDirection: TextDirection.rtl,
                     ),
                   ),
-
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 0),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 0),
                     child: Text(
                       "تنص خطة عام 2030 بوضوح على أنه لا ميكن تحقيق ٍ التنمية المستدامة من دون تحقيق المساواة بني الجنسني في إطار متكامل ترتبط فيه الأبعاد المختلفة للتنمية المستدامة بحقوق المرأة. ويتضمن الهدف الخامس على وجه الخصوص جملة من المعايري الحقوقية التي تضمن تفعيل مبدأ المساواة بني الجنسني.",
                       style: theme(context).textTheme.bodyText1!.copyWith(
@@ -116,6 +115,55 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                             letterSpacing: 2),
                       ),
                     ),
+                  ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Wrap(
+                      runAlignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      alignment: WrapAlignment.center,
+                      children: [
+                        getSpecialContainer(
+                          context: context,
+                          label: "77 سنتا",
+                          description:
+                              "تكسب النساء 77 سنتاً فقط مقابل كل دولار يحصل عليه الرجل لنفس العمل.",
+                        ),
+                        getSpecialContainer(
+                          context: context,
+                          label: 'من كل 3',
+                          description:
+                              '%35 من النساء تعرضن للعنف الجسدي و / أو الجنسي.',
+                        ),
+                        getSpecialContainer(
+                          context: context,
+                          label: '13%',
+                          description:
+                              'متثّل النساء 13 في المائة فقط من أصحاب الأراضي الزراعية',
+                        ),
+                        getSpecialContainer(
+                          context: context,
+                          label: '750 مليون',
+                          description:
+                              'حوالي 750 مليون امرأة وفتاة على قيد الحياة اليوم تزوجن ً قبل بلوغهن سن 18 عاما',
+                        ),
+                        getSpecialContainer(
+                          context: context,
+                          label: '2 من كل 3',
+                          description:
+                              'حقق ثلثا البلدان النامية المساواة بني الجنسني في التعليم الابتدايئ',
+                        ),
+                        getSpecialContainer(
+                          context: context,
+                          label: '24%',
+                          description:
+                              '%24 فقط من البرلمانيني ً الوطنيني نساء اعتبارا من نوفمبر 2018 زيادة طفيفة عن 1995 عام 11.3%',
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(
@@ -312,5 +360,61 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
             ),
           ),
         ));
+  }
+
+  Widget getSpecialContainer(
+      {required BuildContext context,
+      required String label,
+      required String description}) {
+    return Container(
+      alignment: Alignment.center,
+      width: MediaQuery.of(context).size.width / 2.6,
+      height: MediaQuery.of(context).size.width / 2.6,
+      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 14,
+      ),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black12,
+                spreadRadius: 0.02,
+                offset: Offset(1, 0.5),
+                blurRadius: 0.9),
+            BoxShadow(
+                color: Colors.black12,
+                spreadRadius: 0.02,
+                offset: Offset(1, 0.5),
+                blurRadius: 0.9)
+          ]),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            style: theme(context).textTheme.bodyText1!.copyWith(
+                color: Constants.orangeColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 35,
+                letterSpacing: 2),
+          ),
+          Text(
+            description,
+            textAlign: TextAlign.center,
+            style: theme(context)
+                .textTheme
+                .bodyText1!
+                .copyWith(color: Colors.black87, fontSize: 16),
+          ),
+          SizedBox(
+            height: 8,
+          ),
+        ],
+      ),
+    );
   }
 }
