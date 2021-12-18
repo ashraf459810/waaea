@@ -68,7 +68,7 @@ class AdawatIntexabDetailsScreen extends StatelessWidget {
                     index: 0,
                     title: "القيادة الذاتية",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label:
@@ -99,7 +99,7 @@ class AdawatIntexabDetailsScreen extends StatelessWidget {
                     index: 0,
                     title: "كوني شخصية المؤثرة",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "مؤمنة بقضيتها",
@@ -144,7 +144,7 @@ class AdawatIntexabDetailsScreen extends StatelessWidget {
                     index: 0,
                     title: "كوني قائدة سياسية",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "قادرة على إدارة قضايا هامة على المستوى الوطني",

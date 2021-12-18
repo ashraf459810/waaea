@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -40,7 +41,18 @@ class Hquuq1Screen extends StatelessWidget {
                     child: Text(
                       "الحقوق المدنية والسياسية",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: theme(context).primaryColor, fontSize: 30),
+                          color: theme(context).primaryColor, fontSize: 30,fontWeight: FontWeight.bold),
+                      textDirection: TextDirection.rtl,
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 0),
+                    child: Text(
+                      "ماذا تعني الحقوق المدنية؟",
+                      style: theme(context).textTheme.headline5!.copyWith(
+                          color: Colors.black87, fontSize: 22),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
@@ -56,13 +68,47 @@ class Hquuq1Screen extends StatelessWidget {
                       define:
                           ": ّ هي الحقوق التي متكن المواطن/ة من المشاركة في شؤون البلاد مثل حق الانتخاب والترشيح"),
                   RowQuestionWidget(
+                    context: context,
+                    text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
-                      onPressed: (context) {},),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'هل هناك وثيقة تضمنت هذه الحقوق؟',
+                        description:
+                            'نعم، الإعلان العالمي لحقوق الإنسان والعهد الدولي الخاص بالحقوق المدنية والسياسية.',
+                        listAnswer: [],
+                      ),
+                    ),
+                  ),
                   RowQuestionWidget(
+                    context: context,
+                    text: "ما هي أبرز هذه الحقوق؟",
+                    onPressed: (context) => showModalBottomSheet(
+                      enableDrag: true,
+                      isScrollControlled: true,
                       context: context,
-                      text: "ما هي أبرز هذه الحقوق؟",
-                      onPressed: (context) {},),
+                      builder: (builder) => QuestionAndListAnswer(
+                        context: context,
+                        questionLabel: 'ما هي أبرز هذه الحقوق؟',
+                        listAnswer: [
+                          'الحق في الحياة',
+                          'الحماية من التعذيب أو العقوبة أو المعاملة القاسية أو اللاإنسانية أو المهينةالحماية من التعذيب أو العقوبة أو المعاملة القاسية أو اللاإنسانية أو المهينة',
+                          'عدم جواز توقيف أحد أو اعتقاله تعسّفاً',
+                          'الحق في المعاملة الإنسانية لجميع المحرومين من الحرية.',
+                          'حق التنقل وحرية اختيار مكان الإقامة',
+                          'الحق في المساواة أمام القضاء',
+                          'حرية الحياة الخاصة',
+                          'حرية الفكر والضمير والدين',
+                          'حرية التعبير',
+                          'حرية تكوين الجمعيات والأحزاب',
+                          'الحق في التجمّع السلمي ',
+                        ],
+                      ),
+                    ),
+                  ),
                   SizedBox(
                     height: 40,
                   )
@@ -101,10 +147,8 @@ class Hquuq1Screen extends StatelessWidget {
                 TextSpan(text: ''),
                 TextSpan(
                   text: "$label : ",
-                  style: theme(context)
-                      .textTheme
-                      .headline5!
-                      .copyWith(color: theme(context).primaryColor, fontSize: 20),
+                  style: theme(context).textTheme.headline5!.copyWith(
+                      color: theme(context).primaryColor, fontSize: 20),
                 ),
                 TextSpan(
                     text: define,

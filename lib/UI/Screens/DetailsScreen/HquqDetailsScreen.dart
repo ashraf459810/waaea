@@ -151,7 +151,7 @@ class HquqDetailsScreen extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.deepOrangeAccent),
+                          color: Constants.orangeColor),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ListTile(

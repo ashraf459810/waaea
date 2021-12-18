@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -42,23 +43,61 @@ class Hquuq3Screen extends StatelessWidget {
                     child: Text(
                       "الحقوق الجامعية",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: theme(context).primaryColor, fontSize: 30),
+                          color: theme(context).primaryColor, fontSize: 30,fontWeight: FontWeight.bold),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
-                 quoteCard(
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 0),
+                    child: Text(
+                      "ماذا تعني الحقوق الجماعية؟",
+                      style: theme(context).textTheme.headline5!.copyWith(
+                          color: Colors.black87, fontSize: 22),
+                      textDirection: TextDirection.rtl,
+                    ),
+                  ),
+                  quoteCard(
                       context: context,
-                      label:"هي حقوق الإنسان التي ترتبط بالتضامن والتسامح. وتحتاج إلى التعاون الدولي وتضافر الجهود الدولية من أجل حل مشاكل عالمية كالبيئة والتنمية والهجرة.",
+                      label:
+                          "هي حقوق الإنسان التي ترتبط بالتضامن والتسامح. وتحتاج إلى التعاون الدولي وتضافر الجهود الدولية من أجل حل مشاكل عالمية كالبيئة والتنمية والهجرة.",
                       define:
                           "مثال تحتاج مشكلة اللاجئني التعاون الدولي من أجل إيجاد الحلول اللازمة لأسباب اللجوء وتقاسم أعباء وتقديم الحامية والرعاية الإنسانية لهم."),
-                  RowQuestionWidget(
-                      context: context,
-                      text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
-                      onPressed: (context) {}),
+                  // RowQuestionWidget(
+                  //   context: context,
+                  //   text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
+                  //   onPressed: (context) => showModalBottomSheet(
+                  //     enableDrag: true,
+                  //     isScrollControlled: true,
+                  //     context: context,
+                  //     builder: (builder) => QuestionAndListAnswer(
+                  //       context: context,
+                  //       questionLabel: '',
+                  //       description:
+                  //           '',
+                  //       listAnswer: [],
+                  //     ),
+                  //   ),
+                  // ),
                   RowQuestionWidget(
                       context: context,
                       text: "ما هي أبرز هذه الحقوق؟",
-                      onPressed: (context) {}),
+                      onPressed: (context) => showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel: 'ما هي أبرز هذه الحقوق؟',
+                          listAnswer: [
+                            'الحق في البيئة',
+                            'الحق في التنمية المستدامة',
+                            'الحق في تقرير المصير',
+                            'الحق في بيئة صحية وسليمة ',
+                          ],
+                        ),
+                      ),),
                   SizedBox(
                     height: 40,
                   )
@@ -119,10 +158,8 @@ class Hquuq3Screen extends StatelessWidget {
                 TextSpan(text: ''),
                 TextSpan(
                   text: "$label : ",
-                  style: theme(context)
-                      .textTheme
-                      .headline5!
-                      .copyWith(color: theme(context).primaryColor, fontSize: 20),
+                  style: theme(context).textTheme.headline5!.copyWith(
+                      color: theme(context).primaryColor, fontSize: 20),
                 ),
                 TextSpan(
                     text: define,

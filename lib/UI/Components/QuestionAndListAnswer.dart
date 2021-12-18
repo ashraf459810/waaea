@@ -18,11 +18,13 @@ import '../../Constants.dart';
 class QuestionAndListAnswer extends StatelessWidget {
   final BuildContext context;
   final String questionLabel;
+  final String? description;
   final List<String> listAnswer;
 
   QuestionAndListAnswer(
       {required this.context,
       required this.questionLabel,
+      this.description,
       required this.listAnswer});
 
   @override
@@ -53,6 +55,20 @@ class QuestionAndListAnswer extends StatelessWidget {
                 style: theme(context).textTheme.headline3!.copyWith(
                     color: theme(context).primaryColor, fontFamily: 'R016'),
               ),
+              description != null
+                  ? SizedBox(
+                      height: 10,
+                    )
+                  : SizedBox.shrink(),
+              description != null
+                  ? Text(
+                      description!,
+                      style: theme(context)
+                          .textTheme
+                          .headline5!
+                          .copyWith(color: Colors.black87, fontFamily: 'R016'),
+                    )
+                  : SizedBox.shrink(),
               SizedBox(
                 height: 5,
               ),

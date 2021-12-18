@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wa3iaa/Models/QuotesModel.dart';
+import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
 import 'package:wa3iaa/Utilities/ThemeOf.dart';
 
@@ -42,7 +43,18 @@ class Hquuq2Screen extends StatelessWidget {
                     child: Text(
                       "الحقوق الاقتصادية والاجتامعية والثقافية",
                       style: theme(context).textTheme.headline5!.copyWith(
-                          color: theme(context).primaryColor, fontSize: 30),
+                          color: theme(context).primaryColor, fontSize: 30,fontWeight: FontWeight.bold),
+                      textDirection: TextDirection.rtl,
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 0),
+                    child: Text(
+                      "ماذا تعني الحقوق الاقتصادية والاجتماعية والثقافية ؟",
+                      style: theme(context).textTheme.headline5!.copyWith(
+                          color: Colors.black87, fontSize: 22),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
@@ -54,11 +66,39 @@ class Hquuq2Screen extends StatelessWidget {
                   RowQuestionWidget(
                       context: context,
                       text: "هل هناك وثيقة تضمنت هذه الحقوق؟",
-                      onPressed: (context) {}),
+                      onPressed: (context) => showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel: 'هل هناك وثيقة تضمنت هذه الحقوق؟',
+                          description:
+                          'نعم، الإعلان العالمي لحقوق الإنسان والعهد الدولي الخاص الاقتصادية والاجتماعية والثقافية.',
+                          listAnswer: [],
+                        ),
+                      ),),
                   RowQuestionWidget(
                       context: context,
                       text: "ما هي أبرز هذه الحقوق؟",
-                      onPressed: (context) {}),
+                      onPressed: (context)=> showModalBottomSheet(
+                        enableDrag: true,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (builder) => QuestionAndListAnswer(
+                          context: context,
+                          questionLabel: 'ما هي أبرز هذه الحقوق؟',
+                          listAnswer: [
+                            'الحق في العمل ',
+                            'الحق في تشكيل النقابات والانضمام إليها',
+                            'الحق في الضمان الاجتماعي',
+                            'الحق في مستوى معيشي لائق (الغذاء والكساء والمأوى…) ',
+                            'الحق في الصحة',
+                            'الحق في التعليم',
+                            'الحق في المشاركة في الحياة الثقافية',
+                          ],
+                        ),
+                      ),),
                   SizedBox(
                     height: 40,
                   )

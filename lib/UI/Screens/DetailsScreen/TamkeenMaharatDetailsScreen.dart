@@ -54,7 +54,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "توليد الثقة",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "ابحثي عن نقاط قوتك",
@@ -77,7 +77,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "الفئة المستهدفة (من؟)",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "المناصب",
@@ -115,7 +115,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "الدوافع (لماذا؟)",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "الأسباب",
@@ -129,7 +129,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "الموضوع (ماذا؟)",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "حددي أهدافك",
@@ -152,7 +152,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "الوقت المناسب (متى؟)",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: "وقت التقديم (مدة اللقاء)",
@@ -166,7 +166,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     index: 0,
                     title: "المكان (أين؟)",
                     image: null,
-                    color: theme(context).errorColor.withOpacity(0.3),
+                    color: Constants.lightPinkColor,
                     widgets: [
                       RowPointWidget(
                         label: 'الوصول "مبكرًا كفاية"',
@@ -192,7 +192,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     color: Constants.orangeColor,
                     textColor: Colors.white,
                     onPressed: (context) => Navigator.pushNamed(
-                        context, MsharakaHquqScreen.route),
+                        context, MathmuunXattabScreen.route),
                   ),
                   RowCategoryWidget(
                     context: context,
@@ -200,7 +200,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     color: theme(context).primaryColor,
                     textColor: Colors.white,
                     onPressed: (context) => Navigator.pushNamed(
-                        context, MathmuunXattabScreen.route),
+                        context, MsharakaHquqScreen.route),
                   ),
                   SizedBox(
                     height: 20,
