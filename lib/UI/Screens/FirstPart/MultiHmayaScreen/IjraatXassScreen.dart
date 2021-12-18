@@ -184,7 +184,7 @@ class IjraatXassScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel: 'هل هناك مقررة خاصة بالعنف ضد المرأة؟',
+                        questionLabel: 'هل زار العراق أي من المقررين الخواص؟',
                         listAnswer: [
                           'نعم، نُظمت عدة بعثات إلى العراق مثال المقرر الخاص المعني بحقوق الإنسان للمشردين داخليا، المقررة الخاصة المعنية بقضايا الأقليات.',
                         ],

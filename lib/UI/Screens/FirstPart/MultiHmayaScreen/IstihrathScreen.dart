@@ -30,12 +30,6 @@ class IstihrathScreen extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           color: Constants.lightBgColor,
-          // decoration: BoxDecoration(
-          //   image: DecorationImage(
-          //     image: AssetImage(Constants.bgFlower),
-          //     fit: BoxFit.cover,
-          //   ),
-          // ),
           child: SafeArea(
             child: SingleChildScrollView(
               child: Column(
@@ -74,55 +68,55 @@ class IstihrathScreen extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  rowQuestionWidget(
-                    context: context,
-                    text: "ما هو الاستعراض الدوري الشامل ؟",
-                    onPressed: () => showModalBottomSheet(
-                      enableDrag: false,
-                      isScrollControlled: true,
-                      context: context,
-                      builder: (builder) => QuestionAndListAnswer(
-                        context: context,
-                        questionLabel: 'ما هو الاستعراض الدوري الشامل ؟',
-                        listAnswer: [
-                          'أحدث آلية لحقوق الإنسان',
-                        ],
-                      ),
-                    ),
-                  ),
-                  rowQuestionWidget(
-                    context: context,
-                    text: "كيف أنشئ الاستعراض الدوري الشامل؟",
-                    onPressed: () => showModalBottomSheet(
-                      enableDrag: false,
-                      isScrollControlled: true,
-                      context: context,
-                      builder: (builder) => QuestionAndListAnswer(
-                        context: context,
-                        questionLabel: 'كيف أنشئ الاستعراض الدوري الشامل؟؟',
-                        listAnswer: [
-                          'أُنشئ بموجب قرار الجمعية العامة للأمم المتحدة 60/251.',
-                        ],
-                      ),
-                    ),
-                  ),
-                  rowQuestionWidget(
-                    context: context,
-                    text: "إلى ماذا يستند الاستعراض الدوري الشامل؟",
-                    onPressed: () => showModalBottomSheet(
-                      enableDrag: false,
-                      isScrollControlled: true,
-                      context: context,
-                      builder: (builder) => QuestionAndListAnswer(
-                        context: context,
-                        questionLabel:
-                            'إلى ماذا يستند الاستعراض الدوري الشامل؟',
-                        listAnswer: [
-                          'يستند إلى معلومات موضوعية وموثوق بها ، لبيان مدى وفاء كل دولة بالتزاماتها وتعهداتها في مجال حقوق الإنسان في على نحو يكفل شمولية التطبيق والمساواة في المعاملة بين جميع الدول.',
-                        ],
-                      ),
-                    ),
-                  ),
+                  // rowQuestionWidget(
+                  //   context: context,
+                  //   text: "ما هو الاستعراض الدوري الشامل ؟",
+                  //   onPressed: () => showModalBottomSheet(
+                  //     enableDrag: false,
+                  //     isScrollControlled: true,
+                  //     context: context,
+                  //     builder: (builder) => QuestionAndListAnswer(
+                  //       context: context,
+                  //       questionLabel: 'ما هو الاستعراض الدوري الشامل ؟',
+                  //       listAnswer: [
+                  //         'أحدث آلية لحقوق الإنسان',
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  // rowQuestionWidget(
+                  //   context: context,
+                  //   text: "كيف أنشئ الاستعراض الدوري الشامل؟",
+                  //   onPressed: () => showModalBottomSheet(
+                  //     enableDrag: false,
+                  //     isScrollControlled: true,
+                  //     context: context,
+                  //     builder: (builder) => QuestionAndListAnswer(
+                  //       context: context,
+                  //       questionLabel: 'كيف أنشئ الاستعراض الدوري الشامل؟؟',
+                  //       listAnswer: [
+                  //         'أُنشئ بموجب قرار الجمعية العامة للأمم المتحدة 60/251.',
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  // rowQuestionWidget(
+                  //   context: context,
+                  //   text: "إلى ماذا يستند الاستعراض الدوري الشامل؟",
+                  //   onPressed: () => showModalBottomSheet(
+                  //     enableDrag: false,
+                  //     isScrollControlled: true,
+                  //     context: context,
+                  //     builder: (builder) => QuestionAndListAnswer(
+                  //       context: context,
+                  //       questionLabel:
+                  //           'إلى ماذا يستند الاستعراض الدوري الشامل؟',
+                  //       listAnswer: [
+                  //         'يستند إلى معلومات موضوعية وموثوق بها ، لبيان مدى وفاء كل دولة بالتزاماتها وتعهداتها في مجال حقوق الإنسان في على نحو يكفل شمولية التطبيق والمساواة في المعاملة بين جميع الدول.',
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
                   rowQuestionWidget(
                     context: context,
                     text:

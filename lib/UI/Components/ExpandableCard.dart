@@ -30,20 +30,12 @@ class _ExpandableCardState extends State<ExpandableCard> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+      margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
       decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black26,
-            blurRadius: 10,
-            blurStyle: BlurStyle.outer,
-          )
-        ],
-        borderRadius: BorderRadius.circular(10),
-        color: widget.color == null ? Colors.white : widget.color,
-      ),
-      child: isOpened
+          borderRadius: BorderRadius.circular(10),
+          color: theme(context).errorColor.withOpacity(0.25)),
+      child:  isOpened
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -58,7 +50,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                      widget.title,
                      style:
                      theme(context).textTheme.headline2!.copyWith(
-                       color: theme(context).primaryColor,
+                       color: Colors.black87,
                        fontSize: 24,
                        // overflow: TextOverflow.ellipsis
                      ),
@@ -74,7 +66,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                               widget.index.toString(),
                               style:
                                   theme(context).textTheme.headline2!.copyWith(
-                                        color: theme(context).primaryColor,
+                                    color: Colors.black87,
                                         fontSize: 24,
                                         // overflow: TextOverflow.ellipsis
                                       ),
@@ -89,7 +81,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                               widget.title,
                               style:
                                   theme(context).textTheme.headline2!.copyWith(
-                                        color: theme(context).primaryColor,
+                                    color: Colors.black87,
                                         fontSize: 24,
                                         // overflow: TextOverflow.ellipsis
                                       ),
@@ -109,7 +101,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                         angle: math.pi / 2,
                         child: Icon(
                           Icons.arrow_back_ios_new,
-                          color: theme(context).primaryColor,
+                          color: Colors.black87,
                         ),
                       ),
                     )
@@ -173,7 +165,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                         widget.title,
                         style:
                         theme(context).textTheme.headline2!.copyWith(
-                          color: theme(context).primaryColor,
+                          color: Colors.black87,
                           fontSize: 24,
                           // overflow: TextOverflow.ellipsis
                         ),
@@ -190,7 +182,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                               widget.index.toString(),
                               style:
                                   theme(context).textTheme.headline2!.copyWith(
-                                        color: theme(context).primaryColor,
+                                    color: Colors.black87,
                                         fontSize: 24,
                                         // overflow: TextOverflow.ellipsis
                                       ),
@@ -205,7 +197,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                               widget.title,
                               style:
                                   theme(context).textTheme.headline2!.copyWith(
-                                        color: theme(context).primaryColor,
+                                        color: Colors.black87,
                                         fontSize: 24,
                                         // overflow: TextOverflow.ellipsis
                                       ),
@@ -225,7 +217,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                         angle: -math.pi / 2,
                         child: Icon(
                           Icons.arrow_back_ios_new,
-                          color: theme(context).primaryColor,
+                          color: Colors.black87,
                         ),
                       ),
                     ),
