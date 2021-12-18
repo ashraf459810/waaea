@@ -44,7 +44,7 @@ class BahthTahdyatScreen extends StatelessWidget {
                       textDirection: TextDirection.rtl,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     RowPointWidget(
                       label: "العنف",

@@ -44,7 +44,7 @@ class BahthAfkarScreen extends StatelessWidget {
                       textDirection: TextDirection.rtl,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     Text(
                       "حددي الرؤية",
@@ -66,7 +66,7 @@ class BahthAfkarScreen extends StatelessWidget {
                       textDirection: TextDirection.rtl,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     Text(
                       "فكري",
@@ -89,6 +89,7 @@ class BahthAfkarScreen extends StatelessWidget {
                       label:
                           "ما هو الحق الذي سيتم الاعتراف به أو التمتع مبامرسته؟ (انظري إلى الإعلان العالمي لحقوق الانسان)",
                     ),
+                    SizedBox(height: 20,),
                     Text(
                       "حددي الهدف",
                       style: theme(context).textTheme.headline5!.copyWith(
@@ -127,6 +128,9 @@ class BahthAfkarScreen extends StatelessWidget {
                     ),
                     RowPointWidget(
                       label: "(إطار زمني) هل لهدفك إطار زمني؟",
+                    ),
+                    SizedBox(
+                      height: 30,
                     ),
                     Container(
                       width: double.infinity,
