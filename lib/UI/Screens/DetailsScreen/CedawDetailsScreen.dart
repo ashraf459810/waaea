@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:wa3iaa/UI/Components/CategoryWidget.dart';
 import 'package:wa3iaa/UI/Components/QuestionAndListAnswer.dart';
 import 'package:wa3iaa/UI/Components/RowQuestionWidget.dart';
+import 'package:wa3iaa/UI/Screens/FirstPart/MultiCedawScreen/MwadItfaqyaScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiCedawScreen/NmathjCedawScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiCedawScreen/TahfithCedawScreen.dart';
 import 'package:wa3iaa/UI/Screens/FirstPart/MultiHmayaScreen/ItarScreen.dart';
@@ -191,15 +192,15 @@ class CedawDetailsScreen extends StatelessWidget {
                     bgColor: Constants.lightPinkColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>
-                        Navigator.pushNamed(context, TawattawrScreen.route),
+                        Navigator.pushNamed(context, MwadItfaqyaScreen.route),
                   ),
                   CategoryWidget(
                       title:
                           "صادق العراق على اتفاقية سيداو بتاريخ 13 آب/أغسطس 1986",
                       bgColor: Constants.orangeColor,
                       textColor: theme(context).backgroundColor,
-                      onPressed: () =>
-                          Navigator.pushNamed(context, AlmasawatScreen.route)),
+                      hasNavigation: false,
+                      onPressed: () {}),
                   RowQuestionWidget(
                       onPressed: (context) => showModalBottomSheet(
                             enableDrag: true,

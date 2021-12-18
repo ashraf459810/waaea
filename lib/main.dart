@@ -21,6 +21,7 @@ import 'UI/Screens/DetailsScreen/MaraaTamnyaDetailsScreen.dart';
 import 'UI/Screens/DetailsScreen/MsharakaDetailsScreen.dart';
 import 'UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfManthurQanunScreen.dart';
 import 'UI/Screens/FirstPart/MultiAlhnfScreen/AlhnfStrategyScreen.dart';
+import 'UI/Screens/FirstPart/MultiCedawScreen/MwadItfaqyaScreen.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/AdwarGenderScreen.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/AnfQaymIjtmahi.dart';
 import 'UI/Screens/FirstPart/MultiGenderScreen/HawamlMuathraScreen.dart';
@@ -145,6 +146,7 @@ class MyApp extends StatelessWidget {
             CedawDetailsScreen.route: (context) => CedawDetailsScreen(),
             TahfithCedawScreen.route: (context) => TahfithCedawScreen(),
             NmathjCedawScreen.route: (context) => NmathjCedawScreen(),
+            MwadItfaqyaScreen.route: (context) => MwadItfaqyaScreen(),
             //Gender Screens (Section 6)
             GenderDetailsScreen.route: (context) => GenderDetailsScreen(),
             AnfQaymIjtmahiScreen.route: (context) => AnfQaymIjtmahiScreen(),

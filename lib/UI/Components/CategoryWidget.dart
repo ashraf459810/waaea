@@ -6,9 +6,10 @@ class CategoryWidget extends StatelessWidget {
   final String title;
   final Color bgColor;
   final Color textColor;
+  final bool? hasNavigation;
   final void Function() onPressed;
 
-  CategoryWidget({required this.title,required this.bgColor,required this.textColor,required this.onPressed});
+  CategoryWidget({required this.title,required this.bgColor,this.hasNavigation,required this.textColor,required this.onPressed});
   @override
   Widget build(BuildContext context) {
     return  GestureDetector(
@@ -24,9 +25,9 @@ class CategoryWidget extends StatelessWidget {
             color: bgColor),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: ListTile(
+          child: hasNavigation == null ? ListTile(
             title: Text(
-             title,
+              title,
               style: theme(context)
                   .textTheme
                   .headline2!
@@ -35,6 +36,14 @@ class CategoryWidget extends StatelessWidget {
             trailing: Icon(
               Icons.arrow_forward_ios_outlined,
               color: textColor,
+            ),
+          ) :ListTile(
+            title: Text(
+             title,
+              style: theme(context)
+                  .textTheme
+                  .headline2!
+                  .copyWith(color: textColor, fontSize: 20,fontFamily: 'R016'),
             ),
           ),
         ),
