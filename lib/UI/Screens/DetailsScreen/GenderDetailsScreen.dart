@@ -53,7 +53,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Text(
-                      'النوع الاجتامعي "الجندر"',
+                      'النوع الاجتماعي "الجندر"',
                       style: theme(context).textTheme.headline2!.copyWith(
                           color: Colors.black87,
                           fontSize: 32,
@@ -252,7 +252,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                       onPressed: () {}),
                   sectionImageWithLabel(
                     context: context,
-                    text: "هل هناك أعامل لا تستطيع النساء القيام بها؟",
+                    text: "هل هناك أعمال لا تستطيع النساء القيام بها؟",
                     image: Constants.moneyImage,
                     onPressed: () {},
                   ),
@@ -260,7 +260,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     height: 10,
                   ),
                   CategoryWidget(
-                    title: "الفرق بين النوع الاجتامعي والجنس",
+                    title: "الفرق بين النوع الاجتماعي والجنس",
                     bgColor: Constants.lightPinkColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () => Navigator.pushNamed(
@@ -269,7 +269,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     ),
                   ),
                   CategoryWidget(
-                    title: "العوامل المؤثرة في النوع الاجتامعي",
+                    title: "العوامل المؤثرة في النوع الاجتماعي",
                     bgColor: theme(context).primaryColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () => Navigator.pushNamed(
@@ -278,7 +278,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                     ),
                   ),
                   CategoryWidget(
-                    title: "الأدوار المختلفة القامئة على النوع الاجتامعي",
+                    title: "الأدوار المختلفة القامئة على النوع الاجتماعي",
                     bgColor: Constants.orangeColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () => Navigator.pushNamed(

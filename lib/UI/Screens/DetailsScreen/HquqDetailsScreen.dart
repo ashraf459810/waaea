@@ -33,19 +33,19 @@ class HquqDetailsScreen extends StatelessWidget {
                     color: theme(context).primaryColor,
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: Text(
                       "مفهوم حقوق الإنسان",
-                      style: theme(context)
-                          .textTheme
-                          .headline2!
-                          .copyWith(color: Colors.black87, fontSize: 38,fontFamily: 'R016'),
+                      style: theme(context).textTheme.headline2!.copyWith(
+                          color: Colors.black87,
+                          fontSize: 38,
+                          fontFamily: 'R016'),
                     ),
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: Text(
                       "لك الحق أن تعرفي انك تتمتعني بنفس الحقوق وُ الحريات الأساسية. فحقوق الإنسان ليست هبة ولا ميكنُ لأحد أو لأي جهة أن متنحك حقوقك أو تُسلبها منكحقوق الإنسان هي الضامنات العالمية التي تضمن الكرامة الإنسانية وتكفل المساواة بني الجميع. وهي ّة في جميع البشر مهام كانت الحقوق المتأصل جنسيتهم، أو مكان إقامتهم، أو جنسهم، أو أصلهم، ....أو لونهم، أو عرقهم، أو دينهم، أو لغتهم",
                       style: theme(context)
@@ -86,13 +86,14 @@ class HquqDetailsScreen extends StatelessWidget {
                     height: 20,
                   ),
                   GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, Hquuq1Screen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, Hquuq1Screen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      margin:
-                          const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: theme(context).accentColor),
@@ -115,13 +116,14 @@ class HquqDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, Hquuq2Screen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, Hquuq2Screen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      margin:
-                          const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: theme(context).primaryColor),
@@ -142,13 +144,14 @@ class HquqDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, Hquuq3Screen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, Hquuq3Screen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      margin:
-                          const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Constants.orangeColor),
@@ -210,13 +213,14 @@ class HquqDetailsScreen extends StatelessWidget {
                       text: "هل يكفل الدستور العراقي المساواة بني الجنسني؟",
                       context: context),
                   GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, Hquuq4Screen.route),
+                    onTap: () =>
+                        Navigator.pushNamed(context, Hquuq4Screen.route),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      margin:
-                          const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 2),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white),
@@ -224,7 +228,7 @@ class HquqDetailsScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ListTile(
                           title: Text(
-                            "ضامنات حقوق الإنسان على تحسني أوضاع النساء والفتيات",
+                            "ضامنات حقوق الإنسان على تحسين أوضاع النساء والفتيات",
                             style: theme(context)
                                 .textTheme
                                 .headline2!
@@ -236,25 +240,29 @@ class HquqDetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 30,),
-
+                  SizedBox(
+                    height: 30,
+                  ),
                 ],
               ),
-              Positioned(child:  SafeArea(
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  radius: 20,
-                  child: IconButton(
-                    padding: EdgeInsets.only(right: 5),
-                    icon: Icon(
-                      Icons.arrow_back_ios,
+              Positioned(
+                child: SafeArea(
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    radius: 20,
+                    child: IconButton(
+                      padding: EdgeInsets.only(right: 5),
+                      icon: Icon(
+                        Icons.arrow_back_ios,
+                      ),
+                      onPressed: () => Navigator.pop(context),
                     ),
-                    onPressed: () =>Navigator.pop(context),
                   ),
                 ),
-              ),
-              top: 10,right: 20,)
+                top: 10,
+                right: 20,
+              )
             ],
           ),
         ));

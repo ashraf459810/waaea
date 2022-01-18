@@ -47,7 +47,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 30),
                     child: Text(
-                      "تحقيق المساواة بني الجنسني ومتكني كل النساء والفتيات في كل مكان",
+                      "تحقيق المساواة بين الجنسين ومتكني كل النساء والفتيات في كل مكان",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Colors.black87,
                           fontSize: 30,
@@ -183,7 +183,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ListTile(
                           title: Text(
-                            "حواجز ضخمة في سبيل تحقيق المساواة بني الجنسني.",
+                            "حواجز ضخمة في سبيل تحقيق المساواة بين الجنسين.",
                             style: theme(context)
                                 .textTheme
                                 .headline2!

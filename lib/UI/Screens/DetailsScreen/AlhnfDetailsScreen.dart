@@ -25,12 +25,11 @@ class AlhnfDetailsScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: EdgeInsets.only(
-                        top: 40,bottom: 0),
+                    padding: EdgeInsets.only(top: 40, bottom: 0),
                     child: Image.asset(
                       Constants.topBg,
                       width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height/5,
+                      height: MediaQuery.of(context).size.height / 5,
                     ),
                     color: theme(context).primaryColor,
                   ),
@@ -38,10 +37,10 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     height: 15,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Text(
-                      "العنف القائم على النوع الاجتامعي",
+                      "العنف القائم على النوع الاجتماعي",
                       style: theme(context).textTheme.headline2!.copyWith(
                           color: Colors.black87,
                           fontSize: 32,
@@ -49,8 +48,8 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 4),
                     child: Text(
                       "العنف هـو “اعتداء جسـدي أو معنوي مقصود مـن جهة تتمتع بسلطة مادية أو معنوية على جهة أخرى. وقد تكون هـذه الجهة فـرداً أو جامعة أو طبقة اجتامعية أو دولة تحاول إخضاع جهة أخرى في إطار علاقة قوة غري ّب متكافئة إجتامعياً وسياسياً وإقتصادياً، ما قـد يتسـب فـي إحداث أضرار مادية أو معنوية أو نفسية على فـرد أو جامعة أو طبقة اجتامعية أو دولة أخرى ”",
                       style: theme(context)
@@ -60,8 +59,8 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 4),
                     child: Text(
                       "(الجمعية العامة للأمم المتحدة)",
                       style: theme(context).textTheme.bodyText1!.copyWith(
@@ -74,8 +73,8 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     height: 20,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 25, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
                     child: Align(
                       alignment: Alignment.center,
                       child: Text(
@@ -97,8 +96,8 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 4),
                     child: Text(
                       "(إعلان القضاء على العنف ضد المرأة الصادر عن الجمعية العامة للأمم المتحدة عام (1993)",
                       style: theme(context).textTheme.bodyText1!.copyWith(
@@ -122,17 +121,16 @@ class AlhnfDetailsScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: quoteCard(
-                        context: context,
-                        label: "يتميّز بقبول وتسامح مجتمعيُ"),
+                        context: context, label: "يتميّز بقبول وتسامح مجتمعيُ"),
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15, vertical: 5),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20)),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(20)),
                     child: Image.asset(Constants.page1),
                   ),
                   Padding(
@@ -148,14 +146,14 @@ class AlhnfDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   CategoryWidget(
-                    title: "أنواع العنف القائم على أساس النوع الاجتامعي",
+                    title: "أنواع العنف القائم على أساس النوع الاجتماعي",
                     bgColor: Constants.orangeColor,
                     textColor: theme(context).backgroundColor,
                     onPressed: () =>
                         Navigator.pushNamed(context, AlhnfNawhScreen.route),
                   ),
                   CategoryWidget(
-                    title: "آثار العنف القائم على النوع الإجتامعي",
+                    title: "آثار العنف القائم على النوع الاجتماعي",
                     bgColor: Constants.extraLightPinkColor,
                     textColor: theme(context).primaryColor,
                     onPressed: () =>
@@ -170,11 +168,11 @@ class AlhnfDetailsScreen extends StatelessWidget {
                           context, AlhnfStrategyScreen.route)),
                   CategoryWidget(
                     title:
-                        "العنف القائم على النوع الاجتامعي من منظور القانون الدولي لحقوق الإنسان",
+                        "العنف القائم على النوع الاجتماعي من منظور القانون الدولي لحقوق الإنسان",
                     bgColor: Constants.orangeColor,
                     textColor: theme(context).backgroundColor,
-                    onPressed: () =>
-                        Navigator.pushNamed(context, AlhnfManthurQanunScreen.route),
+                    onPressed: () => Navigator.pushNamed(
+                        context, AlhnfManthurQanunScreen.route),
                   ),
                   SizedBox(
                     height: 20,

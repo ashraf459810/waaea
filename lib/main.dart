@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:wa3iaa/UI/Screens/AboutScreen/About_app.dart';
 import 'package:wa3iaa/UI/Screens/CategoriesScreen/CategoriesScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HalamyaDetailsScreen.dart';
 import 'package:wa3iaa/UI/Screens/DetailsScreen/HquqDetailsScreen.dart';
@@ -78,9 +79,7 @@ import 'UI/Screens/SplashScreen/SplashScreen.dart';
 import 'UI/Screens/SubCategories2Screen/SubCategories2Screen.dart';
 import 'UI/Screens/SubCategoriesScreen/SubCategoriesScreen.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -137,7 +136,8 @@ class MyApp extends StatelessWidget {
             //Alhnf Screens (Section 4)
             AlhnfDetailsScreen.route: (context) => AlhnfDetailsScreen(),
             AlhnfStrategyScreen.route: (context) => AlhnfStrategyScreen(),
-            AlhnfManthurQanunScreen.route: (context) => AlhnfManthurQanunScreen(),
+            AlhnfManthurQanunScreen.route: (context) =>
+                AlhnfManthurQanunScreen(),
             AlhnfNawhScreen.route: (context) => AlhnfNawhScreen(),
             AtharHanafScreen.route: (context) => AtharHanafScreen(),
             GhairTahaqdyaScreen.route: (context) => GhairTahaqdyaScreen(),
@@ -198,6 +198,7 @@ class MyApp extends StatelessWidget {
             BahthTahdyatScreen.route: (context) => BahthTahdyatScreen(),
             BahthAfkarScreen.route: (context) => BahthAfkarScreen(),
             ThahyStrategytScreen.route: (context) => ThahyStrategytScreen(),
+            AboutScreen.route: (context) => AboutScreen(),
           },
         ));
   }

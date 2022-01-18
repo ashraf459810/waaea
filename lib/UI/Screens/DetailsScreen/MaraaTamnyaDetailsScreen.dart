@@ -65,11 +65,9 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
                           ),
                     ),
                   ),
-
                   SizedBox(
                     height: 10,
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 10),
@@ -81,7 +79,6 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 10),
@@ -93,7 +90,6 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(
                       context,
@@ -112,7 +108,7 @@ class MaraaTamnyaDetailsScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ListTile(
                           title: Text(
-                            "الهدف الخامس تحقيق المساواة بني الجنسني",
+                            "الهدف الخامس تحقيق المساواة بين الجنسين",
                             style: theme(context)
                                 .textTheme
                                 .headline2!

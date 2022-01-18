@@ -56,7 +56,8 @@ class Constants {
   static String stealImage = 'assets/images/gender/stealImage.png';
   static String genderImage = 'assets/images/gender/genderImage.png';
   static String screenshotGender = 'assets/images/gender/screenshotGender.png';
-  static String compareScreenshot = 'assets/images/gender/compareScreenshot.png';
+  static String compareScreenshot =
+      'assets/images/gender/compareScreenshot.png';
   static String adwarScreenshot = 'assets/images/gender/adwarScreenshot.png';
 
   //Images Maraa
@@ -101,6 +102,13 @@ class Constants {
       'assets/images/adawatIntxab/intxabScreenshot1.png';
   static String intxabScreenshot2 =
       'assets/images/adawatIntxab/intxabScreenshot2.png';
+
+  // logo images for about screen
+
+  static String kernel_logo = 'assets/images/kernel.png';
+  static String logo1 = 'assets/images/logo1.jpg';
+  static String logo2 = 'assets/images/logo2.jpg';
+  static String sida = 'assets/images/sida.png';
 
   /// --------------------Colors----------------------
 

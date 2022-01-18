@@ -253,7 +253,7 @@ class MaraaDetailsScreen extends StatelessWidget {
     required String title,
   }) {
     return Container(
-      height: MediaQuery.of(context).size.height / 4.7,
+      height: MediaQuery.of(context).size.height / 4.5,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
