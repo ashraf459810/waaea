@@ -40,18 +40,22 @@ class CompareGenderScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "الفرق بني النوع الاجتامعي والجنس",
+                      "الفرق بني النوع الاجتماعي والجنس",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Constants.orangeColor,
                           fontSize: 30,
                           fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
-                    SizedBox(height: 20,),
-
-                    Image.asset(Constants.compareScreenshot,),
-                    SizedBox(height: 20,),
-
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Image.asset(
+                      'assets/images/gender/table2.png',
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Text(
                       "أساس مراعاة مفهوم النوع الاجتامعي",
                       style: theme(context).textTheme.headline5!.copyWith(
@@ -60,24 +64,25 @@ class CompareGenderScreen extends StatelessWidget {
                           fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
-                    SizedBox(height: 10,),
-
+                    SizedBox(
+                      height: 10,
+                    ),
                     Text(
-                      "1.التعرف على الأدوار المنوطة لكل من المرأة والرجل ّ والتي لا تحددها العوامل البيولوجية بقدر ما تحددها العوامل الاقتصادية والاجتامعية والثقافية.  \n\n 2.إتاحة الفرص المتكافئة للمرأة والرجل لاكتشاف القدرات الكامنة لديهم ومتكني مهاراتهم من أجل القيام بأدوار جديدة تعود بالفائدة عليهم وعلى المجتمع.\n \n 3.اعادة توزيع الأدوار بني المرأة والرجل في المجتمع من منطلق مفهوم المشاركة مام يساهم في تحقيق فائدة اكبر للجميع.",
+                      "1.التعرف على الأدوار المنوطة لكل من المرأة والرجل ّ والتي لا تحددها العوامل البيولوجية بقدر ما تحددها العوامل الاقتصادية والاجتامعية والثقافية.  \n\n 2.إتاحة الفرص المتكافئة للمرأة والرجل لاكتشاف القدرات الكامنة لديهم وتمكين مهاراتهم من أجل القيام بأدوار جديدة تعود بالفائدة عليهم وعلى المجتمع.\n \n 3.اعادة توزيع الأدوار بني المرأة والرجل في المجتمع من منطلق مفهوم المشاركة مام يساهم في تحقيق فائدة اكبر للجميع.",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Colors.black54,
                           fontSize: 20,
                           fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
-                    SizedBox(height: 20,),
-
+                    SizedBox(
+                      height: 20,
+                    ),
                   ],
                 ),
               ),
             ),
           ),
-        )
-    );
+        ));
   }
 }

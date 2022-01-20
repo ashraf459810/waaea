@@ -14,7 +14,7 @@ class AdwarGenderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor:  Constants.orangeColor,
+          backgroundColor: Constants.orangeColor,
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back_ios,
@@ -44,7 +44,7 @@ class AdwarGenderScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 10),
                       child: Text(
-                        "الأدوار المختلفة القامئة على النوع الاجتامعي",
+                        "الأدوار المختلفة القائمة على النوع الاجتماعي",
                         style: theme(context).textTheme.headline5!.copyWith(
                             color: Constants.orangeColor,
                             fontSize: 30,
@@ -52,17 +52,17 @@ class AdwarGenderScreen extends StatelessWidget {
                         textDirection: TextDirection.rtl,
                       ),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
 
-                    SizedBox(height: 10,),
-
-                    Image.asset(Constants.adwarScreenshot,),
-
-                   ],
+                    ///table 1
+                    Image.asset('assets/images/gender/table1.png'),
+                  ],
                 ),
               ),
             ),
           ),
-        )
-    );
+        ));
   }
 }

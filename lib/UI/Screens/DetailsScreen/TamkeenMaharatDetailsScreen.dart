@@ -26,7 +26,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "العامل يحتاجك لتكوين صوته",
+                      "العالم يحتاجك لتكوين صوته",
                       style: theme(context).textTheme.headline2!.copyWith(
                           color: Colors.white,
                           fontSize: 35,
@@ -41,7 +41,7 @@ class TamkeenMaharatDetaillsScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 30),
                     child: Text(
-                      "العامل سيكون آمناً بنسائه التي لها صوت ورؤية وبصمة في المجتمع ًا في التغيري في هذا العامل نحو ميكنك أن تكون سبب الأفضل اذا استطعتي ان تقولي الكلمة المناسبة في الوقت المناسب بالطريقة المناسبة للأشخاص المناسبني",
+                      "العالم سيكون آمناً بنسائه التي لها صوت ورؤية وبصمة في المجتمع ًا في التغيري في هذا العامل نحو ميكنك أن تكون سبب الأفضل اذا استطعتي ان تقولي الكلمة المناسبة في الوقت المناسب بالطريقة المناسبة للأشخاص المناسبني",
                       style: theme(context).textTheme.bodyText1!.copyWith(
                             color: Colors.black54,
                             fontSize: 20,

@@ -11,7 +11,10 @@ class CardCategory extends StatelessWidget {
   final void Function() onPressed;
 
   const CardCategory(
-      {required this.asset,required this.onPressed, required this.title, required this.description});
+      {required this.asset,
+      required this.onPressed,
+      required this.title,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -48,17 +51,16 @@ class CardCategory extends StatelessWidget {
             Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 8),
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 25),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
                       title,
-                      style: theme(context)
-                          .textTheme
-                          .headline5!
-                          .copyWith(color: theme(context).primaryColor,fontFamily: 'R016'),
+                      style: theme(context).textTheme.headline5!.copyWith(
+                          color: theme(context).primaryColor,
+                          fontFamily: 'R016'),
                       textDirection: TextDirection.rtl,
                     ),
                     Text(

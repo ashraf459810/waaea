@@ -60,7 +60,13 @@ class Logos extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 20),
+                SizedBox(
+                    height: 50,
+                    width: 120,
+                    child: Image.asset(
+                      'assets/images/louder.png',
+                      fit: BoxFit.contain,
+                    )),
                 Container(
                   width: 100,
                   height: 100,

@@ -42,9 +42,7 @@ class CategoriesScreen extends StatelessWidget {
                 onPressed: () =>
                     Navigator.pushNamed(context, SubCategories2Screen.route),
                 title: "الإطار العملي",
-                description:
-                    "وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور" +
-                        " أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد",
+                description: "",
                 asset: Constants.presenting,
               ),
             ),

@@ -47,7 +47,7 @@ class Ta7qeeqMasawatScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 30),
                     child: Text(
-                      "تحقيق المساواة بين الجنسين ومتكني كل النساء والفتيات في كل مكان",
+                      "تحقيق المساواة بين الجنسين وتمكين كل النساء والفتيات في كل مكان",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Colors.black87,
                           fontSize: 30,

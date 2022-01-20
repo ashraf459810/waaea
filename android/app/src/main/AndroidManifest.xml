@@ -13,7 +13,7 @@
       </intent>
     </queries>
    <application
-        android:label="واعية"
+        android:label="Waaea - واعية"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
