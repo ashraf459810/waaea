@@ -21,7 +21,7 @@ class AlhnfNawhScreen extends StatelessWidget {
               Icons.arrow_back_ios,
               color: theme(context).backgroundColor,
             ),
-            onPressed: () =>Navigator.pop(context),
+            onPressed: () => Navigator.pop(context),
           ),
         ),
         body: Container(
@@ -45,9 +45,11 @@ class AlhnfNawhScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 10),
                       child: Text(
-                        "أنواع العنف القائم على أساس النوع الاجتامعي",
+                        "أنواع العنف القائم على أساس النوع الاجتماعي",
                         style: theme(context).textTheme.headline5!.copyWith(
-                            color: Constants.orangeColor, fontSize: 30,fontFamily: 'R016'),
+                            color: Constants.orangeColor,
+                            fontSize: 30,
+                            fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),
@@ -97,10 +99,10 @@ class AlhnfNawhScreen extends StatelessWidget {
                         hasSideColor: true,
                         color: Constants.lightPinkColor,
                         desc:
-                            "الإساءة بإسم الأعراف والتقاليد والعادات الاجتامعية والثقافة السائدة في المجتمع، بالاضافة إلى الصور النمطية للأدوار الاجتامعية بيـن الجنسيـن.",
+                            "الإساءة بإسم الأعراف والتقاليد والعادات الاجتماعية والثقافة السائدة في المجتمع، بالاضافة إلى الصور النمطية للأدوار الاجتامعية بيـن الجنسيـن.",
                         icon: Constants.ijtmahyIcon,
                         extra:
-                            "مثال: التزويج المبكر بإسم الأعراف والتقاليد والعادات الاجتامعية، وتقييد الحركة، والمنع من السفر، الحرمان من التعليم."),
+                            "مثال: التزويج المبكر بإسم الأعراف والتقاليد والعادات الاجتماعية، وتقييد الحركة، والمنع من السفر، الحرمان من التعليم."),
                     NawhIconWidget(
                         label: "العنف القانوي",
                         hasSideColor: true,

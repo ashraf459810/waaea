@@ -47,7 +47,9 @@ class AtharHanafScreen extends StatelessWidget {
                       child: Text(
                         "آثار العنف القائم على النوع الإجتامعي",
                         style: theme(context).textTheme.headline5!.copyWith(
-                            color: theme(context).primaryColor, fontSize: 30,fontFamily: 'R016'),
+                            color: theme(context).primaryColor,
+                            fontSize: 30,
+                            fontFamily: 'R016'),
                         textDirection: TextDirection.rtl,
                       ),
                     ),
@@ -68,7 +70,7 @@ class AtharHanafScreen extends StatelessWidget {
                         desc: "مشاكل نفسية",
                         icon: Constants.depressPic,
                         extra:
-                            "الاكتئاب والقلق والاضطرابات، الانتحار والقتل، عدم الثقة بالنفس، الخوف الحاد من حدوث عنف َ في المستقبل على الشخص المعنف ومحيطه، الرفض والعزلة والوصمة الاجتامعية."),
+                            "الاكتئاب والقلق والاضطرابات، الانتحار والقتل، عدم الثقة بالنفس، الخوف الحاد من حدوث عنف َ في المستقبل على الشخص المعنف ومحيطه، الرفض والعزلة والوصمة الاجتماعية."),
                     NawhIconWidget(
                         label:
                             "الحرمان من فرص التعليم والعمل والمشاركة في صنع القرار",
@@ -96,7 +98,7 @@ class AtharHanafScreen extends StatelessWidget {
                         desc: "null",
                         icon: "null",
                         extra:
-                            "زيادة العبء المالي على النظم الصحية والقضائية ونظم الرعاية الاجتامعية وضع عوائق أمام الاستقرار والنمو الاقتصادي وغياب المساهمة في التنمية الاجتامعية والاقتصادية."),
+                            "زيادة العبء المالي على النظم الصحية والقضائية ونظم الرعاية الاجتماعية وضع عوائق أمام الاستقرار والنمو الاقتصادي وغياب المساهمة في التنمية الاجتامعية والاقتصادية."),
                   ],
                 ),
               ),

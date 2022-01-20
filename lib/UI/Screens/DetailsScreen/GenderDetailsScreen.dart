@@ -140,7 +140,7 @@ class _GenderDetailsScreenState extends State<GenderDetailsScreen> {
                   ),
                   RowQuestionWidget(
                     context: context,
-                    text: "لماذا الاهتامم بقضايا النوع الاجتامعي؟",
+                    text: "لماذا الاهتامم بقضايا النوع الاجتماعي؟",
                     onPressed: (context) => showModalBottomSheet(
                       enableDrag: true,
                       isScrollControlled: true,

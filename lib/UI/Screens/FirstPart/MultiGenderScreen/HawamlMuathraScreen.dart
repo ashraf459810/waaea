@@ -40,7 +40,7 @@ class HawamlMuathraScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "العوامل المؤثرة في النوع الاجتامعي",
+                      "العوامل المؤثرة في النوع الاجتماعي",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: theme(context).primaryColor,
                           fontSize: 30,
@@ -75,7 +75,6 @@ class HawamlMuathraScreen extends StatelessWidget {
                     SizedBox(
                       height: 15,
                     ),
-
                     Text.rich(
                       TextSpan(
                         children: [
@@ -89,7 +88,7 @@ class HawamlMuathraScreen extends StatelessWidget {
                           ),
                           TextSpan(
                             text:
-                            "من خلال عملية التهيئة الاجتامعية وثقافة المجتمع المعني والثقافات السائدة، حيث يتلقى الصبيان التشجيع على التصرف بطريقة تبرز السامت الذكرية لهم... الخشونة. اللعب في الشارع، الألعاب، حرية الحركة والجلوس...الخ بينام تتلقى البنات عكس ذلك، أي إبراز الصفات الأنثوية لديهن... الرقة، اللعب داخل المنزل، ملازمة الأم، الألعاب، ارتداء الثياب.",
+                                "من خلال عملية التهيئة الاجتماعية وثقافة المجتمع المعني والثقافات السائدة، حيث يتلقى الصبيان التشجيع على التصرف بطريقة تبرز السامت الذكرية لهم... الخشونة. اللعب في الشارع، الألعاب، حرية الحركة والجلوس...الخ بينام تتلقى البنات عكس ذلك، أي إبراز الصفات الأنثوية لديهن... الرقة، اللعب داخل المنزل، ملازمة الأم، الألعاب، ارتداء الثياب.",
                             style: theme(context).textTheme.headline5!.copyWith(
                                 color: Colors.black54,
                                 fontSize: 22,

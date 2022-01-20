@@ -46,7 +46,7 @@ class TaqtasrMsharakaScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 30, vertical: 0),
                     child: Text(
-                      "يرتبط تعزيز مشاركة النساء في صنع القرار بالمشاركة السياسية، وإمنا بالمساهمة الفعالة في اتخاذ القرارات الحيوية ضمن مختلف المجالات الاقتصادية والاجتامعية والثقافية.",
+                      "يرتبط تعزيز مشاركة النساء في صنع القرار بالمشاركة السياسية، وإمنا بالمساهمة الفعالة في اتخاذ القرارات الحيوية ضمن مختلف المجالات الاقتصادية والاجتماعية والثقافية.",
                       style: theme(context).textTheme.bodyText1!.copyWith(
                             color: Colors.black54,
                             fontSize: 20,
@@ -60,7 +60,7 @@ class TaqtasrMsharakaScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 30, vertical: 0),
                     child: Text(
-                      "تأيت هذه المشاركة بأشكال مختلفة في مواقع صنع القرار ومواقع التأثري وتتأثر بجملة من العوامل السياسية والاجتامعية والاقتصادية والثقافية",
+                      "تأيت هذه المشاركة بأشكال مختلفة في مواقع صنع القرار ومواقع التأثري وتتأثر بجملة من العوامل السياسية والاجتماعية والاقتصادية والثقافية",
                       style: theme(context).textTheme.bodyText1!.copyWith(
                             color: Colors.black54,
                             fontSize: 20,
@@ -88,7 +88,9 @@ class TaqtasrMsharakaScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20,),
+                          SizedBox(
+                            height: 20,
+                          ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 0),

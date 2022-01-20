@@ -66,7 +66,7 @@ class Hquuq4Screen extends StatelessWidget {
                       context: context,
                       label: "الحق في التعليم",
                       define:
-                          "يساعدك على لعب دور أساسي في الحياة الاقتصادية والاجتامعية والسياسية."),
+                          "يساعدك على لعب دور أساسي في الحياة الاقتصادية والاجتماعية والسياسية."),
                   quoteCard(
                       context: context,
                       label: "الحق في المساواة",
@@ -132,7 +132,7 @@ class Hquuq4Screen extends StatelessWidget {
                   quoteCard(
                       context: context,
                       label: "الحق في الخصوصية ",
-                      define: "مينع خرق حسابات التواصل الاجتامعي."),
+                      define: "مينع خرق حسابات التواصل الاجتماعي."),
                   quoteCard(
                       context: context,
                       label: "الحق في الرعاية والصحة الإنجابية",

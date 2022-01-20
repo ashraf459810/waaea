@@ -161,7 +161,7 @@ class SubCategoriesScreen extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 20, vertical: 20),
                           child: Text(
-                            "مناهضة العنف القائم\nعلى النوع الاجتامعي",
+                            "مناهضة العنف القائم\nعلى النوع الاجتماعي",
                             style: theme(context).textTheme.headline5!.copyWith(
                                 color: Colors.white, fontFamily: 'R016'),
                             textDirection: TextDirection.rtl,

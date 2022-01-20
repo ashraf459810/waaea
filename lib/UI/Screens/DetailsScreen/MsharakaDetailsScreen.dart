@@ -31,7 +31,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                     ),
                     height: MediaQuery.of(context).size.height / 4,
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.only(top: 50,bottom: 10),
+                    padding: EdgeInsets.only(top: 50, bottom: 10),
                     color: theme(context).primaryColor,
                   ),
                   Padding(
@@ -46,8 +46,8 @@ class MsharakaDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
                     child: Text(
                       "يعتمد حق مشاركة النساء في صنع القرار في جوهره على الاعتراف بحقوق النساء المتساوية في إدارة شؤونهن وتقرير مصريهن والتأثري على السياسات ِ الحكومية بصرف النظر عن الجنس أو الدين أو العرق أو اللون أو النوع الاجتامعي.",
                       style: theme(context).textTheme.bodyText1!.copyWith(
@@ -75,8 +75,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                               offset: Offset(1, 0.5),
                               blurRadius: 9)
                         ]),
-                    margin:
-                        EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 30, vertical: 10),
@@ -93,11 +92,11 @@ class MsharakaDetailsScreen extends StatelessWidget {
                     height: 10,
                   ),
                   RowQuestionWidget(
-                    context: context,
-                    text:
-                        "هل تقتصر مشاركة المرأة في صنع القرار على المشاركة السياسية؟",
-                    onPressed: (context) => Navigator.pushNamed(context, TaqtasrMsharakaScreen.route)
-                  ),
+                      context: context,
+                      text:
+                          "هل تقتصر مشاركة المرأة في صنع القرار على المشاركة السياسية؟",
+                      onPressed: (context) => Navigator.pushNamed(
+                          context, TaqtasrMsharakaScreen.route)),
                   RowQuestionWidget(
                     context: context,
                     text: "ما هي أهمية مشاركة المرأة في صنع القرار؟ ",
@@ -138,8 +137,8 @@ class MsharakaDetailsScreen extends StatelessWidget {
                     text: "المشاركة وحقوق الإنسان",
                     color: Constants.lightPinkColor,
                     textColor: Colors.white,
-                    onPressed: (context) => Navigator.pushNamed(
-                        context, MsharakaHquqScreen.route),
+                    onPressed: (context) =>
+                        Navigator.pushNamed(context, MsharakaHquqScreen.route),
                   ),
                   RowCategoryWidget(
                     context: context,
@@ -179,8 +178,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel:
-                        'الصورة النمطية للمرأة',
+                        questionLabel: 'الصورة النمطية للمرأة',
                         listAnswer: [
                           "يكرّس الواقع صورة نمطية للمرأة أقصتها عن سلطة اتخاذ القرار السياسي والإداري والاقتصادي والاجتماعي، ولا تزال المشاركة الكاملة والمتساوية للمرأة في صنع القرار في جميع مجالات الحياة العامة والسياسية بعيدة المنال ولم تشفع للمرأة كوتا التمثيل المقرّرة قانوناً في أن تمارس حقها  في تولّي مناصب اتخاذ القرار. ",
                         ],
@@ -189,7 +187,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                   ),
                   RowCategoryWidget(
                     context: context,
-                    text: "تحديات ثقافية واجتامعية",
+                    text: "تحديات ثقافية واجتماعية",
                     color: Colors.white,
                     textColor: theme(context).primaryColor,
                     onPressed: (context) => showModalBottomSheet(
@@ -198,8 +196,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel:
-                        'تحديات ثقافية واجتامعية',
+                        questionLabel: 'تحديات ثقافية واجتامعية',
                         listAnswer: [
                           "تتعدد القوالب الاجتماعية والثقافية السلبية السائدة التي تحّد من مشاركة النساء في الشؤون السياسية وتعزّز التمييز ضد النساء في الأسرة والمجتمع، وتزيد من غياب الخدمات الاجتماعية، وعدم تقاسم الرجال على قدم المساواة أعباء الرعاية والأسرة، وانتشار العنف ضد المرأة، واعتماد النساء الاقتصادي على الرجال.",
                           " كل هذه العوامل تساهم مساهمة كبيرة في استبعاد النساء من الحياة العامة بصورةٍ منهجية وتقيدّ المشاركة بفعالية في الحياة السياسية والعامة.",
@@ -219,8 +216,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel:
-                        ' تحديات اقتصادية',
+                        questionLabel: ' تحديات اقتصادية',
                         listAnswer: [
                           "تواجه النساء وجوهاً مختلفة من التمييز والاستغلال، تؤدّي إلى استبعادهن عن مواقع صنع القرار بشكلٍ عام، وعن مواقع صنع القرارات الاقتصادية بشكلٍ خاص. ولااحظ أن التقدّم الملحوظ الكمّي والنوعي في مشاركة المرأة في المجال الاقتصادي يصطدم بالسقف الزجاجي للوصول إلى مواقع صنع القرار في المؤسسات الاقتصادية بالقطاعين العام والخاص.",
                           "إن حرمان النساء من إمكانية الوصول على قدم المساواة مع الرجل إلى التعليم والتدريب والقروض المصرفية، وعدم إمكانية امتلاك الموارد المالية ومجالات الإنتاج الأخرى، وتحسين ظروف العمل المواتية مع الدور الأسري الرعائي يعيق تحقيق كامل إمكاناتهن، ويحدّ من إسهامهن الكامل في التنمية والنمو الاقتصادي.",
@@ -239,8 +235,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel:
-                        'تحديات مؤسسية',
+                        questionLabel: 'تحديات مؤسسية',
                         listAnswer: [
                           "تساهم العوامل المؤسسية أيضاً في سوء تمثيل المرأة في الحياة السياسية والعامة على جميع المستويات، من المحلي إلى الدولي. فعلى سبيل المثال، يظل تعيين النساء في مناصب رفيعة في الحكومة أو النقابات أو الجمعيات السياسية أمراً نادراً. كما أن عدم اهتمام القيادات الحزبية بتوفير مستلزمات التدريب والتطوير للكوادر النسائية ضمن تلك الأحزاب ضاعف من ضعف مشاركة النساء في المواقع القيادية في العمل الحزبي.",
                         ],
@@ -258,8 +253,7 @@ class MsharakaDetailsScreen extends StatelessWidget {
                       context: context,
                       builder: (builder) => QuestionAndListAnswer(
                         context: context,
-                        questionLabel:
-                        'تحديات المضايقات الالكترونية',
+                        questionLabel: 'تحديات المضايقات الالكترونية',
                         listAnswer: [
                           "تواجه النساء هجمات مختلفة لإسكات وتشويه سمعتهن خاصة حين يعبّرن عن آرائهن بجرأة كقيادات وعاملات في المجتمعات المحلية ومدافعات عن حقوق الإنسان وممارسات للعمل السياسي. قد تعرّضّت عدد من المرشحات خلال الحملة الانتخابية 2018 إلى أساليب تسقيط سياسي وتشهير جنسي مفبرك في مواقع التواصل الاجتماعي، بهدف بثّ الذعر والخوف لدى المرشحات وإجبارهن على الانسحاب من الترشيح لمواقع صنع القرار من أجل الحفاظ على سمعتهن، في ظل غياب دعم الأحزاب والقوائم السياسية المرشحات ضمنهن، مع ضعف تدابير الحماية القانونية لهن."
                         ],

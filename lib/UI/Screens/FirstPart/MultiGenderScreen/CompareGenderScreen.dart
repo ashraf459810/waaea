@@ -57,7 +57,7 @@ class CompareGenderScreen extends StatelessWidget {
                       height: 20,
                     ),
                     Text(
-                      "أساس مراعاة مفهوم النوع الاجتامعي",
+                      "أساس مراعاة مفهوم النوع الاجتماعي",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: theme(context).primaryColor,
                           fontSize: 26,
