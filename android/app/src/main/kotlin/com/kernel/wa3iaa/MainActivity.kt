@@ -1,4 +1,4 @@
-package com.kernel.wa3iaa
+package com.kernel.waiaa
 
 import io.flutter.embedding.android.FlutterActivity
 

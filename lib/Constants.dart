@@ -44,6 +44,15 @@ class Constants {
   static String jasadyIcon = 'assets/images/gender-violence/jasadyIcon.png';
   static String iqtsadyIcon = 'assets/images/gender-violence/iqtsadyIcon.png';
   static String ijtmahyIcon = 'assets/images/gender-violence/ijtmahyIcon.png';
+  static String ijtmahyIcon1 = 'assets/images/gender-violence/ijtmahyIcon1.png';
+  static String edit1 = 'assets/images/edit1.png';
+  static String photo1 = 'assets/images/1.png';
+  static String photo2 = 'assets/images/2.png';
+  static String photo3 = 'assets/images/3.png';
+  static String photo4 = 'assets/images/4.png';
+  static String table = 'assets/images/table.png';
+  static String table2 = 'assets/images/tablePhoto.png';
+
   static String jnsyIcon = 'assets/images/gender-violence/jnsyIcon.png';
   static String nafsyIcon = 'assets/images/gender-violence/nafsyIcon.png';
 

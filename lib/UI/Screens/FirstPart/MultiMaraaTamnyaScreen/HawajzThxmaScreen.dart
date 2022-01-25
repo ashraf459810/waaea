@@ -43,7 +43,7 @@ class HawajzThxmaScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 30, vertical: 20),
                     child: Text(
-                      "حواجز ضخمة في سبيل تحقيق المساواة بني الجنسني",
+                      "حواجز ضخمة في سبيل تحقيق المساواة بين الجنسين",
                       style: theme(context).textTheme.headline5!.copyWith(
                           color: Colors.black87,
                           fontSize: 30,
@@ -127,11 +127,11 @@ class HawajzThxmaScreen extends StatelessWidget {
                       children: [
                         RowPointWidget(
                           label:
-                              "تحقيق المساواة بني الجنسني وتمكين كل النساء والفتيات",
+                              "تحقيق المساواة بين الجنسين وتمكين كل النساء والفتيات",
                         ),
                         RowPointWidget(
                           label:
-                              "تعميم المساواة بني الجنسني في جميع مجالات عملهم/ن",
+                              "تعميم المساواة بين الجنسين في جميع مجالات عملهم/ن",
                         ),
                         RowPointWidget(
                           label:

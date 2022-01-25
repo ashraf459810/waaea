@@ -78,11 +78,8 @@ class IjraatXassScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Image.asset(
-                      Constants.ijraatTableScreenshot,
+                      Constants.table,
                     ),
-                  ),
-                  SizedBox(
-                    height: 20,
                   ),
                   rowQuestionWidget(
                     context: context,

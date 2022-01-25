@@ -142,8 +142,41 @@ class ElqaaXattabScreen extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-                    // sortImageCode(context),
-                    Image.asset(Constants.elqaScreenshot),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image(
+                                image: AssetImage(Constants.photo3),
+                                width: 160,
+                                height: 160,
+                              ),
+                              Image(
+                                image: AssetImage(Constants.photo2),
+                                width: 160,
+                                height: 160,
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Image(
+                                image: AssetImage(Constants.photo4),
+                                width: 160,
+                                height: 160,
+                              ),
+                              Image(
+                                image: AssetImage(Constants.photo1),
+                                width: 160,
+                                height: 160,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
 
                     SizedBox(
                       height: 30,

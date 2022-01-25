@@ -196,7 +196,7 @@ class MrajhWaRawabtScreen extends StatelessWidget {
                         SizedBox(
                           width: double.infinity,
                           child: Text(
-                            "إرشادات لإدماج منظور المساواة بني الجنسني في الاستعراضات الوطنية",
+                            "إرشادات لإدماج منظور المساواة بين الجنسين في الاستعراضات الوطنية",
                             style: theme(context).textTheme.subtitle1!.copyWith(
                                   color: theme(context).primaryColor,
                                   fontSize: 20,

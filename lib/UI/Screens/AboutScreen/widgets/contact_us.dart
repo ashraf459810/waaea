@@ -28,7 +28,14 @@ class ContactUs extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'ﴍﻛﺔ ﻛﻴﺮﻧﻞ, ﴍﻛﺔ ﺗﻌﻤﻞ ﰲ ﻣﺠﺎل اﻻﻣﻦ اﳌﻌﻠﻮﻣﺎﺗﻲ و ﺗﻄﻮﻳﺮ اﻟﱪﻣﺠﻴﺎت واﻟﺘﺼﻤﻴﻢ. ﺳﺎﻫﻤﺖ ﴍﻛﺔ ﻛﻴﺮﻧﻞ ﰲ ﺗﺼﻤﻴﻢ وﺗﻄﻮﻳﺮ ﻣﴩوع واﻋﻴﺔ ﻛﺪﻋﻢ ﻟﻠﻨﺴﺎء وﺣﻘﻮﻗﻬﻦ وﻧﴩ اﻟﻮﻋﻲ ﺣﻮل ذﻟﻚ.',
+            'شركة كيرنل',
+            style: style.copyWith(
+              color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            '  ﴍﻛﺔ ﺗﻌﻤﻞ ﰲ ﻣﺠﺎل اﻻﻣﻦ اﳌﻌﻠﻮﻣﺎﺗﻲ و ﺗﻄﻮﻳﺮ اﻟﱪﻣﺠﻴﺎت واﻟﺘﺼﻤﻴﻢ. ﺳﺎﻫﻤﺖ ﴍﻛﺔ ﻛﻴﺮﻧﻞ ﰲ ﺗﺼﻤﻴﻢ وﺗﻄﻮﻳﺮ ﻣﴩوع واﻋﻴﺔ ﻛﺪﻋﻢ ﻟﻠﻨﺴﺎء وﺣﻘﻮﻗﻬﻦ وﻧﴩ اﻟﻮﻋﻲ ﺣﻮل ذﻟﻚ.',
             style: style.copyWith(
               color: Colors.white,
             ),

@@ -111,7 +111,7 @@ class SubCategoriesScreen extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 20, vertical: 20),
                           child: Text(
-                            "النوع الاجتماعی \" جیندر \"",
+                            "النوع الاجتماعی \" الجندر \"",
                             style: theme(context).textTheme.headline5!.copyWith(
                                 color: Colors.black87, fontFamily: 'R016'),
                             textDirection: TextDirection.rtl,
@@ -245,7 +245,7 @@ class SubCategoriesScreen extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "المرأة و التمنیة والمستدامة ",
+                                "رؤية جديدة للعالم الذي نريده ",
                                 style: theme(context)
                                     .textTheme
                                     .button!

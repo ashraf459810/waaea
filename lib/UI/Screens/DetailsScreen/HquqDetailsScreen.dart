@@ -47,7 +47,7 @@ class HquqDetailsScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 10),
                     child: Text(
-                      "لك الحق أن تعرفي انك تتمتعني بنفس الحقوق وُ الحريات الأساسية. فحقوق الإنسان ليست هبة ولا ميكنُ لأحد أو لأي جهة أن متنحك حقوقك أو تُسلبها منكحقوق الإنسان هي الضامنات العالمية التي تضمن الكرامة الإنسانية وتكفل المساواة بني الجميع. وهي ّة في جميع البشر مهام كانت الحقوق المتأصل جنسيتهم، أو مكان إقامتهم، أو جنسهم، أو أصلهم، ....أو لونهم، أو عرقهم، أو دينهم، أو لغتهم",
+                      "لك الحق أن تعرفي انك تتمتعني بنفس الحقوق وُ الحريات الأساسية. فحقوق الإنسان ليست هبة ولا ميكنُ لأحد أو لأي جهة أن متنحك حقوقك أو تُسلبها منك حقوق الإنسان هي الضامنات العالمية التي تضمن الكرامة الإنسانية وتكفل المساواة بني الجميع. وهي ّة في جميع البشر مهام كانت الحقوق المتأصل جنسيتهم، أو مكان إقامتهم، أو جنسهم، أو أصلهم، ....أو لونهم، أو عرقهم، أو دينهم، أو لغتهم",
                       style: theme(context)
                           .textTheme
                           .bodyText1!
@@ -159,7 +159,7 @@ class HquqDetailsScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ListTile(
                           title: Text(
-                            "الحقوق الجامعية",
+                            "الحقوق الجماعية",
                             style: theme(context)
                                 .textTheme
                                 .headline2!
@@ -189,13 +189,13 @@ class HquqDetailsScreen extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => PointScreen(
                                       title:
-                                          "هل تُعتبر المساواة بني الجنسني أساسيا من حقا حقوق الإنسان؟",
+                                          "هل تُعتبر المساواة بين الجنسين أساسيا من حقا حقوق الإنسان؟",
                                       description:
                                           " نعم، وتضمن المساواة في الفرص والعائدات وتساعد في تحقيق التنمية المستدامة والسلام في المجتمعات",
                                     )),
                           ),
                       text:
-                          "هل تُعتبر المساواة بني الجنسني أساسيا من حقا حقوق الإنسان؟",
+                          "هل تُعتبر المساواة بين الجنسين أساسيا من حقا حقوق الإنسان؟",
                       context: context),
                   RowQuestionWidget(
                       onPressed: (context) => Navigator.push(
@@ -210,7 +210,7 @@ class HquqDetailsScreen extends StatelessWidget {
                                       ],
                                     )),
                           ),
-                      text: "هل يكفل الدستور العراقي المساواة بني الجنسني؟",
+                      text: "هل يكفل الدستور العراقي المساواة بين الجنسين؟",
                       context: context),
                   GestureDetector(
                     onTap: () =>
